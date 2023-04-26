@@ -32,12 +32,40 @@ html {
   color:#6070ff;
   display: inline-block;
   margin-right: 24px;
-  
+  width: 16px;
 }
 
 /*INTRODUCTION SECTION*/
 
-. introduction-name{
-
+.introduction-name {
+  width: 87%;
+  margin: 116px 6.5% 12px 6.5%;
+  color: #172b4d;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
+.introduction-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 6.5% 12px 6.5%;
+}
+
+.lets-connect {
+  margin: 0 6.5% 14px 6.5%;
+  color: #7F8cff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 6.5%;
+  list-style: none;
+  align-items: baseline;
+}
+
+.social-icons li {
+  margin-right: 20px;  
+}
