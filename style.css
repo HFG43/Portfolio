@@ -41,12 +41,14 @@ html {
 /* INTRODUCTION SECTION */
 
 #introduction-section {
+  background-image: url("Images_Background/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 10px;
   background-size: cover;
   position: relative;
-  height: 90vh;
+  height: 82vh;
 }
 
 .introduction-name {
@@ -68,6 +70,7 @@ html {
 
 .lets-connect {
   margin: 0 6.5% 1.95% 6.5%;
+  padding: 3px 0;
   color: #7f8cff;
   font-size: 1rem;
   font-weight: 500;
