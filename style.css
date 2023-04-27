@@ -9,7 +9,7 @@ html {
   font-size: 16px;
 }
 
-/*NAVIGATION BAR*/ 
+/*NAVIGATION BAR*/
 
 .navbar {
   margin-top: 25px;
@@ -38,7 +38,7 @@ html {
 
 #introduction-section {
   background: url("Images_Background/header-shapes\ mobile.png") no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
 .introduction-name {
