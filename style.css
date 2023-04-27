@@ -43,11 +43,19 @@ html {
 #introduction-section {
   background: url("Images_Background/header-shapes\ mobile.png") no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;  
+}
+
+.introduction-container{
+  margin: 0 6.5% 0 6.5%;
 }
 
 .introduction-name {
   width: 87%;
-  margin: 0 6.5% 12px 6.5%;
+  margin-bottom: 12px;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -58,11 +66,11 @@ html {
   color: #344563;
   font-weight: 400;
   font-size: 1rem;
-  margin: 0 6.5% 12px 6.5%;
+  margin-bottom: 12px;
 }
 
 .lets-connect {
-  margin: 0 6.5% 14px 6.5%;
+  margin-bottom: 14px;
   color: #7f8cff;
   font-size: 1rem;
   font-weight: 500;
@@ -70,7 +78,6 @@ html {
 
 .social-icons {
   display: flex;
-  margin-left: 6.5%;
   margin-bottom: 136px;
   list-style: none;
   align-items: baseline;
