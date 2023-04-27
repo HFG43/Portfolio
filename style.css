@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: purple solid 2px;
 }
 
 html {
@@ -97,6 +96,7 @@ html {
   display: grid;
   grid-template-columns: auto;
   row-gap: 88px;
+  margin: 0 6.5% 0 6.5%;
 }
 
 #card-work-1 {
@@ -113,4 +113,73 @@ html {
 
 #card-work-4 {
   grid-row: 4 / 5;
+}
+
+.mobile-card {
+  border: solid 1px #dfe1e6;
+  border-radius: 16px;
+}
+
+.project-description-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: #172b4d;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.project-role-detail {
+  list-style: none;
+  display: flex;
+  color: #7a869a;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.project-role-client {
+  color: #344563;
+  margin-bottom: 20px;
+}
+
+.project-role-counter {
+  color: #c1C7d0;
+}
+
+.project-role-detail li {
+  margin-right: 12px;
+}
+
+.project-description-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  margin-bottom: 12px;
+}
+
+.project-language-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.project-language-list li {
+  margin-right: 8px;
+  background-color: #ebebff;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.see-project-button {
+  border-radius: 5px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  padding: 12px;
 }
