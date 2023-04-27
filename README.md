@@ -128,7 +128,7 @@ No deployment available yet.
 
 - GitHub: [@githubhandle](https://github.com/HFG43)
 - Twitter: [@twitterhandle](https://twitter.com/HFG_43)
-- LinkedIn: [LinkedIn](linkedin.com/in/hernán-güemes-a440591b)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hern%C3%A1n-g%C3%BCemes-a440591b/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
