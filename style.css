@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: purple solid 2px;
 }
 
 html {
@@ -88,4 +89,28 @@ html {
 .social-icons li {
   margin-right: 1.25rem;
   flex-shrink: 2;
+}
+
+/* MOBILE CARDS */
+
+#card-works-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 88px;
+}
+
+#card-work-1 {
+  grid-row: 1 / 2;
+}
+
+#card-work-2 {
+  grid-row: 2 / 3;
+}
+
+#card-work-3 {
+  grid-row: 3 / 4;
+}
+
+#card-work-4 {
+  grid-row: 4 / 5;
 }
