@@ -135,12 +135,12 @@ No deployment available yet.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-**[dinamic_style_media_querys]**
-**[RWD_Responsive_Web_Design]**
-**[contact_form]**
-**[accesibility]**
-**[add_portfolio_snapshots]**
-**[deployment]**
+- **[Dynamic Style Media Querys]**
+- **[RWD Responsive Web Design]**
+- **[Contact Form]**
+- **[Accesibility taken into consideration]**
+- **[Portfolio Snapshots]**
+- **[Deployment included]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

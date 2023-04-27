@@ -43,6 +43,11 @@ html {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 10px;
+}
+
+.intro-item-proportion {
+  flex: 1;
 }
 
 .introduction-name {
@@ -52,6 +57,7 @@ html {
   font-size: 2.5rem;
   font-weight: 700;
   padding-top: 116px;
+  flex-shrink: 2;
 }
 
 .introduction-paragraph {
@@ -74,9 +80,10 @@ html {
   margin-bottom: 136px;
   list-style: none;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .social-icons li {
   margin-right: 20px;
-  flex-shrink: 1;
+  flex-shrink: 2;
 }
