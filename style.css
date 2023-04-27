@@ -12,8 +12,7 @@ html {
 /*NAVIGATION BAR*/ 
 
 .navbar {
-  margin-bottom: 45px;
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 .navbar ul {
@@ -37,12 +36,18 @@ html {
 
 /*INTRODUCTION SECTION*/
 
+#introduction-section {
+  background: url("Images_Background/header-shapes\ mobile.png") no-repeat;
+  background-size: cover;  
+}
+
 .introduction-name {
   width: 87%;
-  margin: 116px 6.5% 12px 6.5%;
+  margin: 0 6.5% 12px 6.5%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
+  padding-top: 116px;
 }
 
 .introduction-paragraph {
@@ -62,10 +67,12 @@ html {
 .social-icons {
   display: flex;
   margin-left: 6.5%;
+  margin-bottom: 136px;
   list-style: none;
   align-items: baseline;
 }
 
 .social-icons li {
-  margin-right: 20px;  
+  margin-right: 20px;
+  flex-shrink: 1;
 }
