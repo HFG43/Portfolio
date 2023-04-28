@@ -249,8 +249,16 @@ html {
   flex-direction: column;
 }
 
+.tech-languages li {
+  background-color: #f7f7f9;
+}
+
 .arrow-skills {
   justify-content: space-between;
+}
+
+.arrow-color {
+  color: #acb7c3;
 }
 
 .language-name {
