@@ -49,11 +49,15 @@ html {
   background-size: cover;
   position: relative;
   height: 82vh;
+  margin-bottom: 20%;
+}
+
+.principal-margin {
+  margin: 0 6.5% 1.67% 6.5%;
 }
 
 .introduction-name {
   width: 87%;
-  margin: 0 6.5% 1.67% 6.5%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -65,7 +69,6 @@ html {
   color: #344563;
   font-weight: 400;
   font-size: 1rem;
-  margin: 0 6.5% 1.67% 6.5%;
 }
 
 .lets-connect {
@@ -79,10 +82,13 @@ html {
 .social-icons {
   display: flex;
   margin-left: 6.5%;
-  margin-bottom: 18.95%;
   list-style: none;
   align-items: baseline;
   flex-wrap: wrap;
+}
+
+.social-icons-margin-bottom-presentation {
+  margin-bottom: 18.95%;
 }
 
 .social-icons li {
@@ -95,8 +101,8 @@ html {
 #card-works-container {
   display: grid;
   grid-template-columns: auto;
-  row-gap: 88px;
   margin: 0 6.5% 0 6.5%;
+  row-gap: 88px;
 }
 
 #card-work-1 {
@@ -120,9 +126,15 @@ html {
   border-radius: 16px;
 }
 
+.card-snapshot {
+  width: 92%;
+  margin: 12px 4% 0 4%;
+}
+
 .project-description-block {
   display: flex;
   flex-direction: column;
+  margin: 16px 4% 32px 4%;
 }
 
 .card-title {
@@ -175,6 +187,10 @@ html {
   border-radius: 8px;
 }
 
+.button-container {
+  display: inline-block;
+}
+
 .see-project-button {
   border-radius: 5px;
   color: #396df2;
@@ -182,4 +198,14 @@ html {
   font-weight: 500;
   font-size: 1.0625rem;
   padding: 12px;
+  display: inline-block;
+}
+
+#about-myself {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons-margin-bottom-about-myself {
+  margin-bottom: 24px;
 }
