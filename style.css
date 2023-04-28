@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 html {
@@ -53,7 +54,8 @@ html {
 }
 
 .principal-margin {
-  margin: 0 6.5% 1.67% 6.5%;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
 }
 
 .introduction-name {
@@ -63,12 +65,14 @@ html {
   font-weight: 700;
   margin-top: 20%;
   flex-shrink: 2;
+  margin-bottom: 1.67%;
 }
 
 .introduction-paragraph {
   color: #344563;
   font-weight: 400;
   font-size: 1rem;
+  margin-bottom: 1.67%;
 }
 
 .lets-connect {
@@ -82,7 +86,6 @@ html {
 .social-icons {
   display: flex;
   margin-left: 6.5%;
-  list-style: none;
   align-items: baseline;
   flex-wrap: wrap;
 }
@@ -144,7 +147,6 @@ html {
 }
 
 .project-role-detail {
-  list-style: none;
   display: flex;
   color: #7a869a;
   font-size: 0.8125rem;
@@ -172,7 +174,6 @@ html {
 }
 
 .project-language-list {
-  list-style: none;
   display: flex;
   margin-bottom: 24px;
 }
@@ -208,4 +209,14 @@ html {
 
 .social-icons-margin-bottom-about-myself {
   margin-bottom: 24px;
+}
+
+.about-myself-skills {
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.tech-languages {
+  
 }
