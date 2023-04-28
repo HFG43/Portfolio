@@ -202,6 +202,23 @@ html {
   display: inline-block;
 }
 
+.see-project-button:hover {
+  color: #ffffff;
+  background-color: #6070ff;
+}
+
+.see-project-button:active {
+  color: #ffffff;
+  background-color: #2230d2
+}
+
+.see-project-button:disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
+
+/* ABOUT MYSELF SECTION */
+
 #about-myself {
   display: flex;
   flex-direction: column;
@@ -215,8 +232,32 @@ html {
   color: #000000;
   font-weight: 500;
   font-size: 1.25rem;
+  margin-top: 12%;
+  margin-left: 9%;
+}
+
+.about-myself-skills li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
 }
 
 .tech-languages {
-  
+  color: #253858;
+  font-size: 0.9375rem;
+  margin-left: 3%;
+  flex-direction: column;
+}
+
+.arrow-skills {
+  justify-content: space-between;
+}
+
+.language-name {
+  margin-left: 16px;
+}
+
+.bottom-line-language {
+  border-bottom: 2px solid #dfe1e6;
+  margin-bottom: 23px;
 }
