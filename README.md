@@ -36,7 +36,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-is a first project to prepare the arena to showcase my future Portfolio as software developer. Here I will present my projects and professional skills.
+is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills.
 
 **[Portfolio]** is a starting point to present my future portfolio in a responsive way.
 
@@ -68,6 +68,7 @@ is a first project to prepare the arena to showcase my future Portfolio as softw
 ### Key Features <a name="key-features"></a>
 
 - **[First approach to mobile responsive portfolio design]**
+- **[To position elements in place, and to prepare them for a RWD, I udes Flex-Box and CSS Grid Layout]**
 - **[Introduction of my skills as professional developer]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -135,11 +136,10 @@ No deployment available yet.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Dynamic Style Media Querys]**
+- **[Dynamic Style Media Querys including Desktop Version]**
 - **[RWD Responsive Web Design]**
 - **[Contact Form]**
 - **[Accesibility taken into consideration]**
-- **[Portfolio Snapshots]**
 - **[Deployment included]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
