@@ -203,13 +203,13 @@ html {
 }
 
 .see-project-button:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #6070ff;
 }
 
 .see-project-button:active {
-  color: #ffffff;
-  background-color: #2230d2
+  color: #fff;
+  background-color: #2230d2;
 }
 
 .see-project-button:disabled {
@@ -229,7 +229,7 @@ html {
 }
 
 .about-myself-skills {
-  color: #000000;
+  color: #000;
   font-weight: 500;
   font-size: 1.25rem;
   margin-top: 12%;
