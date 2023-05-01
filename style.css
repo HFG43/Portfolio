@@ -269,3 +269,12 @@ html {
   border-bottom: 2px solid #dfe1e6;
   margin-bottom: 23px;
 }
+
+/* Collaborative Working */
+.html-language,
+ .css-language,
+ .javascript-language
+{
+  float: left;
+}
+
