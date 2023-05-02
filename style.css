@@ -222,6 +222,7 @@ html {
 #about-myself {
   display: flex;
   flex-direction: column;
+  margin-bottom: 170px;
 }
 
 .social-icons-margin-bottom-about-myself {
