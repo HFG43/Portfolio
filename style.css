@@ -302,9 +302,18 @@ html {
   margin-bottom: 52px;
 }
 
+.form-input {
+  color: #172b4d;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  padding: 15px 16px;
+}
+
 .form-input-width {
   width: 100%;
   margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
 }
 
 .closing-line-container {
