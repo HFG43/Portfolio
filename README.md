@@ -36,7 +36,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills.
+is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills, and you will also have the option of sending me a message.
 
 **[Portfolio]** is a starting point to present my future portfolio in a responsive way.
 
@@ -61,7 +61,14 @@ is a first project to prepare the arena to showcase my future Portfolio as softw
 <details>
 <summary>Standar code</summary>
   <ul>
-    <li><a href="#">Linters</a></li>
+    <li><a href="https://formspree.io/html/">Linters</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Data</summary>
+  <ul>
+    <li><a href="#">Formspree</a></li>
   </ul>
 </details>
 
@@ -70,6 +77,7 @@ is a first project to prepare the arena to showcase my future Portfolio as softw
 - **[First approach to mobile responsive portfolio design]**
 - **[To position elements in place, and to prepare them for a RWD, I udes Flex-Box and CSS Grid Layout]**
 - **[Introduction of my skills as professional developer]**
+- **[Contact form -with client side validation- where you will be able to send me your messages]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,12 +141,16 @@ No deployment available yet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/M-Anwar-Hussaini)
+- Twitter: [@twitterhandle](https://twitter.com/MAnwarHussaini)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammad-anwar-hussaini-876638267/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **[Dynamic Style Media Querys including Desktop Version]**
 - **[RWD Responsive Web Design]**
-- **[Contact Form]**
 - **[Accesibility taken into consideration]**
 - **[Deployment included]**
 
@@ -162,7 +174,7 @@ If you like this project, please Star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my Code Reviewers!
+I would like to thank my Code Reviewers and Anwar Hussaini for collaborating in the form section doing pair programing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
