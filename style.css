@@ -323,12 +323,27 @@ html {
 
 .textarea {
   height: 9.375rem;
-  font-weight: 400;
-  font-size: 0.9375rem;
 }
 
-::placeholder {
+textarea::placeholder {
   color: #b3bac5;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea::-ms-input-placeholder {
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-form-button {
