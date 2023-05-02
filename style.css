@@ -269,3 +269,41 @@ html {
   border-bottom: 2px solid #dfe1e6;
   margin-bottom: 23px;
 }
+
+/* CONTACT ME SECTION */
+
+#contact-me {
+  background-color: #6070ff;
+  background-image: url(Images_Background/contact\ form\ shapes-mobile.svg) no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+  padding-top: 13.2%;
+  flex-shrink: 3;
+}
+
+.contact-me-paragraph {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #ebebff;
+  margin-bottom: 52px;
+}
+
+.closing-line-container {
+  display: flex;
+  justify-content: center;
+}
+
+.closing-line {
+  margin-bottom: 8px;
+}
