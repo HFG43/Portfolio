@@ -36,7 +36,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills, and you will also have the option of sending me a message.
+Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills, and you will also have the option of sending me a message.
 
 **[Portfolio]** is a starting point to present my future portfolio in a responsive way.
 
