@@ -300,11 +300,17 @@ html {
   margin-bottom: 52px;
 }
 
+.form-input-width {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
 .closing-line-container {
   display: flex;
   justify-content: center;
 }
 
 .closing-line {
+  margin-top: 32px;
   margin-bottom: 8px;
 }
