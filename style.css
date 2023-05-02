@@ -306,7 +306,6 @@ html {
   color: #172b4d;
   font-size: 1.0625rem;
   font-weight: 400;
-  padding: 15px 16px;
 }
 
 .form-input-width {
@@ -314,15 +313,21 @@ html {
   margin-bottom: 18px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
+  outline: none;
+  padding: 15px 16px;
+}
+
+.textarea-size {
+ height: 9.375rem;
+}
+
+.contact-form-button {
+  padding: 12px 16px;
 }
 
 .closing-line-container {
   display: flex;
   justify-content: center;
-}
-
-.contact-form-button {
-  padding: 12px 16px;
 }
 
 .closing-line {
