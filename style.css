@@ -275,12 +275,13 @@ html {
 
 #contact-me {
   background-color: #6070ff;
-  background-position-y: /*REVIEW*/;
   border-top-left-radius: 100px;
   display: flex;
   flex-direction: column;
   background-image: url(Images_Background/contact\ form\ shapes-mobile.svg);
-  background-size: cover;
+  background-size: 60%;
+  background-position-y: 21px;
+  background-position-x: right;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -291,7 +292,7 @@ html {
   color: #fff;
   margin-bottom: 12px;
   text-align: center;
-  padding-top: 13.2%;
+  margin-top: 25%;
   flex-shrink: 3;
 }
 
@@ -318,7 +319,7 @@ html {
 }
 
 .textarea-size {
- height: 9.375rem;
+  height: 9.375rem;
 }
 
 .contact-form-button {
