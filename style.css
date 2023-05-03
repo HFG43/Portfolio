@@ -43,10 +43,6 @@ html {
   flex-shrink: 2;
 }
 
-.navbar-menu-list li {
-  display: none;
- }
-
 /* INTRODUCTION SECTION */
 
 #introduction-section {
@@ -61,13 +57,13 @@ html {
   margin-bottom: 20%;
 }
 
-.principal-margin {
+.principal-margin-intro {
   margin-left: 6.5%;
   margin-right: 6.5%;
 }
 
 .introduction-name {
-  width: 87%;
+  width: 100%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -389,17 +385,18 @@ textarea:-ms-input-placeholder {
   /* NAVIGATION BAR DESKTOP */
 
   .navbar-menu-list li{
-    display: initial; 
+    display: initial;
+    margin-right: 32px;
   }
 
   /* INTRODUCTION SECTION DESKTOP */
 
-  .principal-margin {
+  .principal-margin-intro {
     margin-left: 18%;
     margin-right: 18%;
   }
 
-  .introduction-name {
+  #introduction-section h1 {
     font-size: 3rem;
   }
 
@@ -409,85 +406,112 @@ textarea:-ms-input-placeholder {
 
     /* CARDS DISTRIBUTION */
   
-    #card-work-1 {
-      grid-row: 3 / 4;
-      display: flex;
-      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-    }
+  #card-work-1 {
+    grid-row: 3 / 4;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
     
-    #card-work-2 {
-      grid-row: 4 / 5;
-      display: flex;
-      flex-direction: row-reverse;
-    }
+  #card-work-2 {
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row-reverse;
+  }
     
-    #card-work-3 {
-      grid-row: 1 / 2;
-      display: flex;
-    }
+  #card-work-3 {
+    grid-row: 1 / 2;
+    display: flex;
+  }
     
-    #card-work-4 {
-      grid-row: 2 / 3;
-      display: flex;
-      flex-direction: row-reverse;
-    }
+  #card-work-4 {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   
-    /* CARD IMAGE */ 
+  /* CARD IMAGE */ 
 
-    .card-snapshot {
-      width: 47%;
-      margin: 24px; 
-    }
+  .card-snapshot {
+    width: 47%;
+    margin: 24px; 
+  }
 
-    /* CARD CONTENT */
+  /* CARD CONTENT */
 
-    .project-description-block {
-      margin: 48px 46px 0 22px;
-    }
+  .project-description-block {
+    margin: 48px 46px 0 22px;
+  }
     
-    .card-title {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
+  .card-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
     
-    .project-role-detail {
-      font-size: 1.125rem;
-      margin-bottom: 12px;
-    }
+  .project-role-detail {
+    font-size: 1.125rem;
+    margin-bottom: 12px;
+  }
     
-    .project-description-paragraph {
-      font-size: 1rem;
-      margin-bottom: 28px;
-    }
+  .project-description-paragraph {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
     
-    .project-language-list {
-     margin-bottom: 40px;
-    }
+  .project-language-list {
+    margin-bottom: 40px;
+  }
     
-    .button-container {
-      display: inline-block;
-    }
+  .button-container {
+    display: inline-block;
+  }
     
-    .facebook360-button {
-      color: #fff;
-      background-color: #4053fc;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 1.0625rem;
-      padding: 12px;
-      display: inline-block;
-      cursor: pointer;
-      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-      border-style: none;
-    }
+  .facebook360-button {
+    color: #fff;
+    background-color: #4053fc;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    padding: 12px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border-style: none;
+  }
 
-    .facebook360-button:active {
-      color: #6070ff;
-      border: 1px solid #396df2;
-    }
+  .facebook360-button:active {
+    color: #6070ff;
+    border: 1px solid #396df2;
+  }
     
-    .facebook360-button:hover {
-      color: #fff;
-      background-color: #6070ff;
-    }
+  .facebook360-button:hover {
+    color: #fff;
+    background-color: #6070ff;
+  }
+  
+  /* ABOUT MYSELF SECTION */
+
+  #about-myself {
+    flex-direction: row;
+    margin-left: 10%;
+  }
+
+  .principal-margin-about {
+    
+  }
+
+  .principal-margin-about-social {
+    margin-left: 2.5%
+  }
+ 
+  .about-myself-intro-section {
+    margin-top: 166px;
+    margin-right: 48px;
+    width: 31%
+  }
+  
+  .about-myself-skills-section {
+    margin-top: 166px;
+    width: 43%;
+  }
 } 
+
