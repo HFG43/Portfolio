@@ -384,9 +384,13 @@ textarea:-ms-input-placeholder {
   
   /* NAVIGATION BAR DESKTOP */
 
-  .navbar-menu-list li{
+  .navbar-menu-list li a{
     display: initial;
     margin-right: 32px;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: #344563;
+    text-decoration: none;
   }
 
   /* INTRODUCTION SECTION DESKTOP */
