@@ -321,6 +321,13 @@ html {
   padding: 15px 16px;
 }
 
+::placeholder {
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
 .textarea {
   height: 9.375rem;
 }
