@@ -398,4 +398,23 @@ textarea:-ms-input-placeholder {
   .introduction-paragraph {
     font-size: 1.25rem;
   }
+
+    /* CARDS DISTRIBUTION */
+  
+    #card-work-1 {
+      grid-row: 3 / 4;
+    }
+    
+    #card-work-2 {
+      grid-row: 4 / 5;
+    }
+    
+    #card-work-3 {
+      grid-row: 1 / 2;
+    }
+    
+    #card-work-4 {
+      grid-row: 2 / 3;
+    }
+  
 }
