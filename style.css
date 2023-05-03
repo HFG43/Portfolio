@@ -463,19 +463,31 @@ textarea:-ms-input-placeholder {
      margin-bottom: 40px;
     }
     
-    .project-language-list li {
-      margin-right: 8px;
-      background-color: #ebebff;
-      color: #6070ff;
-      font-weight: 500;
-      font-size: 0.75rem;
-      padding: 4px 12px;
-      border-radius: 8px;
-    }
-    
     .button-container {
       display: inline-block;
     }
     
+    .facebook360-button {
+      color: #fff;
+      background-color: #4053fc;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 1.0625rem;
+      padding: 12px;
+      display: inline-block;
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+      border-style: none;
+    }
+
+    .facebook360-button:active {
+      color: #6070ff;
+      border: 1px solid #396df2;
+    }
     
-}
+    .facebook360-button:hover {
+      color: #fff;
+      background-color: #6070ff;
+    }
+    
+} 
