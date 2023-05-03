@@ -76,7 +76,8 @@ html {
 }
 
 .lets-connect {
-  margin: 0 6.5% 1.95% 6.5%;
+  margin-top: 0;
+  margin-bottom: 1.95%;
   padding: 3px 0;
   color: #7f8cff;
   font-size: 1rem;
@@ -85,7 +86,6 @@ html {
 
 .social-icons {
   display: flex;
-  margin-left: 6.5%;
   align-items: baseline;
   flex-wrap: wrap;
 }
@@ -365,4 +365,25 @@ textarea:-ms-input-placeholder {
 .closing-line {
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  /* GENERAL DESKTOP */
+  
+  /* NAVIGATION BAR DESKTOP */
+
+  /* INTRODUCTION SECTION DESKTOP */
+
+  .principal-margin {
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .introduction-name {
+    font-size: 3rem;
+  }
+
+  .introduction-paragraph {
+    font-size: 1.25rem;
+  }
 }
