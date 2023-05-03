@@ -10,6 +10,10 @@ html {
   font-size: 100%;
 }
 
+.big-size {
+  display: none; 
+}
+
 /* NAVIGATION BAR */
 
 .navbar {
@@ -374,14 +378,18 @@ textarea:-ms-input-placeholder {
 @media screen and (min-width: 768px) {
   /* GENERAL DESKTOP */
 
-  /* NAVIGATION BAR DESKTOP */
-
-  .hamburguer-menu {
+  .mobile-display {
     display: none;
   }
 
+  .big-size {
+    display: initial; 
+  }
+  
+  /* NAVIGATION BAR DESKTOP */
+
   .navbar-menu-list li{
-    display: contents; 
+    display: initial; 
   }
 
   /* INTRODUCTION SECTION DESKTOP */
