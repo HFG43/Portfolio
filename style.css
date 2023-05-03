@@ -39,6 +39,10 @@ html {
   flex-shrink: 2;
 }
 
+.navbar-menu-list li {
+  display: none;
+ }
+
 /* INTRODUCTION SECTION */
 
 #introduction-section {
@@ -369,8 +373,16 @@ textarea:-ms-input-placeholder {
 
 @media screen and (min-width: 768px) {
   /* GENERAL DESKTOP */
-  
+
   /* NAVIGATION BAR DESKTOP */
+
+  .hamburguer-menu {
+    display: none;
+  }
+
+  .navbar-menu-list li{
+    display: contents; 
+  }
 
   /* INTRODUCTION SECTION DESKTOP */
 
