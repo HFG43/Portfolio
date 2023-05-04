@@ -231,6 +231,10 @@ html {
   margin-bottom: 170px;
 }
 
+.introduction-paragraph-about {
+  font-size: 1.25rem;
+}
+
 .social-icons-margin-bottom-about-myself {
   margin-bottom: 24px;
 }
@@ -501,20 +505,16 @@ textarea:-ms-input-placeholder {
   } */
   
   #about-myself {
-    margin-left: 10%;
     margin-top: 166px;
+    margin-left: 10%;
     margin-right: 10%;
     display: grid;
     grid-template-columns: 38.7% 61.3%;  
   }
-  
-  .about-myself-intro-section {
-    
    
-  }
-  
   .about-myself-skills-section {
     margin-top: 0;
+    width: 100%;
   }
   
   .introduction-name {
@@ -522,16 +522,34 @@ textarea:-ms-input-placeholder {
     flex-shrink: 2;
   }
 
+  .introduction-paragraph-about {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .principal-margin-about {
+    margin-bottom: 26px;
+  }
+  
+  .principal-margin-about-social {
+    margin-left: 2.5%
+  }
+
   .about-myself-skills {
     color: #344563;
     font-weight: 500;
     font-size: 1.25rem;
-    margin-left: 9%;
+    margin-left: 5%;
     margin-top: 0;
   }
 
+  .margin-languages-bigsize {
+    margin-bottom: 48px;
+  }
+
   .tech-languages {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
   }
   
   .tech-languages li {
@@ -545,16 +563,10 @@ textarea:-ms-input-placeholder {
   }
 
   .about-myself-skills li {
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
   
-  .principal-margin-about {
-    
-  }
-
-  .principal-margin-about-social {
-    margin-left: 2.5%
-  }
+  
  
   
 } 
