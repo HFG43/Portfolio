@@ -501,11 +501,21 @@ textarea:-ms-input-placeholder {
   } */
   
   #about-myself {
-    flex-direction: row;
     margin-left: 10%;
     margin-top: 166px;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 38.7% 61.3%;  
   }
-
+  
+  .about-myself-intro-section {
+    
+   
+  }
+  
+  .about-myself-skills-section {
+    margin-top: 0;
+  }
   
   .introduction-name {
     margin-top: 0;
@@ -546,14 +556,6 @@ textarea:-ms-input-placeholder {
     margin-left: 2.5%
   }
  
-  .about-myself-intro-section {
-    margin-right: 48px;
-    width: 31%
-  }
   
-  .about-myself-skills-section {
-    width: 43%;
-    margin-top: 0;
-  }
 } 
 
