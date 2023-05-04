@@ -413,6 +413,10 @@ textarea:-ms-input-placeholder {
   }
 
     /* CARDS DISTRIBUTION */
+  #card-works-container {
+    margin: 0 10% 0 10%;
+    row-gap: 142px;
+  }  
   
   #card-work-1 {
     grid-row: 3 / 4;
