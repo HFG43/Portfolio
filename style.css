@@ -387,32 +387,51 @@ textarea:-ms-input-placeholder {
   }
   
   /* NAVIGATION BAR DESKTOP */
-
+  .navbar {
+    margin: 25px 10% 73px 10%;
+  }
   .navbar-menu-list li a{
     display: initial;
     margin-right: 32px;
     font-weight: 500;
     font-size: 0.9375rem;
     color: #344563;
-    text-decoration: none;
+    text-decoration: none;   
   }
 
   /* INTRODUCTION SECTION DESKTOP */
 
+  #introduction-section {
+    background-image: url("Images_Background/Header\ bg\ Desktop.svg");
+    background-position-x: 34.6px;
+    background-size: 97%;
+    margin-bottom: 142px;
+    height: 100vh;
+  }
+
+  .social-icons-margin-bottom-presentation {
+    margin-bottom: 257px;
+    margin-top: 14px;
+  }
+
   .principal-margin-intro {
     margin-left: 18%;
     margin-right: 18%;
+    margin-bottom: 0;
   }
 
   #introduction-section h1 {
     font-size: 3rem;
+    margin-top: 216px;
   }
 
   .introduction-paragraph {
     font-size: 1.25rem;
+    margin-bottom: 12px;
   }
 
     /* CARDS DISTRIBUTION */
+
   #card-works-container {
     margin: 0 10% 0 10%;
     row-gap: 142px;
@@ -502,12 +521,6 @@ textarea:-ms-input-placeholder {
   
   /* ABOUT MYSELF SECTION */
 
-  /* #about-myself {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 170px;
-  } */
-  
   #about-myself {
     margin-top: 166px;
     margin-left: 10%;
@@ -570,8 +583,6 @@ textarea:-ms-input-placeholder {
     margin-bottom: 48px;
   }
   
-  
- 
-  
+    
 } 
 
