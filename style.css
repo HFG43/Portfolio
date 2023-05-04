@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  transition: 0.4s;
 }
 
 html {
@@ -128,11 +129,21 @@ html {
   grid-row: 4 / 5;
 }
 
+
+/* Collaborative Work */
+/* Using Animation */
 .mobile-card {
   border: solid 1px #dfe1e6;
   border-radius: 16px;
+  transition: all 0.4s;
 }
 
+.cursor-container:hover .hand-cursor{
+  transform: translate(-80px, 40px);
+}
+
+
+/* End of Collaborative Working */
 .card-snapshot {
   width: 92%;
   margin: 12px 4% 0 4%;
@@ -270,6 +281,7 @@ html {
 
 .arrow-color {
   color: #acb7c3;
+
 }
 
 .language-name {
