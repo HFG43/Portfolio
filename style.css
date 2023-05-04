@@ -403,15 +403,15 @@ textarea:-ms-input-placeholder {
 
   #introduction-section {
     background-image: url("Images_Background/Header\ bg\ Desktop.svg");
-    background-position-x: 34.6px;
-    background-size: 97%;
-    margin-bottom: 142px;
+    background-position-x: 2.1625rem;
+    background-size: 96%;
+    margin-bottom: 8.875rem;
     height: 100vh;
   }
 
   .social-icons-margin-bottom-presentation {
-    margin-bottom: 257px;
-    margin-top: 14px;
+    margin-bottom: 16.0625rem;
+    margin-top: 0.875rem;
   }
 
   .principal-margin-intro {
@@ -422,19 +422,19 @@ textarea:-ms-input-placeholder {
 
   #introduction-section h1 {
     font-size: 3rem;
-    margin-top: 216px;
+    margin-top: 13.5rem;
   }
 
   .introduction-paragraph {
     font-size: 1.25rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 
     /* CARDS DISTRIBUTION */
 
   #card-works-container {
     margin: 0 10% 0 10%;
-    row-gap: 142px;
+    row-gap: 8.875rem;
   }  
   
   #card-work-1 {
@@ -464,32 +464,32 @@ textarea:-ms-input-placeholder {
 
   .card-snapshot {
     width: 47%;
-    margin: 24px; 
+    margin: 1.5rem; 
   }
 
   /* CARD CONTENT */
 
   .project-description-block {
-    margin: 48px 46px 0 22px;
+    margin: 3rem 2.875rem 0 1.375rem;
   }
     
   .card-title {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
     
   .project-role-detail {
     font-size: 1.125rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
     
   .project-description-paragraph {
     font-size: 1rem;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
   }
     
   .project-language-list {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
     
   .button-container {
@@ -522,7 +522,7 @@ textarea:-ms-input-placeholder {
   /* ABOUT MYSELF SECTION */
 
   #about-myself {
-    margin-top: 166px;
+    margin-top: 10.375rem;
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
@@ -541,15 +541,15 @@ textarea:-ms-input-placeholder {
 
   .introduction-paragraph-about {
     font-size: 1rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 
   .principal-margin-about {
-    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
   }
   
   .principal-margin-about-social {
-    margin-left: 2.5%
+    margin-left: 2.5%;
   }
 
   .about-myself-skills {
@@ -561,7 +561,7 @@ textarea:-ms-input-placeholder {
   }
 
   .margin-languages-bigsize {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   .tech-languages {
@@ -580,9 +580,55 @@ textarea:-ms-input-placeholder {
   }
 
   .about-myself-skills li {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
   
-    
+  /* CONTACT ME DESKTOP SECTION */
+
+  #contact-me {
+    background-image: url(Images_Background/contact\ form\ background\ Desktop.svg);
+    background-size: 92%;
+    background-position-y: 79px;
+    background-position-x: 75px;
+  }
+
+  .contact-me-title {
+    margin-top: 142px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .contact-me-paragraph {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-left: 30.5%;
+    margin-right: 30.5%;
+  }
+  
+  .form-bigsize-align {
+    margin-left: 34.5%;
+    margin-right: 34.5%;
+    margin-bottom: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-input-width {
+    margin-bottom: 27px;
+    border-radius: 0;
+    border: 1px solid #cfd8dc;
+    outline: none;
+    padding: 15px 16px;
+  }
+  
+  .closing-line-container {
+    display: none;    
+  }
+
+  .contact-form-button-desktop {
+    align-self: center;   
+  }
 } 
 
