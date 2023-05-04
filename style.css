@@ -11,7 +11,7 @@ html {
 }
 
 .big-size {
-  display: none; 
+  display: none;
 }
 
 /* NAVIGATION BAR */
@@ -371,7 +371,7 @@ textarea:-ms-input-placeholder {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   /* GENERAL DESKTOP */
 
   .mobile-display {
@@ -494,11 +494,50 @@ textarea:-ms-input-placeholder {
   
   /* ABOUT MYSELF SECTION */
 
+  /* #about-myself {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 170px;
+  } */
+  
   #about-myself {
     flex-direction: row;
     margin-left: 10%;
+    margin-top: 166px;
   }
 
+  
+  .introduction-name {
+    margin-top: 0;
+    flex-shrink: 2;
+  }
+
+  .about-myself-skills {
+    color: #344563;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-left: 9%;
+    margin-top: 0;
+  }
+
+  .tech-languages {
+    flex-direction: column;
+  }
+  
+  .tech-languages li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .language-name {
+    margin-left: 0;
+  }
+
+  .about-myself-skills li {
+    margin-bottom: 36px;
+  }
+  
   .principal-margin-about {
     
   }
@@ -508,14 +547,13 @@ textarea:-ms-input-placeholder {
   }
  
   .about-myself-intro-section {
-    margin-top: 166px;
     margin-right: 48px;
     width: 31%
   }
   
   .about-myself-skills-section {
-    margin-top: 166px;
     width: 43%;
+    margin-top: 0;
   }
 } 
 
