@@ -37,7 +37,6 @@ html {
 
 .hamburguer-menu {
   color: #6070ff;
-  display: inline-block;
   margin-right: 6.5%;
   width: 16px;
   flex-shrink: 2;
