@@ -571,13 +571,13 @@ textarea:-ms-input-placeholder {
 
   .principal-margin-about-social {
     margin-left: 2.5%;
-    margin-top: 16px;    
+    margin-top: 16px;
   }
 
   .margin-about-me-skills {
     margin-left: 18px;
   }
-  
+
   .about-myself-skills {
     color: #344563;
     font-weight: 500;
@@ -585,7 +585,7 @@ textarea:-ms-input-placeholder {
     margin-left: 5%;
     margin-top: 12px;
   }
-  
+
   .about-myself-skills li {
     margin-bottom: 23px;
   }
@@ -600,11 +600,11 @@ textarea:-ms-input-placeholder {
     flex-direction: column;
     align-items: start;
     padding-top: 12px;
-    padding-bottom: 12px;    
+    padding-bottom: 12px;
   }
 
   .tech-languages li img {
-   margin-bottom: 12px;
+    margin-bottom: 12px;
   }
 
   .language-name {
@@ -613,12 +613,12 @@ textarea:-ms-input-placeholder {
   }
 
   .arrow-color {
-     margin-right: 5%;
+    margin-right: 5%;
   }
-  
+
   .bottom-line-language {
     padding-bottom: 23px;
-    margin-bottom: 0x;
+    margin-bottom: 0px;
   }
 
   /* CONTACT ME DESKTOP SECTION */
