@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none;  
 }
 
 html {
@@ -63,7 +63,6 @@ html {
 }
 
 .introduction-name {
-  width: 100%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -406,7 +405,6 @@ textarea:-ms-input-placeholder {
     background-position-x: 2.1625rem;
     background-size: 96%;
     margin-bottom: 8.875rem;
-    height: 100vh;
   }
 
   .social-icons-margin-bottom-presentation {
