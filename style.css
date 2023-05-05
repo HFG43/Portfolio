@@ -476,12 +476,10 @@ textarea:-ms-input-placeholder {
 
   /* CARD CONTENT */
 
-  /* .project-description-block {
-    margin: 3rem 2.875rem 0 1.375rem;
-  } */
-    
   .project-description-block {
     margin: 4.4% 4% 0 3.8%;
+    flex-wrap: nowrap;
+    flex-shrink: 3.2;
   }
     
   .card-title {
@@ -585,13 +583,13 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 18% 18% 18%;
+    grid-template-columns: 18% 18% 18%;    
   }
   
   .tech-languages li {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: start;    
   }
 
   .language-name {

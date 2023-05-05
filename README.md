@@ -37,7 +37,7 @@
 
 Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills, and you will also have the option of sending me a message.
 
-**[Portfolio]** is a starting point to present my future portfolio in a responsive way.
+**[Portfolio]** is a starting point to getting prepare to present my future portfolio in a responsive way.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,7 +73,8 @@ Is a first project to prepare the arena to showcase my future Portfolio as softw
 
 ### Key Features <a name="key-features"></a>
 
-- **[First approach to mobile responsive portfolio design]**
+- **[First approach to a responsive portfolio design]**
+- **[Includes my mobile & desktop design. I have used @Media queries to introduce responsiveness]**
 - **[To position elements in place, and to prepare them for a RWD, I udes Flex-Box and CSS Grid Layout]**
 - **[Introduction of my skills as professional developer]**
 - **[Contact form -with client side validation- where you will be able to send me your messages]**
@@ -140,16 +141,10 @@ No deployment available yet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/M-Anwar-Hussaini)
-- Twitter: [@twitterhandle](https://twitter.com/MAnwarHussaini)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammad-anwar-hussaini-876638267/)
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **[Dynamic Style Media Querys including Desktop Version]**
-- **[RWD Responsive Web Design]**
+- **[Animations & Transitions]**
 - **[Accesibility taken into consideration]**
 - **[Deployment included]**
 
@@ -173,7 +168,7 @@ If you like this project, please Star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my Code Reviewers and Anwar Hussaini for collaborating in the form section doing pair programing.
+I would like to thank to my coding partner Anwar Hussaini [@githubhandle](https://github.com/M-Anwar-Hussaini) for working together with the contact form section!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
