@@ -22,24 +22,30 @@
       <nav class="navbar">
         <ul>
           <li><a class="my-logo" href="#">My Logo</a></li>
-          <li><i class="fa-solid fa-bars hamburguer-menu"></i></li>
+          <li><span class="mobile-display"><i class="fa-solid fa-bars hamburguer-menu"></i></span>
+            <ul class="navbar-menu-list">
+              <li class="big-size"><a href="#card-works-container">Portfolio</a></li>
+              <li class="big-size"><a href="#about-myself">About</a></li>
+              <li class="big-size"><a href="#contact-me">Contact</a></li>
+            </ul>
+          </li>         
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="introduction-section">
-        <h1 class="introduction-name principal-margin">
+        <h1 class="introduction-name principal-margin-intro">
           I’m Hernán.<br />Glad to see you!
         </h1>
-        <p class="introduction-paragraph principal-margin">
+        <p class="introduction-paragraph principal-margin-intro">
           I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don’t hesitate to contact
           me.
         </p>
-        <h2 class="lets-connect">LET'S CONNECT</h2>
-        <ul class="social-icons social-icons-margin-bottom-presentation">
+        <h2 class="lets-connect principal-margin-intro">LET'S CONNECT</h2>
+        <ul class="social-icons social-icons-margin-bottom-presentation principal-margin-intro">
           <li>
             <a href="https://twitter.com/HFG__43"
               ><img src="Images_Background/Twitter.svg" alt="Twitter Icon"
@@ -77,29 +83,38 @@
             alt="Project 1 Snapshot"
           />
           <div class="project-description-block">
-            <h2 class="card-title">Tonic</h2>
+            <h2 class="card-title mobile-display">Tonic</h2>
+            <h2 class="card-title big-size">Facebook 360</h2>
             <ul class="project-role-detail">
-              <li class="project-role-client">CANOPY</li>
+              <li class="project-role-client mobile-display">CANOPY</li>
+              <li class="project-role-client big-size">FACEBOOK</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>Back End Dev</li>
+              <li class="mobile-display">Back End Dev</li>
+              <li class="big-size weight-desktop">Full Stack Dev</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>2015</li>
+              <li class="weight-desktop">2015</li>
             </ul>
-            <p class="project-description-paragraph">
+            <p class="project-description-paragraph mobile-display">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
+            <p class="project-description-paragraph big-size">
+              Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+            </p>
             <ul class="project-language-list">
               <li>HTML</li>
+              <li class="big-size">Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button class="see-project-button">See project</button>
+              <button class="see-project-button mobile-display">See project</button>
+              <button class="facebook360-button big-size">See project</button>
+              <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size" />
             </div>
           </div>
         </article>
@@ -110,25 +125,33 @@
             alt="Project 2 Snapshot"
           />
           <div class="project-description-block">
-            <h2 class="card-title">Tonic</h2>
+            <h2 class="card-title mobile-display">Tonic</h2>
+            <h2 class="card-title big-size">Uber Navigation</h2>
             <ul class="project-role-detail">
-              <li class="project-role-client">CANOPY</li>
+              <li class="project-role-client mobile-display">CANOPY</li>
+              <li class="project-role-client big-size">Uber</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>Back End Dev</li>
+              <li class="mobile-display">Back End Dev</li>
+              <li class="big-size weight-desktop">Lead Developer</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>2015</li>
+              <li class="mobile-display">2015</li>
+              <li class="big-size weight-desktop">2018</li>
             </ul>
-            <p class="project-description-paragraph">
+            <p class="project-description-paragraph mobile-display">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
+            </p>
+            <p class="project-description-paragraph big-size">
+              A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
             </p>
             <ul class="project-language-list">
               <li>HTML</li>
               <li>CSS</li>
+              <li class="big-size">Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
@@ -138,8 +161,13 @@
         </article>
         <article id="card-work-3" class="mobile-card">
           <img
-            class="card-snapshot"
+            class="card-snapshot mobile-display"
             src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"
+            alt="Project 3 Snapshot"
+          />
+          <img
+            class="card-snapshot big-size"
+            src="Images_Background/Desktop Card Snapshot-Nature.svg"
             alt="Project 3 Snapshot"
           />
           <div class="project-description-block">
@@ -149,11 +177,11 @@
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>Back End Dev</li>
+              <li class="weight-desktop">Back End Dev</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>2015</li>
+              <li class="weight-desktop">2015</li>
             </ul>
             <p class="project-description-paragraph">
               A daily selection of privately personalized reads; no accounts or
@@ -176,24 +204,31 @@
             alt="Project 4 Snapshot"
           />
           <div class="project-description-block">
-            <h2 class="card-title">Tonic</h2>
+            <h2 class="card-title mobile-display">Tonic</h2>
+            <h2 class="card-title big-size">Multi-Post Stories</h2>
             <ul class="project-role-detail">
-              <li class="project-role-client">CANOPY</li>
+              <li class="project-role-client mobile-display">CANOPY</li>
+              <li class="project-role-client big-size">FACEBOOK</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>Back End Dev</li>
+              <li class="mobile-display">Back End Dev</li>
+              <li class="big-size weight-desktop">Full Stack Dev</li>
               <li>
                 <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
               </li>
-              <li>2015</li>
+              <li class="weight-desktop">2015</li>
             </ul>
-            <p class="project-description-paragraph">
+            <p class="project-description-paragraph mobile-display">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
+            <p class="project-description-paragraph big-size">
+              Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+            </p>
             <ul class="project-language-list">
               <li>HTML</li>
+              <li class="big-size">Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
@@ -205,87 +240,87 @@
       </section>
 
       <section id="about-myself">
-        <h1 class="introduction-name principal-margin">About Myself</h1>
-        <p class="introduction-paragraph principal-margin">
+        <div class="about-myself-intro-section">
+          <h1 class="introduction-name principal-margin-about">About Myself</h1>
+          <p class="introduction-paragraph-about principal-margin-about">
           Hello I’m a software developer! I can help you build a product ,
           feature or website. Look through some of my work and experience! If
           you like what you see and have a project you need coded, don’t
           hesitate to contact me.
-        </p>
-        <h2 class="lets-connect">LET'S CONNECT</h2>
-        <ul class="social-icons social-icons-margin-bottom-about-myself">
-          <li>
-            <a href="https://github.com/HFG43"
-              ><img src="Images_Background/GitHub.svg" alt="GitHub Icon"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/hern%C3%A1n-g%C3%BCemes-a440591b/"
-              ><img
-                src="Images_Background/Linkedin icon.svg"
-                alt="LinkedIn Icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="Images_Background/Fingers.svg" alt="Fingers Icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HFG__43"
-              ><img src="Images_Background/Twitter.svg" alt="Twitter Icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="Images_Background/M.svg" alt="M Icon" /></a>
-          </li>
-        </ul>
-        <div class="button-container principal-margin">
-          <button class="see-project-button">Get my resume</button>
-        </div>
-        <ul class="about-myself-skills principal-margin">
-          <li class="arrow-skills">
-            <p>Languages</p>
-            <i class="fa fa-angle-down arrow-color"></i>
-          </li>
-          <ul class="tech-languages">
+          </p>
+          <h2 class="lets-connect principal-margin-about">LET'S CONNECT</h2>
+          <ul class="social-icons social-icons-margin-bottom-about-myself principal-margin-about-social">
             <li>
-              <img src="Images_Background/JS-logo.svg" alt="JavaScript logo" />
-              <p class="language-name">JavaScript</p>
+              <a href="https://github.com/HFG43"
+                ><img src="Images_Background/GitHub.svg" alt="GitHub Icon"
+              /></a>
             </li>
             <li>
-              <img src="Images_Background/html-logo.svg" alt="HTML logo" />
-              <p class="language-name">HTML</p>
+              <a
+                href="https://www.linkedin.com/in/hern%C3%A1n-g%C3%BCemes-a440591b/"
+                ><img
+                  src="Images_Background/Linkedin icon.svg"
+                  alt="LinkedIn Icon"
+              /></a>
             </li>
             <li>
-              <img src="Images_Background/css-logo.svg" alt="CSS logo" />
-              <p class="language-name">CSS</p>
+              <a href="#"
+                ><img src="Images_Background/Fingers.svg" alt="Fingers Icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/HFG__43"
+                ><img src="Images_Background/Twitter.svg" alt="Twitter Icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="Images_Background/M.svg" alt="M Icon" /></a>
             </li>
           </ul>
-          <li class="bottom-line-language arrow-skills">
-            <p>Frameworks</p>
-            <i class="fa fa-angle-down arrow-color"></i>
-          </li>
-          <li class="bottom-line-language arrow-skills">
-            <p>Skills</p>
-            <i class="fa fa-angle-down arrow-color"></i>
-          </li>
-        </ul>
+          <div class="button-container principal-margin-about">
+            <button class="see-project-button">Get my resume</button>
+          </div>
+        </div> 
+        <div class="about-myself-skills-section">
+          <ul class="about-myself-skills principal-margin">
+            <li class="arrow-skills">
+              <p class="margin-about-me-skills">Languages</p>
+              <i class="fa fa-angle-down arrow-color"></i>
+            </li>
+            <ul class="tech-languages margin-languages-bigsize">
+              <li>
+                <img src="Images_Background/JS-logo.svg" alt="JavaScript logo" />
+                <p class="language-name">JavaScript</p>
+              </li>
+              <li>
+                <img src="Images_Background/html-logo.svg" alt="HTML logo" />
+                <p class="language-name">HTML</p>
+              </li>
+              <li>
+                <img src="Images_Background/css-logo.svg" alt="CSS logo" />
+                <p class="language-name">CSS</p>
+              </li>
+            </ul>
+            <li class="bottom-line-language arrow-skills ">
+              <p class="margin-about-me-skills">Frameworks</p>
+              <i class="fa fa-angle-down fa-rotate-270 arrow-color"></i>
+            </li>
+            <li class="bottom-line-language arrow-skills">
+              <p class="margin-about-me-skills">Skills</p>
+              <i class="fa fa-angle-down fa-rotate-270 arrow-color"></i>
+            </li>
+          </ul>
+        </div>  
       </section>
-
-      <!------------------------>
-      <!-- CONTACT ME SECTION -->
-      <!------------------------>
 
       <section id="contact-me">
         <h2 class="contact-me-title">Contact me</h2>
-        <p class="contact-me-paragraph principal-margin">
+        <p class="contact-me-paragraph principal-margin-intro">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
-        <form action="https://formspree.io/f/mknayrpk" method="post" class="principal-margin">
+        <form action="https://formspree.io/f/mknayrpk" method="post" class="principal-margin-intro form-bigsize-align">
           <input
             type="text"
             id="name"
@@ -311,7 +346,7 @@
             placeholder="Write your message here..."
             required
           ></textarea>
-          <button type="submit" class="see-project-button contact-form-button">
+          <button type="submit" class="see-project-button contact-form-button-desktop">
             Get in touch
           </button>
         </form>

@@ -10,6 +10,10 @@ html {
   font-size: 100%;
 }
 
+.big-size {
+  display: none;
+}
+
 /* NAVIGATION BAR */
 
 .navbar {
@@ -33,7 +37,6 @@ html {
 
 .hamburguer-menu {
   color: #6070ff;
-  display: inline-block;
   margin-right: 6.5%;
   width: 16px;
   flex-shrink: 2;
@@ -53,13 +56,12 @@ html {
   margin-bottom: 20%;
 }
 
-.principal-margin {
+.principal-margin-intro {
   margin-left: 6.5%;
   margin-right: 6.5%;
 }
 
 .introduction-name {
-  width: 87%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -76,7 +78,8 @@ html {
 }
 
 .lets-connect {
-  margin: 0 6.5% 1.95% 6.5%;
+  margin-top: 0;
+  margin-bottom: 1.95%;
   padding: 3px 0;
   color: #7f8cff;
   font-size: 1rem;
@@ -85,7 +88,6 @@ html {
 
 .social-icons {
   display: flex;
-  margin-left: 6.5%;
   align-items: baseline;
   flex-wrap: wrap;
 }
@@ -227,6 +229,19 @@ html {
   margin-bottom: 170px;
 }
 
+.principal-margin-about {
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+}
+
+.principal-margin-about-social {
+  margin-left: 6.5%;
+}
+
+.introduction-paragraph-about {
+  font-size: 1.25rem;
+}
+
 .social-icons-margin-bottom-about-myself {
   margin-bottom: 24px;
 }
@@ -258,10 +273,12 @@ html {
 
 .arrow-skills {
   justify-content: space-between;
+  margin-right: 6.5%;
 }
 
 .arrow-color {
   color: #acb7c3;
+  margin-right: 41.5px;
 }
 
 .language-name {
@@ -269,7 +286,7 @@ html {
 }
 
 .bottom-line-language {
-  border-bottom: 2px solid #dfe1e6;
+  border-bottom: 3px solid #dfe1e6;
   margin-bottom: 23px;
 }
 
@@ -365,4 +382,295 @@ textarea:-ms-input-placeholder {
 .closing-line {
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+@media all and (min-width: 768px) {
+  /* GENERAL DESKTOP */
+
+  .mobile-display {
+    display: none;
+  }
+
+  .big-size {
+    display: initial;
+  }
+
+  /* NAVIGATION BAR DESKTOP */
+
+  .navbar {
+    margin: 25px 10% 73px 10%;
+  }
+
+  .navbar-menu-list li a {
+    display: initial;
+    margin-right: 32px;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  /* INTRODUCTION SECTION DESKTOP */
+
+  #introduction-section {
+    background-image: url("Images_Background/Header\ bg\ Desktop.svg");
+    background-position-x: 2.1625rem;
+    background-size: 96%;
+    margin-bottom: 8.875rem;
+  }
+
+  .social-icons-margin-bottom-presentation {
+    margin-bottom: 16.0625rem;
+    margin-top: 0.875rem;
+  }
+
+  .principal-margin-intro {
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 0;
+  }
+
+  #introduction-section h1 {
+    font-size: 3rem;
+    margin-top: 13.5rem;
+  }
+
+  .introduction-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* CARDS DISTRIBUTION */
+
+  #card-works-container {
+    margin: 0 10% 0 10%;
+    row-gap: 8.875rem;
+  }
+
+  #card-work-1 {
+    grid-row: 3 / 4;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+
+  #card-work-2 {
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #card-work-3 {
+    grid-row: 1 / 2;
+    display: flex;
+  }
+
+  #card-work-4 {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /* CARD IMAGE */
+
+  .card-snapshot {
+    width: 47%;
+    margin: 2.2% 1.9% 2.2%;
+  }
+
+  /* CARD CONTENT */
+
+  .project-description-block {
+    margin: 4.4% 4% 0 3.8%;
+    flex-wrap: nowrap;
+    flex-shrink: 3.2;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .project-role-detail {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+
+  .weight-desktop {
+    font-weight: 400;
+  }
+
+  .project-description-paragraph {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .project-language-list {
+    margin-bottom: 2.5rem;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .facebook360-button {
+    height: 48px;
+    color: #fff;
+    background-color: #4053fc;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    padding: 12px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    border-style: none;
+  }
+
+  .facebook360-button:active {
+    color: #6070ff;
+    border: 1px solid #396df2;
+  }
+
+  .facebook360-button:hover {
+    color: #fff;
+    background-color: #6070ff;
+  }
+
+  /* ABOUT MYSELF SECTION */
+
+  #about-myself {
+    margin-top: 10.375rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 38.7% 61.3%;
+  }
+
+  .about-myself-skills-section {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .introduction-name {
+    margin-top: 0;
+    flex-shrink: 2;
+  }
+
+  .introduction-paragraph-about {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .principal-margin-about {
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .lets-connect {
+    margin-bottom: 26px;
+  }
+
+  .principal-margin-about-social {
+    margin-left: 2.5%;
+    margin-top: 16px;
+  }
+
+  .margin-about-me-skills {
+    margin-left: 18px;
+  }
+
+  .about-myself-skills {
+    color: #344563;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-left: 5%;
+    margin-top: 12px;
+  }
+
+  .about-myself-skills li {
+    margin-bottom: 23px;
+  }
+
+  .tech-languages {
+    display: grid;
+    grid-template-columns: 18% 18% 18%;
+  }
+
+  .tech-languages li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .tech-languages li img {
+    margin-bottom: 12px;
+  }
+
+  .language-name {
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+
+  .arrow-color {
+    margin-right: 5%;
+  }
+
+  .bottom-line-language {
+    padding-bottom: 23px;
+    margin-bottom: 0;
+  }
+
+  /* CONTACT ME DESKTOP SECTION */
+
+  #contact-me {
+    background-image: url(Images_Background/contact\ form\ background\ Desktop.svg);
+    background-size: 92%;
+    background-position-y: 79px;
+    background-position-x: 75px;
+  }
+
+  .contact-me-title {
+    margin-top: 142px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .contact-me-paragraph {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-left: 30.5%;
+    margin-right: 30.5%;
+  }
+
+  .form-bigsize-align {
+    margin-left: 34.5%;
+    margin-right: 34.5%;
+    margin-bottom: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-input-width {
+    margin-bottom: 27px;
+    border-radius: 0;
+    border: 1px solid #cfd8dc;
+    outline: none;
+    padding: 15px 16px;
+  }
+
+  .closing-line-container {
+    display: none;
+  }
+
+  .contact-form-button-desktop {
+    align-self: center;
+  }
 }
