@@ -393,11 +393,13 @@ textarea:-ms-input-placeholder {
   .big-size {
     display: initial;
   }
-  
-  /* NAVIGATION BAR DESKTOP */  
+
+  /* NAVIGATION BAR DESKTOP */
+
   .navbar {
     margin: 25px 10% 73px 10%;
   }
+  
   .navbar-menu-list li a {
     display: initial;
     margin-right: 32px;
@@ -443,7 +445,7 @@ textarea:-ms-input-placeholder {
     margin: 0 10% 0 10%;
     row-gap: 8.875rem;
   }
-  
+
   #card-work-1 {
     grid-row: 3 / 4;
     display: flex;
@@ -466,7 +468,7 @@ textarea:-ms-input-placeholder {
     display: flex;
     flex-direction: row-reverse;
   }
-  
+
   /* CARD IMAGE */
 
   .card-snapshot {
@@ -501,10 +503,6 @@ textarea:-ms-input-placeholder {
     margin-bottom: 2.5rem;
   }
 
-  .facebook360-button {
-    height: 48px;
-  }
-
   .button-container {
     display: flex;
     align-items: center;
@@ -512,6 +510,7 @@ textarea:-ms-input-placeholder {
   }
 
   .facebook360-button {
+    height: 48px;
     color: #fff;
     background-color: #4053fc;
     border-radius: 8px;
@@ -543,12 +542,12 @@ textarea:-ms-input-placeholder {
     display: grid;
     grid-template-columns: 38.7% 61.3%;
   }
-  
+
   .about-myself-skills-section {
     margin-top: 0;
     width: 100%;
   }
-  
+
   .introduction-name {
     margin-top: 0;
     flex-shrink: 2;
@@ -564,7 +563,7 @@ textarea:-ms-input-placeholder {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .principal-margin-about-social {
     margin-left: 2.5%;
   }
@@ -583,7 +582,7 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 18% 18% 18%; 
+    grid-template-columns: 18% 18% 18%;
   }
 
   .tech-languages li {
@@ -599,7 +598,7 @@ textarea:-ms-input-placeholder {
   .about-myself-skills li {
     margin-bottom: 3rem;
   }
-  
+
   /* CONTACT ME DESKTOP SECTION */
 
   #contact-me {
