@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  list-style: none;  
+  list-style: none;
 }
 
 html {
@@ -391,20 +391,20 @@ textarea:-ms-input-placeholder {
   }
 
   .big-size {
-    display: initial; 
+    display: initial;
   }
   
-  /* NAVIGATION BAR DESKTOP */
+  /* NAVIGATION BAR DESKTOP */  
   .navbar {
     margin: 25px 10% 73px 10%;
   }
-  .navbar-menu-list li a{
+  .navbar-menu-list li a {
     display: initial;
     margin-right: 32px;
     font-weight: 500;
     font-size: 0.9375rem;
     color: #344563;
-    text-decoration: none;   
+    text-decoration: none;
   }
 
   /* INTRODUCTION SECTION DESKTOP */
@@ -437,41 +437,41 @@ textarea:-ms-input-placeholder {
     margin-bottom: 0.75rem;
   }
 
-    /* CARDS DISTRIBUTION */
+  /* CARDS DISTRIBUTION */
 
   #card-works-container {
     margin: 0 10% 0 10%;
     row-gap: 8.875rem;
-  }  
+  }
   
   #card-work-1 {
     grid-row: 3 / 4;
     display: flex;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
-    
+
   #card-work-2 {
     grid-row: 4 / 5;
     display: flex;
     flex-direction: row-reverse;
   }
-    
+
   #card-work-3 {
     grid-row: 1 / 2;
     display: flex;
   }
-    
+
   #card-work-4 {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: row-reverse;
   }
   
-  /* CARD IMAGE */ 
+  /* CARD IMAGE */
 
   .card-snapshot {
     width: 47%;
-    margin: 2.2% 1.9% 2.2% 
+    margin: 2.2% 1.9% 2.2%;
   }
 
   /* CARD CONTENT */
@@ -481,26 +481,26 @@ textarea:-ms-input-placeholder {
     flex-wrap: nowrap;
     flex-shrink: 3.2;
   }
-    
+
   .card-title {
     font-size: 2.5rem;
     margin-bottom: 1.25rem;
   }
-    
+
   .project-role-detail {
     font-size: 1.125rem;
     margin-bottom: 0.75rem;
   }
-    
+
   .project-description-paragraph {
     font-size: 1rem;
     margin-bottom: 1.75rem;
   }
-    
+
   .project-language-list {
     margin-bottom: 2.5rem;
   }
-    
+
   .facebook360-button {
     height: 48px;
   }
@@ -510,7 +510,7 @@ textarea:-ms-input-placeholder {
     align-items: center;
     justify-content: space-between;
   }
-    
+
   .facebook360-button {
     color: #fff;
     background-color: #4053fc;
@@ -528,7 +528,7 @@ textarea:-ms-input-placeholder {
     color: #6070ff;
     border: 1px solid #396df2;
   }
-    
+
   .facebook360-button:hover {
     color: #fff;
     background-color: #6070ff;
@@ -541,9 +541,9 @@ textarea:-ms-input-placeholder {
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
-    grid-template-columns: 38.7% 61.3%;  
+    grid-template-columns: 38.7% 61.3%;
   }
-   
+  
   .about-myself-skills-section {
     margin-top: 0;
     width: 100%;
@@ -583,13 +583,13 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 18% 18% 18%;    
+    grid-template-columns: 18% 18% 18%; 
   }
-  
+
   .tech-languages li {
     display: flex;
     flex-direction: column;
-    align-items: start;    
+    align-items: start;
   }
 
   .language-name {
@@ -622,7 +622,7 @@ textarea:-ms-input-placeholder {
     margin-left: 30.5%;
     margin-right: 30.5%;
   }
-  
+
   .form-bigsize-align {
     margin-left: 34.5%;
     margin-right: 34.5%;
@@ -639,13 +639,12 @@ textarea:-ms-input-placeholder {
     outline: none;
     padding: 15px 16px;
   }
-  
+
   .closing-line-container {
-    display: none;    
+    display: none;
   }
 
   .contact-form-button-desktop {
-    align-self: center;   
+    align-self: center;
   }
-} 
-
+}
