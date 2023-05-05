@@ -618,7 +618,7 @@ textarea:-ms-input-placeholder {
 
   .bottom-line-language {
     padding-bottom: 23px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   /* CONTACT ME DESKTOP SECTION */
