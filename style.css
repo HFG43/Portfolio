@@ -230,6 +230,15 @@ html {
   margin-bottom: 170px;
 }
 
+.principal-margin-about {
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+}
+
+.principal-margin-about-social {
+  margin-left: 6.5%;
+}
+
 .introduction-paragraph-about {
   font-size: 1.25rem;
 }
@@ -374,7 +383,7 @@ textarea:-ms-input-placeholder {
   margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   /* GENERAL DESKTOP */
 
   .mobile-display {
@@ -462,13 +471,17 @@ textarea:-ms-input-placeholder {
 
   .card-snapshot {
     width: 47%;
-    margin: 1.5rem; 
+    margin: 2.2% 1.9% 2.2% 
   }
 
   /* CARD CONTENT */
 
-  .project-description-block {
+  /* .project-description-block {
     margin: 3rem 2.875rem 0 1.375rem;
+  } */
+    
+  .project-description-block {
+    margin: 4.4% 4% 0 3.8%;
   }
     
   .card-title {
@@ -490,8 +503,14 @@ textarea:-ms-input-placeholder {
     margin-bottom: 2.5rem;
   }
     
+  .facebook360-button {
+    height: 48px;
+  }
+
   .button-container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
     
   .facebook360-button {
@@ -544,6 +563,8 @@ textarea:-ms-input-placeholder {
 
   .principal-margin-about {
     margin-bottom: 1.625rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .principal-margin-about-social {
