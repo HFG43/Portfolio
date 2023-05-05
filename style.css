@@ -487,12 +487,17 @@ textarea:-ms-input-placeholder {
 
   .card-title {
     font-size: 2.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;   
   }
 
   .project-role-detail {
     font-size: 1.125rem;
     margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .weight-desktop {
+    font-weight: 400;
   }
 
   .project-description-paragraph {
