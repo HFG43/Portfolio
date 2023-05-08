@@ -84,7 +84,7 @@ Is a first project to prepare the arena to showcase my future Portfolio as softw
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[my portfolio live demo link](https://hfg43.github.io/Portfolio_Mobile_First/)
+[My portfolio live demo link](https://hfg43.github.io/Portfolio_Mobile_First/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +127,7 @@ No test available yet.
 
 You can deploy this project using:
 
-[my portfolio deployment link](https://hfg43.github.io/Portfolio_Mobile_First/)
+[My portfolio deployment link](https://hfg43.github.io/Portfolio_Mobile_First/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
