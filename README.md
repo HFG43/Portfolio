@@ -35,7 +35,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first presentation of my portfolio works and professional skills, and you will also have the option of sending me a message.
+Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message.
 
 **[Portfolio]** is a starting point to getting prepare to present my future portfolio in a responsive way.
 
@@ -78,12 +78,13 @@ Is a first project to prepare the arena to showcase my future Portfolio as softw
 - **[To position elements in place, and to prepare them for a RWD, I udes Flex-Box and CSS Grid Layout]**
 - **[Introduction of my skills as professional developer]**
 - **[Contact form -with client side validation- where you will be able to send me your messages]**
+- **[Includes a deployment link to being able to see the project in any browser and dispositive]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not available
+[My portfolio live demo link](https://hfg43.github.io/Portfolio_Mobile_First/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +127,7 @@ No test available yet.
 
 You can deploy this project using:
 
-No deployment available yet.
+[My portfolio deployment link](https://hfg43.github.io/Portfolio_Mobile_First/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +147,7 @@ No deployment available yet.
 - **[Dynamic Style Media Querys including Desktop Version]**
 - **[Animations & Transitions]**
 - **[Accesibility taken into consideration]**
-- **[Deployment included]**
+- **[Use of Bootstrap and CSS preprocessors ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
