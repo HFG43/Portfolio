@@ -37,6 +37,9 @@
 
 Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message.
 
+Here you will find a Loom video explaining main goal, what was new for me and which challenges I faced during the preparation of this project, enjoy!
+[Portfolio project video](https://www.loom.com/share/cccee21071244920a217c4f1d6450c49)
+
 **[Portfolio]** is a starting point to getting prepare to present my future portfolio in a responsive way.
 
 ## 🛠 Built With <a name="built-with"></a>
