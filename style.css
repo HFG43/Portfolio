@@ -18,7 +18,8 @@ html {
 /* NAVIGATION BAR */
 
 .navbar {
-  margin: 8px 6.5% 0 6.5%;
+  margin: 0 6.5% 0 6.5%;
+  padding-top: 8px;
 }
 
 .navbar ul {
@@ -391,11 +392,12 @@ textarea:-ms-input-placeholder {
 
 .mobile-menu-style {
   background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
   background-size: cover;
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 0;
 }
 
 .hidden {
@@ -422,8 +424,19 @@ textarea:-ms-input-placeholder {
 .list-menu-mobile li a {
   font-weight: 600;
   font-size: 32px;
-  color: #fff;
+  color: white;
   text-decoration: none;
+}
+
+.close-mobile-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.closing-line-mobile-menu {
+  position: absolute;
+  bottom: 16px;
+  right: 35%
 }
 
 @media all and (min-width: 768px) {
