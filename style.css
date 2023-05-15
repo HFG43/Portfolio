@@ -388,7 +388,7 @@ textarea:-ms-input-placeholder {
   margin-bottom: 8px;
 }
 
-  /* MOBILE MENU */
+/* MOBILE MENU */
 
 .mobile-menu-style {
   background-color: #6070ff;
@@ -404,7 +404,7 @@ textarea:-ms-input-placeholder {
   display: none;
 }
 
-.fa-xmark{
+.fa-xmark {
   float: right;
   margin-right: 38px;
   margin-top: 62px;
@@ -436,7 +436,7 @@ textarea:-ms-input-placeholder {
 .closing-line-mobile-menu {
   position: absolute;
   bottom: 16px;
-  right: 35%
+  right: 35%;
 }
 
 @media all and (min-width: 768px) {

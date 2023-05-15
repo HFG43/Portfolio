@@ -1,4 +1,3 @@
-
 const menuContainer = document.querySelector('#mobile-menu-hidden');
 const hamburguer = document.getElementById('hamburguer');
 const closeIcon = document.getElementById('closing-Icon');
