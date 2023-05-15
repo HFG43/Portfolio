@@ -410,6 +410,10 @@ textarea:-ms-input-placeholder {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 @media all and (min-width: 768px) {
   /* GENERAL DESKTOP */
 
