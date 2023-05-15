@@ -55,6 +55,7 @@ html {
   position: relative;
   height: 82vh;
   margin-bottom: 20%;
+  z-index: -1;
 }
 
 .principal-margin-intro {
@@ -304,6 +305,7 @@ html {
   background-position-x: right;
   background-repeat: no-repeat;
   position: relative;
+  z-index: -1;
 }
 
 .contact-me-title {
@@ -387,15 +389,24 @@ textarea:-ms-input-placeholder {
 
   /* MOBILE MENU */
 
+.mobile-menu-style {
+  background-color: #6070ff;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
 .hidden {
   display: none;
 }
 
-.fa-solid {
+.fa-xmark{
   float: right;
   margin-right: 38px;
   margin-top: 62px;
-  height: 12px;
+  color: #fff;
 }
 
 .list-menu-mobile {
@@ -411,6 +422,7 @@ textarea:-ms-input-placeholder {
 .list-menu-mobile li a {
   font-weight: 600;
   font-size: 32px;
+  color: #fff;
   text-decoration: none;
 }
 

@@ -1,6 +1,6 @@
 
 const menuContainer = document.querySelector('#mobile-menu-hidden');
-const hamburguer = document.querySelector('#hamburguer');
+const hamburguer = document.getElementById('hamburguer');
 const closeIcon = document.getElementById('closing-Icon');
 const menuListPortfolio = document.querySelector('.menu-mobile-portfolio');
 const menuListContact = document.querySelector('.menu-mobile-contact');
