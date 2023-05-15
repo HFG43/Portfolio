@@ -10,7 +10,6 @@ function displayMobileMenu() {
 }
 hamburguer.addEventListener('click', displayMobileMenu);
 
-
 function closeMobileMenu() {
   menuContainer.classList.add('hidden');
 }
@@ -18,4 +17,3 @@ menuListPortfolio.addEventListener('click', closeMobileMenu);
 menuListContact.addEventListener('click', closeMobileMenu);
 menuListAbout.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
-
