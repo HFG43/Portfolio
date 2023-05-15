@@ -387,7 +387,11 @@ textarea:-ms-input-placeholder {
 
   /* MOBILE MENU */
 
-.fa-solid {
+.hidden {
+  display: none;
+}
+
+/* .fa-solid {
   float: right;
   margin-right: 38px;
   margin-top: 62px;
@@ -408,11 +412,7 @@ textarea:-ms-input-placeholder {
   font-weight: 600;
   font-size: 32px;
   text-decoration: none;
-}
-
-.hidden {
-  display: none;
-}
+} */
 
 @media all and (min-width: 768px) {
   /* GENERAL DESKTOP */

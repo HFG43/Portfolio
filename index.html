@@ -22,7 +22,7 @@
       <nav class="navbar">
         <ul>
           <li><a class="my-logo" href="#">My Logo</a></li>
-          <li><span class="mobile-display"><i class="fa-solid fa-bars hamburguer-menu"></i></span>
+          <li ><span class="mobile-display"><i id="hamburguer" class="fa-solid fa-bars hamburguer-menu"></i></span>
             <ul class="navbar-menu-list">
               <li class="big-size"><a href="#card-works-container">Portfolio</a></li>
               <li class="big-size"><a href="#about-myself">About</a></li>
@@ -31,17 +31,7 @@
           </li>         
         </ul>
       </nav>
-      <div class="mobile-menu hidden" id="mobile-menu-hidden">
-        <div id="closing-cross">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <ul class="list-menu-mobile">
-          <li><a href="#card-works-container">Portfolio</a></li>
-          <li><a href="#about-myself">About</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-        </ul>
-        </div>
-      </div>
+     
     </header>
 
     <main>
@@ -370,5 +360,18 @@
         </div>
       </section>
     </main>
+    <section>
+      <div id="mobile-menu-hidden" class="hidden" >
+        <div >
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li><a href="#card-works-container">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
