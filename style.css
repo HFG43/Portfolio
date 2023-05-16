@@ -469,10 +469,6 @@ textarea:-ms-input-placeholder {
     text-decoration: none;
   }
 
-  .hidden {
-    display: none;
-  }
-  
   /* INTRODUCTION SECTION DESKTOP */
 
   #introduction-section {
