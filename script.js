@@ -22,3 +22,81 @@ menuListAbout.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
 
 // POP UP PROJECT //
+
+const cardDataMobil = {
+  cardMob1: {
+    name: Tonic,
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardMob2: {
+    name: Multi-Post Stories,
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 2_availability.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardMob3: {
+    name: Tonic,
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardMob4: {
+    name: 'Uber Navigation',
+    role: ['UBER','Lead Developer', '2018'],
+    description: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+};
+
+const cardDataDesktop = {
+  cardDesk1: {
+    name: 'Tonic',
+    role: ['CANOPY','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Desktop Card Snapshot-Nature.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardDesk2: {
+    name: 'Multi-Post Stories',
+    role: ['FACEBOOK','Fulls Stack Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML','Ruby on Rails','CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardDesk3: {
+    name: 'Facebook 360',
+    role: ['FACEBOOK','Full Stack Dev','2015'],
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 3_Ballerina.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  cardDesk4: {
+    name: 'Multi-Post Stories',
+    role: ['CANOPY','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 2_availability.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+};
