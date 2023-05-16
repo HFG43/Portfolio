@@ -406,8 +406,8 @@ textarea:-ms-input-placeholder {
 
 .fa-xmark {
   float: right;
-  margin-right: 38px;
-  margin-top: 62px;
+  margin-right: 30px;
+  margin-top: 20px;
   color: #fff;
 }
 
@@ -439,7 +439,7 @@ textarea:-ms-input-placeholder {
 
 .closing-line-mobile-menu {
   position: absolute;
-  bottom: 16px;
+  bottom: 8px;
   right: 35%;
 }
 
