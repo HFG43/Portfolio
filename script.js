@@ -25,7 +25,7 @@ closeIcon.addEventListener('click', closeMobileMenu);
 
 const cardDataMobil = {
   cardMob1: {
-    name: Tonic,
+    name: 'Tonic',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
@@ -34,7 +34,7 @@ const cardDataMobil = {
     sourceButton: '#',
   },
   cardMob2: {
-    name: Multi-Post Stories,
+    name: 'Multi-Post Stories',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
@@ -43,7 +43,7 @@ const cardDataMobil = {
     sourceButton: '#',
   },
   cardMob3: {
-    name: Tonic,
+    name: 'Tonic',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
