@@ -279,7 +279,7 @@ html {
   margin-right: 6.5%;
 }
 
-.arrow-color {
+.arrow-look {
   color: #acb7c3;
   margin-right: 41.5px;
 }
@@ -672,7 +672,7 @@ textarea:-ms-input-placeholder {
     padding-bottom: 20px;
   }
 
-  .arrow-color {
+  .arrow-look {
     margin-right: 5%;
   }
 
