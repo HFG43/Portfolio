@@ -1,5 +1,10 @@
+const cardContainer = document.querySelector('.dynamic-card-container');
+const cards = document.createElement('section');
+cards.id = ('card-works-container');
 
-const cardMobile = `
+cardContainer.appendChild(cards);
+
+cards.innerHTML = `
 <article id="card-work-1" class="mobile-card">
           <img
             class="card-snapshot"
@@ -161,5 +166,3 @@ const cardMobile = `
             </div>
           </div>
         </article>`;
-
-const cardContainer = document.querySelector('#')
