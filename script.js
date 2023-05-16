@@ -20,3 +20,5 @@ menuListPortfolio.addEventListener('click', closeMobileMenu);
 menuListContact.addEventListener('click', closeMobileMenu);
 menuListAbout.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
+
+// POP UP PROJECT //
