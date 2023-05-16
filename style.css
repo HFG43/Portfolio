@@ -454,11 +454,57 @@ textarea:-ms-input-placeholder {
   margin: 60px 4.67% 50px 4.67%;
   border-radius: 16px;
   border: solid 1px black;
-} 
+}
+
+.title-close-mobile-popup-container {
+  margin: 18px 5.15% 22px 5.15%;
+}
+
+.mobile-popup-card-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.cross-mobile-popup {
+  color: #67798e;
+}
+
+.mobile-pop-up-role-container {
+  margin-left: 5.15%;
+}
 
 .mobile-popup-image {
   margin: 20px 5.15% 12px 5.15%;
   width: 89.7%;
+}
+
+.mobile-popup-paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 5.15% 12px 5.15%;
+  color: #344563;
+}
+
+.mobile-popup-role-fontweight {
+  font-weight: 600;
+}
+
+.mobile-popup-tech-margin {
+  margin-left: 5.15%;
+  margin-bottom: 20px;
+}
+
+/* .line-separation {
+  border-bottom: 1px solid #ebecf0;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  width: 90%;
+} */
+
+.mobile-popup-button-container {
+  margin: 27px 5.15% 22px 5.15%;
 }
 
 @media all and (min-width: 768px) {
