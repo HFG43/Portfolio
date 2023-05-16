@@ -18,7 +18,8 @@ html {
 /* NAVIGATION BAR */
 
 .navbar {
-  margin: 8px 6.5% 0 6.5%;
+  margin: 0 6.5% 0 6.5%;
+  padding-top: 8px;
 }
 
 .navbar ul {
@@ -55,6 +56,7 @@ html {
   position: relative;
   height: 82vh;
   margin-bottom: 20%;
+  z-index: -1;
 }
 
 .principal-margin-intro {
@@ -277,7 +279,7 @@ html {
   margin-right: 6.5%;
 }
 
-.arrow-color {
+.arrow-look {
   color: #acb7c3;
   margin-right: 41.5px;
 }
@@ -304,6 +306,7 @@ html {
   background-position-x: right;
   background-repeat: no-repeat;
   position: relative;
+  z-index: -1;
 }
 
 .contact-me-title {
@@ -383,6 +386,61 @@ textarea:-ms-input-placeholder {
 .closing-line {
   margin-top: 32px;
   margin-bottom: 8px;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu-style {
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-xmark {
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.list-menu-mobile {
+  float: left;
+  margin-top: 106px;
+  margin-left: 28px;
+  position: fixed;
+}
+
+.list-menu-mobile li {
+  margin-bottom: 40px;
+  filter: blur(0);
+}
+
+.list-menu-mobile li a {
+  font-weight: 600;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 100);
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+
+.close-mobile-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.closing-line-mobile-menu {
+  position: absolute;
+  bottom: 8px;
+  right: 35%;
 }
 
 @media all and (min-width: 768px) {
@@ -618,7 +676,7 @@ textarea:-ms-input-placeholder {
     padding-bottom: 20px;
   }
 
-  .arrow-color {
+  .arrow-look {
     margin-right: 5%;
   }
 

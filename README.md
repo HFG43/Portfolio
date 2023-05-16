@@ -40,7 +40,7 @@ Is a first project to prepare the arena to showcase my future Portfolio as softw
 Here you will find a Loom video explaining main goal, what was new for me and which challenges I faced during the preparation of this project, enjoy!
 [Portfolio project video](https://www.loom.com/share/cccee21071244920a217c4f1d6450c49)
 
-**[Portfolio]** is a starting point to getting prepare to present my future portfolio in a responsive way.
+**[Portfolio]** is a starting point to getting prepare to present my future portfolio in a responsive and dynamic way.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,21 +61,30 @@ Here you will find a Loom video explaining main goal, what was new for me and wh
 </details>
 
 <details>
+  <summary>Dynamic</summary>
+  <ul>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
 <summary>Standar code</summary>
   <ul>
-    <li><a href="https://formspree.io/html/">Linters</a></li>
+    <li><a href="#">Linters</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Data</summary>
   <ul>
-    <li><a href="#">Formspree</a></li>
+    <li><a href="https://formspree.io/html/">Formspree</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
+- **[Includes a video explaining the project goal]**
+- **[Includes a Mobile Menu displayed dynamicaly using JS events]**
 - **[First approach to a responsive portfolio design]**
 - **[Includes my mobile & desktop design. I have used @Media queries to introduce responsiveness]**
 - **[To position elements in place, and to prepare them for a RWD, I udes Flex-Box and CSS Grid Layout]**
@@ -142,6 +151,14 @@ You can deploy this project using:
 - GitHub: [@githubhandle](https://github.com/HFG43)
 - Twitter: [@twitterhandle](https://twitter.com/HFG_43)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hern%C3%A1n-g%C3%BCemes-a440591b/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/najibullahjafari)
+- Twitter: [@twitterhandle](https://twitter.com/Najib_Jafari_)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/najibulla-jafari-609852263/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

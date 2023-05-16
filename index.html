@@ -19,13 +19,34 @@
   </head>
   <body>
     <header>
+      <div id="mobile-menu-hidden" class="hidden mobile-menu-style">
+        <div id="closing-Icon">
+          <ul>
+           <li><span><i class="fa-solid fa-xmark fa-xl"></i></span></li>
+          </ul>
+        </div>
+        <div class="close-mobile-menu">
+          <img
+            class="closing-line-mobile-menu"
+            src="Images_Background/Shape.png"
+            alt="closing-line"
+          />
+        </div>
+      </div>
+      <div>
+        <ul class="list-menu-mobile hidden">
+          <li class="menu-mobile-portfolio"><a href="#card-works-container">Portfolio</a></li>
+          <li class="menu-mobile-about"><a href="#about-myself">About</a></li>
+          <li class="menu-mobile-contact"><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
       <nav class="navbar">
         <ul>
           <li><a class="my-logo" href="#">My Logo</a></li>
-          <li><span class="mobile-display"><i class="fa-solid fa-bars hamburguer-menu"></i></span>
+          <li id="hamburguer"><span class="mobile-display"><i class="fa-solid fa-bars hamburguer-menu"></i></span>
             <ul class="navbar-menu-list">
               <li class="big-size"><a href="#card-works-container">Portfolio</a></li>
-              <li class="big-size"><a href="#about-myself">About</a></li>
+              <li class="big-size"><a href="#about-myself2">About</a></li>
               <li class="big-size"><a href="#contact-me">Contact</a></li>
             </ul>
           </li>         
@@ -112,9 +133,9 @@
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button class="see-project-button mobile-display">See project</button>
-              <button class="facebook360-button big-size">See project</button>
-              <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size" />
+              <button type="button" class="see-project-button mobile-display">See project</button>
+              <button type="button" class="facebook360-button big-size">See project</button>
+              <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size"/>
             </div>
           </div>
         </article>
@@ -155,7 +176,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button class="see-project-button">See project</button>
+              <button type="button" class="see-project-button">See project</button>
             </div>
           </div>
         </article>
@@ -193,7 +214,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button class="see-project-button">See project</button>
+              <button type="button" class="see-project-button">See project</button>
             </div>
           </div>
         </article>
@@ -233,7 +254,7 @@
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button class="see-project-button">See project</button>
+              <button type="button" class="see-project-button">See project</button>
             </div>
           </div>
         </article>
@@ -278,14 +299,14 @@
             </li>
           </ul>
           <div class="button-container principal-margin-about">
-            <button class="see-project-button">Get my resume</button>
+            <button type="button" class="see-project-button">Get my resume</button>
           </div>
         </div> 
-        <div class="about-myself-skills-section">
+        <div id="about-myself2" class="about-myself-skills-section">
           <ul class="about-myself-skills principal-margin">
             <li class="arrow-skills">
               <p class="margin-about-me-skills">Languages</p>
-              <i class="fa fa-angle-down arrow-color"></i>
+              <i class="fa fa-angle-down arrow-look"></i>
             </li>
             <ul class="tech-languages margin-languages-bigsize">
               <li>
@@ -303,11 +324,11 @@
             </ul>
             <li class="bottom-line-language arrow-skills ">
               <p class="margin-about-me-skills">Frameworks</p>
-              <i class="fa fa-angle-down fa-rotate-270 arrow-color"></i>
+              <i class="fa fa-angle-down fa-rotate-270 arrow-look"></i>
             </li>
             <li class="bottom-line-language arrow-skills">
               <p class="margin-about-me-skills">Skills</p>
-              <i class="fa fa-angle-down fa-rotate-270 arrow-color"></i>
+              <i class="fa fa-angle-down fa-rotate-270 arrow-look"></i>
             </li>
           </ul>
         </div>  
@@ -359,5 +380,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
