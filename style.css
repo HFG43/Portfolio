@@ -398,7 +398,6 @@ textarea:-ms-input-placeholder {
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: ;
 }
 
 .hidden {
@@ -470,6 +469,10 @@ textarea:-ms-input-placeholder {
     text-decoration: none;
   }
 
+  .hidden {
+    display: none;
+  }
+  
   /* INTRODUCTION SECTION DESKTOP */
 
   #introduction-section {
