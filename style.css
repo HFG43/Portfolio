@@ -398,6 +398,7 @@ textarea:-ms-input-placeholder {
   height: 100vh;
   width: 100%;
   position: fixed;
+  z-index: ;
 }
 
 .hidden {
@@ -415,17 +416,21 @@ textarea:-ms-input-placeholder {
   float: left;
   margin-top: 106px;
   margin-left: 28px;
+  position: fixed;
 }
 
 .list-menu-mobile li {
   margin-bottom: 40px;
+  filter: blur(0);
 }
 
 .list-menu-mobile li a {
   font-weight: 600;
   font-size: 32px;
-  color: white;
+  color: rgba(255, 255, 255, 100);
   text-decoration: none;
+  position: relative;
+  z-index: 3;
 }
 
 .close-mobile-menu {
