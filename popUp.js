@@ -262,7 +262,7 @@ buttons.forEach((item) => {
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
-    <span><i class="fa-solid fa-xmark fa-lg cross-mobile-popup"></i></span>           
+    <span><i class="fa-solid fa-xmark fa-lg cross-popup"></i></span>           
   </div>
   <div class="mobile-pop-up-role-container">
     <ul class="project-role-detail">
@@ -277,8 +277,9 @@ buttons.forEach((item) => {
       <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
     </ul>
   </div>
-  <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
-
+  <div class="image-container-mobile-popup">
+    <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
+  </div>
   <p class="mobile-popup-paragraph">
   ${uploadMobileCard.description}
   </p>
@@ -328,7 +329,7 @@ else {
       <div class="subcontainer-desktop-popup">
         <div class="title-close-desktop-popup-container">
           <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
-          <span><i class="fa-solid fa-xmark fa-lg cross-desktop-popup"></i></span>           
+          <span class="cross-popup"><i class="fa-solid fa-xmark fa-lg"></i></span>           
         </div>
         <div class="desktop-pop-up-role-container">
           <ul class="project-role-detail">
@@ -377,3 +378,13 @@ else {
     });
   });
 };
+
+const closePopUpButton = document.querySelector('.cross-popup');
+function closePopUp () {
+  if(window.innerWidth <= 768){
+    mobilePopUpContainer.removeChild(mobilePopUp);
+    }
+    else
+    {mobilePopUpContainer.removeChild(desktopPopUp)};
+}
+closePopUpButton.addEventListener('click', closePopUpButton);

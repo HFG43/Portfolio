@@ -449,16 +449,17 @@ textarea:-ms-input-placeholder {
 #popUpContainer {
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   background-size: cover;
-  position: absolute;
+  height: 100vh;
+  position: fixed;  
 }
 
 .subcontainer-mobile-popup {
   margin: 38px 4.67% 50px 4.67%;
   border-radius: 16px;
   background-color: #fff;
-  border: solid 1px #dfe1e6;
+  border: solid 1px #dfe1e6;  
 }
 
 .title-close-mobile-popup-container {
@@ -474,7 +475,7 @@ textarea:-ms-input-placeholder {
   color: #172b4d;
 }
 
-.cross-mobile-popup {
+.cross-popup {
   color: #67798e;
 }
 
@@ -482,9 +483,13 @@ textarea:-ms-input-placeholder {
   margin-left: 5.15%;
 }
 
-.mobile-popup-image {
+.image-container-mobile-popup {
   margin: 20px 5.15% 12px 5.15%;
-  width: 89.7%;
+  height: 220px;
+}
+
+.mobile-popup-image {
+  
 }
 
 .mobile-popup-paragraph {
@@ -568,7 +573,7 @@ textarea:-ms-input-placeholder {
   color: #091e42;
 }
 
-.cross-desktop-popup {
+.cross-popup {
   color: #67798e;
 }
 
