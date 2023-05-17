@@ -470,7 +470,7 @@ textarea:-ms-input-placeholder {
 
 .mobile-popup-card-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   color: #172b4d;
 }
 
@@ -488,7 +488,7 @@ textarea:-ms-input-placeholder {
 }
 
 .mobile-popup-paragraph {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   margin: 0 5.15% 12px 5.15%;
   color: #344563;
@@ -541,7 +541,7 @@ textarea:-ms-input-placeholder {
 }
 
 .github-see-source-icon {
-  width: 18px;
+  width: 1.125rem;
   height: auto;
 }
 
