@@ -41,7 +41,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" class="see-project-button mobile-display">See project</button>
+              <button type="button" id="mobile1" class="see-project-button mobile-display">See project</button>
               <button type="button" class="facebook360-button big-size">See project</button>
               <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size"/>
             </div>
@@ -84,7 +84,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" class="see-project-button">See project</button>
+              <button type="button" id="mobile2" class="see-project-button">See project</button>
             </div>
           </div>
         </article>
@@ -122,7 +122,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" class="see-project-button">See project</button>
+              <button type="button" id="mobile3" class="see-project-button">See project</button>
             </div>
           </div>
         </article>
@@ -162,7 +162,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" class="see-project-button">See project</button>
+              <button type="button" id="mobile4" class="see-project-button">See project</button>
             </div>
           </div>
         </article>`;

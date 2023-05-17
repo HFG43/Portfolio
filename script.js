@@ -24,7 +24,7 @@ closeIcon.addEventListener('click', closeMobileMenu);
 // POP UP PROJECT //
 
 const cardDataMobil = {
-  cardMob1: {
+  mobile1: {
     name: 'Tonic',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -33,7 +33,7 @@ const cardDataMobil = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardMob2: {
+  mobile2: {
     name: 'Multi-Post Stories',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -42,7 +42,7 @@ const cardDataMobil = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardMob3: {
+  mobile3: {
     name: 'Tonic',
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -51,7 +51,7 @@ const cardDataMobil = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardMob4: {
+  mobile4: {
     name: 'Uber Navigation',
     role: ['UBER','Lead Developer', '2018'],
     description: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
@@ -63,7 +63,7 @@ const cardDataMobil = {
 };
 
 const cardDataDesktop = {
-  cardDesk1: {
+  mobile3: {
     name: 'Tonic',
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -72,7 +72,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardDesk2: {
+  mobile4: {
     name: 'Multi-Post Stories',
     role: ['FACEBOOK','Fulls Stack Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -81,7 +81,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardDesk3: {
+   mobile1: {
     name: 'Facebook 360',
     role: ['FACEBOOK','Full Stack Dev','2015'],
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
@@ -90,7 +90,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-  cardDesk4: {
+  mobile2: {
     name: 'Multi-Post Stories',
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -100,5 +100,5 @@ const cardDataDesktop = {
     sourceButton: '#',
   },
 };
-const butoonaction = document.querySelector('.see-project-button');
-butoonaction.addEventListener('click', )
+
+
