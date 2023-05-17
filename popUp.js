@@ -42,7 +42,7 @@ cards.innerHTML = `
             </ul>
             <div class="button-container">
               <button type="button" id="mobile1" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" class="facebook360-button big-size get-button">See project</button>
+              <button type="button" id="desktop3" class="facebook360-button big-size get-button">See project</button>
               <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size"/>
             </div>
           </div>
@@ -209,7 +209,7 @@ const cardDataMobil = {
 };
 
 const cardDataDesktop = {
-  mobile3: {
+  desktop1: {
     name: 'Tonic',
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -218,7 +218,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-  mobile4: {
+  desktop2: {
     name: 'Multi-Post Stories',
     role: ['FACEBOOK','Fulls Stack Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -227,7 +227,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-   mobile1: {
+   desktop3: {
     name: 'Facebook 360',
     role: ['FACEBOOK','Full Stack Dev','2015'],
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
@@ -236,7 +236,7 @@ const cardDataDesktop = {
     liveButton: '#',
     sourceButton: '#',
   },
-  mobile2: {
+  desktop4: {
     name: 'Multi-Post Stories',
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -248,9 +248,8 @@ const cardDataDesktop = {
 };
 
 
-const mobilePopUpContainer = document.getElementById('mobilepopup-container');
+const popUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
-const closePopUpButton = document.querySelector('.cross-popup');
 
 if(window.innerWidth <= 768){
 buttons.forEach((item) => {
@@ -258,7 +257,8 @@ buttons.forEach((item) => {
     const mobileId = item.id;
     const uploadMobileCard = cardDataMobil[mobileId];
     const mobilePopUp = document.createElement('div');
-    mobilePopUp.id = 'popUpContainer'; 
+    mobilePopUp.id = 'mobilePopUpContainer';
+    const closePopUpButton = document.querySelector('.cross-popup');
     mobilePopUp.innerHTML = `
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
@@ -315,7 +315,7 @@ buttons.forEach((item) => {
   </div>
 </div>  
 `;
-    mobilePopUpContainer.appendChild(mobilePopUp);
+    popUpContainer.appendChild(mobilePopUp);
   });
 });
 }
@@ -325,7 +325,7 @@ else {
       const mobileId = item.id;
       const uploadDesktopCard = cardDataDesktop[mobileId];
       const desktopPopUp = document.createElement('div');
-      desktopPopUp.id = 'popUpContainer'; 
+      desktopPopUp.id = 'desktopPopUpContainer'; 
       desktopPopUp.innerHTML = `
       <div class="subcontainer-desktop-popup">
         <div class="title-close-desktop-popup-container">
@@ -375,8 +375,8 @@ else {
         </div>
       </div>
   `;
-      mobilePopUpContainer.appendChild(desktopPopUp);
-      
+      popUpContainer.appendChild(desktopPopUp);
+
       function closePopUp () {
         if(window.innerWidth <= 768){
           mobilePopUpContainer.removeChild(mobilePopUp);

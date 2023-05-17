@@ -446,7 +446,7 @@ textarea:-ms-input-placeholder {
 
 /* MOBILE POP UP */
 
-#popUpContainer {
+#mobilePopUpContainer {
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
   backdrop-filter: blur(15px);
@@ -550,20 +550,28 @@ textarea:-ms-input-placeholder {
 }
 
 /* DESKTOP POP UP */
+#desktopPopUpContainer {
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(15px);
+  background-size: cover;
+  height: 100vh;
+  position: fixed;  
+}
 
 .subcontainer-desktop-popup {
-  /* margin: 77px 9.86% 77px 9.86%;
+  margin: 77px 9.86% 77px 9.86%;
   border-radius: 16px;
   background-color: #fff;
-  border: solid 1px #dfe1e6;
-   */
+  border: solid 1px #dfe1e6;  
 }
 
 .title-close-desktop-popup-container {
   margin: 24px 2.166% 16px 2.166%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
+  align-items: center;
 }
 
 .desktop-popup-card-title {
@@ -572,12 +580,18 @@ textarea:-ms-input-placeholder {
   color: #091e42;
 }
 
-.cross-popup {
+.cross-desktop-popup {
   color: #67798e;
+  margin-bottom: 15px;
+  margin-right: 12px;
 }
 
 .desktop-pop-up-role-container {
   margin-left: 2.166%;
+}
+
+.desktop-popup-role-fontweight {
+  font-weight: 500;  
 }
 
 .desktop-popup-image {
@@ -585,27 +599,31 @@ textarea:-ms-input-placeholder {
   width: 95.8%;
 }
 
+.desktop-bottom-container {
+  margin: 0 2.166% 8% 2.166%;
+  display: flex;
+}
+
+.desktop-pop-up-paragraph-container {
+  width: 67%;
+}
+
 .desktop-popup-paragraph {
   font-size: 1rem;
   font-weight: 400;
-  margin-left: 2.166%;
-  width: 67.3%;
   color: #344563;  
 }
 
-.desktop-popup-role-fontweight {
-  font-weight: 500;
-}
-
-.desktop-popup-tech-margin {
-  margin-left: 5.15%;
-  margin-bottom: 20px;
+.desktop-popup-buttons-container {
+  width: 30%;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 .desktop-line-separation {
-  /* margin: 0 6.51% 0 6.51%;
+  margin: 0 28px 0 28px;
   display: flex;
-  justify-content: center; */
+  justify-content: center;
 }
 
 .desktop-popup-button-container {
