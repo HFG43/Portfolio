@@ -41,8 +41,8 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile1" class="see-project-button mobile-display">See project</button>
-              <button type="button" class="facebook360-button big-size">See project</button>
+              <button type="button" id="mobile1" class="see-project-button get-button mobile-display">See project</button>
+              <button type="button" class="facebook360-button big-size get-button">See project</button>
               <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size"/>
             </div>
           </div>
@@ -84,7 +84,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile2" class="see-project-button">See project</button>
+              <button type="button" id="mobile2" class="see-project-button get-button">See project</button>
             </div>
           </div>
         </article>
@@ -122,7 +122,7 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile3" class="see-project-button">See project</button>
+              <button type="button" id="mobile3" class="see-project-button get-button">See project</button>
             </div>
           </div>
         </article>
@@ -162,7 +162,80 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile4" class="see-project-button">See project</button>
+              <button type="button" id="mobile4" class="see-project-button get-button">See project</button>
             </div>
           </div>
         </article>`;
+
+// POP UP //
+
+// OBJECT //
+
+
+const mobilePopUpContainer = document.getElementById('mobilepopup-container');
+const buttons = document.querySelectorAll('.get-button');
+
+buttons.forEach((item) => {
+  item.addEventListener('click', () => {
+    const mobileId = item.id;
+    const uploadMobileCard = cardDataMobil[mobileId];
+    const mobilePopUp = document.createElement('div');
+    mobilePopUp.id = 'popUpContainer'; 
+    mobilePopUp.innerHTML = `
+<div class="subcontainer-mobile-popup">
+  <div class="title-close-mobile-popup-container">
+    <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
+    <span><i class="fa-solid fa-xmark fa-lg cross-mobile-popup"></i></span>           
+  </div>
+  <div class="mobile-pop-up-role-container">
+    <ul class="project-role-detail">
+      <li class="project-role-client mobile-popup-role-fontweight">${uploadMobileCard.role[0]}</li>
+      <li>
+        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+      </li>
+      <li>${uploadMobileCard.role[1]}</li>
+      <li>
+        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+      </li>
+      <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
+    </ul>
+  </div>
+  <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
+
+  <p class="mobile-popup-paragraph">
+  ${uploadMobileCard.description}
+  </p>
+  <ul class="project-language-list mobile-popup-tech-margin">
+    <li>${uploadMobileCard.techskills[0]}</li>
+    <li>${uploadMobileCard.techskills[1]}</li>
+    <li>${uploadMobileCard.techskills[2]}</li>
+  </ul>
+  <div class="line-separation">
+    <img src="./Images_Background/Devider.png"/>
+  </div>
+  <div class="mobile-popup-button-container">
+     <div class="see-button-container-mobile-popup">
+       <span class="button-text">
+         See live
+       </span>
+       <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+     </div>
+     <div class="see-button-container-mobile-popup">
+       <span class="button-text">
+         See source 
+       </span>
+         <img class="github-see-source-icon"src="./Images_Background/See Source Icon -GitHub.png"/>
+     </div>
+  </div>
+  <div class="closing-line-container">
+    <img
+      class="closing-line"
+      src="Images_Background/Shape.png"
+      alt="closing-line"
+    />
+  </div>
+</div>  
+`;
+    mobilePopUpContainer.appendChild(mobilePopUp);
+  });
+});

@@ -29,7 +29,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    image: './Images_Background/Snapshoot Portfolio 1_Orange.svg',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -38,7 +38,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 2_availability.svg',
+    image: './Images_Background/Snapshoot Portfolio 2_availability.svg',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -47,16 +47,16 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    image: './Images_Background/Snapshoot Portfolio 1_Orange.svg',
     liveButton: '#',
     sourceButton: '#',
   },
   mobile4: {
-    name: 'Uber Navigation',
-    role: ['UBER','Lead Developer', '2018'],
-    description: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    name: 'Multi-Post Stories',
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: './Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -101,75 +101,76 @@ const cardDataDesktop = {
   },
 };
 
-const cardButtons = document.querySelectorAll('button');
-const uploadMobileCard = cardDataMobil[mobileID];
+// const mobilePopUpContainer = document.getElementById('mobilepopup-container');
 
-function displayPopUp() {
-  cardButtons.forEach(cardButton) => {
-    if (screen.width < 768) {
-      const mobileId = cardButton.getAttribute('id');
-      const uploadMobileCard = cardDataMobil[mobileId];
-      const mobilePopUp = document.createElement('div');
-      mobilePopUp.id = ('popUpContainer');
-      mobilePopUp.innerHTML = `
-<div class="subcontainer-mobile-popup">
-  <div class="title-close-mobile-popup-container">
-    <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
-    <span><i class="fa-solid fa-xmark fa-lg cross-mobile-popup"></i></span>           
-  </div>
-  <div class="mobile-pop-up-role-container">
-    <ul class="project-role-detail">
-      <li class="project-role-client mobile-popup-role-fontweight">${uploadMobileCard.role[0]}</li>
-      <li>
-        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
-      </li>
-      <li>${uploadMobileCard.role[1]}</li>
-      <li>
-        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
-      </li>
-      <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
-    </ul>
-  </div>
-  <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
 
-  <p class="mobile-popup-paragraph">
-  ${uploadMobileCard.description}
-  </p>
-  <ul class="project-language-list mobile-popup-tech-margin">
-    <li>${uploadMobileCard.techskills[0]}</li>
-    <li>${uploadMobileCard.techskills[1]}</li>
-    <li>${uploadMobileCard.techskills[2]}</li>
-    <li>${uploadMobileCard.techskills[3]}</li>
-  </ul>
-  <div class="line-separation">
-    <img src="./Images_Background/Devider.png"/>
-  </div>
-  <div class="mobile-popup-button-container">
-     <div class="see-button-container-mobile-popup">
-       <span class="button-text">
-         See live
-       </span>
-       <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-     </div>
-     <div class="see-button-container-mobile-popup">
-       <span class="button-text">
-         See source 
-       </span>
-         <img class="github-see-source-icon"src="./Images_Background/See Source Icon -GitHub.png"/>
-     </div>
-  </div>
-  <div class="closing-line-container">
-    <img
-      class="closing-line"
-      src="Images_Background/Shape.png"
-      alt="closing-line"
-    />
-  </div>
-</div>  
-`;
-}
-body.appendchiled(mobilePopUp);
-}
-}
-cardButtons.addEventListener('click', displayPopUp);
 
+
+
+// cardButtons.forEach((item) => {
+//   item.addEventListener('click',() => {
+//   if (screen.width < 768) {
+//     const mobileId = item.getAttribute('id');
+//     const uploadMobileCard = cardDataMobil[mobileId];
+//     const mobilePopUp = document.createElement('div');
+//     mobilePopUp.id = ('popUpContainer');
+//     mobilePopUp.innerHTML = `
+// <div class="subcontainer-mobile-popup">
+//   <div class="title-close-mobile-popup-container">
+//     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
+//     <span><i class="fa-solid fa-xmark fa-lg cross-mobile-popup"></i></span>           
+//   </div>
+//   <div class="mobile-pop-up-role-container">
+//     <ul class="project-role-detail">
+//       <li class="project-role-client mobile-popup-role-fontweight">${uploadMobileCard.role[0]}</li>
+//       <li>
+//         <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+//       </li>
+//       <li>${uploadMobileCard.role[1]}</li>
+//       <li>
+//         <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+//       </li>
+//       <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
+//     </ul>
+//   </div>
+//   <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
+
+//   <p class="mobile-popup-paragraph">
+//   ${uploadMobileCard.description}
+//   </p>
+//   <ul class="project-language-list mobile-popup-tech-margin">
+//     <li>${uploadMobileCard.techskills[0]}</li>
+//     <li>${uploadMobileCard.techskills[1]}</li>
+//     <li>${uploadMobileCard.techskills[2]}</li>
+//     <li>${uploadMobileCard.techskills[3]}</li>
+//   </ul>
+//   <div class="line-separation">
+//     <img src="./Images_Background/Devider.png"/>
+//   </div>
+//   <div class="mobile-popup-button-container">
+//      <div class="see-button-container-mobile-popup">
+//        <span class="button-text">
+//          See live
+//        </span>
+//        <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+//      </div>
+//      <div class="see-button-container-mobile-popup">
+//        <span class="button-text">
+//          See source 
+//        </span>
+//          <img class="github-see-source-icon"src="./Images_Background/See Source Icon -GitHub.png"/>
+//      </div>
+//   </div>
+//   <div class="closing-line-container">
+//     <img
+//       class="closing-line"
+//       src="Images_Background/Shape.png"
+//       alt="closing-line"
+//     />
+//   </div>
+// </div>  
+// `;
+//     mobilePopUpContainer.appendchiled(mobilePopUp);
+//     };
+//   });
+// });
