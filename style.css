@@ -485,11 +485,10 @@ textarea:-ms-input-placeholder {
 
 .image-container-mobile-popup {
   margin: 20px 5.15% 12px 5.15%;
-  height: 220px;
 }
 
 .mobile-popup-image {
-  
+  width: 100%;
 }
 
 .mobile-popup-paragraph {

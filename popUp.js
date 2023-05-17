@@ -175,7 +175,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '..\Images_Background\Snapshoot_Portfolio_1_Orange.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -184,7 +184,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: './Images_Background/Snapshoot Portfolio 2_availability.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -193,7 +193,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: './Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -202,7 +202,7 @@ const cardDataMobil = {
     role: ['CANOPY','Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: './Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -214,7 +214,7 @@ const cardDataDesktop = {
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '../Images_Background/Desktop Card Snapshot-Nature.svg',
+    image: 'src="Images_Background/Desktop Card Snapshot-Nature.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -223,7 +223,7 @@ const cardDataDesktop = {
     role: ['FACEBOOK','Fulls Stack Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML','Ruby on Rails','CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -232,7 +232,7 @@ const cardDataDesktop = {
     role: ['FACEBOOK','Full Stack Dev','2015'],
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 3_Ballerina.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -241,7 +241,7 @@ const cardDataDesktop = {
     role: ['CANOPY','Back End Dev','2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     techskills: ['HTML', 'CSS','JavaScript'],
-    image: '../Images_Background/Snapshoot Portfolio 2_availability.svg',
+    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
@@ -250,6 +250,7 @@ const cardDataDesktop = {
 
 const mobilePopUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
+const closePopUpButton = document.querySelector('.cross-popup');
 
 if(window.innerWidth <= 768){
 buttons.forEach((item) => {
@@ -278,7 +279,7 @@ buttons.forEach((item) => {
     </ul>
   </div>
   <div class="image-container-mobile-popup">
-    <img class="mobile-popup-image" src=${uploadMobileCard.image}/>
+    <img class="mobile-popup-image" ${uploadMobileCard.image}/>
   </div>
   <p class="mobile-popup-paragraph">
   ${uploadMobileCard.description}
@@ -375,16 +376,16 @@ else {
       </div>
   `;
       mobilePopUpContainer.appendChild(desktopPopUp);
+      
+      function closePopUp () {
+        if(window.innerWidth <= 768){
+          mobilePopUpContainer.removeChild(mobilePopUp);
+          }
+          else 
+          {mobilePopUpContainer.removeChild(desktopPopUp)};
+      }
+      closePopUpButton.addEventListener('click', closePopUpButton);
     });
   });
 };
 
-const closePopUpButton = document.querySelector('.cross-popup');
-function closePopUp () {
-  if(window.innerWidth <= 768){
-    mobilePopUpContainer.removeChild(mobilePopUp);
-    }
-    else
-    {mobilePopUpContainer.removeChild(desktopPopUp)};
-}
-closePopUpButton.addEventListener('click', closePopUpButton);
