@@ -447,17 +447,25 @@ textarea:-ms-input-placeholder {
 /* MOBILE POP UP */
 
 #popUpContainer {
-  
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  position: absolute;
 }
 
 .subcontainer-mobile-popup {
-  margin: 60px 4.67% 50px 4.67%;
+  margin: 38px 4.67% 50px 4.67%;
   border-radius: 16px;
-  border: solid 1px black;
+  background-color: #fff;
+  border: solid 1px #dfe1e6;
 }
 
 .title-close-mobile-popup-container {
   margin: 18px 5.15% 22px 5.15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
 }
 
 .mobile-popup-card-title {
@@ -495,16 +503,46 @@ textarea:-ms-input-placeholder {
   margin-bottom: 20px;
 }
 
-/* .line-separation {
-  border-bottom: 1px solid #ebecf0;
+.line-separation {
+  margin: 0 6.51% 0 6.51%;
   display: flex;
-  position: absolute;
-  align-content: center;
-  width: 90%;
-} */
+  justify-content: center;
+}
 
 .mobile-popup-button-container {
-  margin: 27px 5.15% 22px 5.15%;
+  margin: 24px 5.15% 22px 5.15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.see-button-container-mobile-popup {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  align-items: center;
+  width: 45%;
+  justify-content: space-evenly;
+}
+
+.button-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #396df2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 14px;
+}
+
+.see-live-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.github-see-source-icon {
+  width: 18px;
+  height: auto;
 }
 
 @media all and (min-width: 768px) {
