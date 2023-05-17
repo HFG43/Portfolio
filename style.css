@@ -545,6 +545,82 @@ textarea:-ms-input-placeholder {
   height: auto;
 }
 
+/* DESKTOP POP UP */
+
+.subcontainer-desktop-popup {
+  /* margin: 77px 9.86% 77px 9.86%;
+  border-radius: 16px;
+  background-color: #fff;
+  border: solid 1px #dfe1e6;
+   */
+}
+
+.title-close-desktop-popup-container {
+  margin: 24px 2.166% 16px 2.166%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.desktop-popup-card-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #091e42;
+}
+
+.cross-desktop-popup {
+  color: #67798e;
+}
+
+.desktop-pop-up-role-container {
+  margin-left: 2.166%;
+}
+
+.desktop-popup-image {
+  margin: 36px 2.166% 59px 2.166%;
+  width: 95.8%;
+}
+
+.desktop-popup-paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 2.166%;
+  width: 67.3%;
+  color: #344563;  
+}
+
+.desktop-popup-role-fontweight {
+  font-weight: 500;
+}
+
+.desktop-popup-tech-margin {
+  margin-left: 5.15%;
+  margin-bottom: 20px;
+}
+
+.desktop-line-separation {
+  /* margin: 0 6.51% 0 6.51%;
+  display: flex;
+  justify-content: center; */
+}
+
+.desktop-popup-button-container {
+  /* margin: 24px 5.15% 22px 5.15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+}
+
+.see-button-container-desktop-popup {
+  /* display: flex;
+  flex-direction: row;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  align-items: center;
+  width: 45%;
+  justify-content: space-evenly; */
+}
+
 @media all and (min-width: 768px) {
   /* GENERAL DESKTOP */
 

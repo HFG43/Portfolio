@@ -169,12 +169,89 @@ cards.innerHTML = `
 
 // POP UP //
 
-// OBJECT //
+const cardDataMobil = {
+  mobile1: {
+    name: 'Tonic',
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '..\Images_Background\Snapshoot_Portfolio_1_Orange.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  mobile2: {
+    name: 'Multi-Post Stories',
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: './Images_Background/Snapshoot Portfolio 2_availability.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  mobile3: {
+    name: 'Tonic',
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: './Images_Background/Snapshoot Portfolio 1_Orange.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  mobile4: {
+    name: 'Multi-Post Stories',
+    role: ['CANOPY','Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: './Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+};
+
+const cardDataDesktop = {
+  mobile3: {
+    name: 'Tonic',
+    role: ['CANOPY','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Desktop Card Snapshot-Nature.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  mobile4: {
+    name: 'Multi-Post Stories',
+    role: ['FACEBOOK','Fulls Stack Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML','Ruby on Rails','CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 4_Art Printing.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+   mobile1: {
+    name: 'Facebook 360',
+    role: ['FACEBOOK','Full Stack Dev','2015'],
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 3_Ballerina.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  mobile2: {
+    name: 'Multi-Post Stories',
+    role: ['CANOPY','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS','JavaScript'],
+    image: '../Images_Background/Snapshoot Portfolio 2_availability.svg',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+};
 
 
 const mobilePopUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
 
+if(window.innerWidth <= 768){
 buttons.forEach((item) => {
   item.addEventListener('click', () => {
     const mobileId = item.id;
@@ -239,3 +316,64 @@ buttons.forEach((item) => {
     mobilePopUpContainer.appendChild(mobilePopUp);
   });
 });
+}
+else {
+  buttons.forEach((item) => {
+    item.addEventListener('click', () => {
+      const mobileId = item.id;
+      const uploadDesktopCard = cardDataDesktop[mobileId];
+      const desktopPopUp = document.createElement('div');
+      desktopPopUp.id = 'popUpContainer'; 
+      desktopPopUp.innerHTML = `
+      <div class="subcontainer-desktop-popup">
+        <div class="title-close-desktop-popup-container">
+          <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
+          <span><i class="fa-solid fa-xmark fa-lg cross-desktop-popup"></i></span>           
+        </div>
+        <div class="desktop-pop-up-role-container">
+          <ul class="project-role-detail">
+            <li class="project-role-client desktop-popup-role-fontweight">${uploadDesktopCard.role[0]}</li>
+            <li>
+              <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+            </li>
+            <li>${uploadDesktopCard.role[1]}</li>
+            <li>
+              <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+            </li>
+            <li class="weight-desktop">${uploadDesktopCard.role[2]}</li>
+          </ul>
+        </div>
+        <img class="desktop-popup-image" src="/Images_Background/Snapshoot Portfolio 1_Orange.svg"/>
+
+        <p class="desktop-popup-paragraph">
+        ${uploadDesktopCard.description}
+        </p>
+        <ul class="project-language-list desktop-popup-tech-margin">
+          <li>${uploadDesktopCard.techskills[0]}</li>
+          <li>${uploadDesktopCard.techskills[1]}</li>
+          <li>${uploadDesktopCard.techskills[2]}</li>
+          <li>${uploadDesktopCard.techskills[3]}</li>
+        </ul>
+        <div class="desktop-line-separation">
+          <img src="./Images_Background/Devider.png"/>
+        </div>
+        <div class="desktop-popup-button-container">
+           <div class="see-button-container-desktop-popup">
+             <span class="button-text">
+               See live
+             </span>
+             <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+           </div>
+           <div class="see-button-container-desktop-popup">
+             <span class="button-text">
+               See source 
+             </span>
+               <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+           </div>
+        </div>
+      </div>
+  `;
+      mobilePopUpContainer.appendChild(desktopPopUp);
+    });
+  });
+};
