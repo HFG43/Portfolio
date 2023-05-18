@@ -23,11 +23,11 @@ menuListContact.addEventListener('click', closeMobileMenu);
 menuListAbout.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
 
-// ------------- DYNAMIC HTML ---------------
+// ------------- DYNAMIC HTML --------------- //
 
 const cardData = [
     {
-      project: '0',
+      id: '0',
       name: 'Tonic',
       role: ['CANOPY', 'Back End Dev', '2015'],
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -37,7 +37,7 @@ const cardData = [
       sourceButton: '#',
     },
     {
-      project: '1',
+      id: '1',
       name: 'Multi-Post Stories',
       role: ['CANOPY', 'Back End Dev', '2015'],
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -47,7 +47,7 @@ const cardData = [
       sourceButton: '#',
     },
     {
-      project: '2',
+      id: '2',
       name: 'Tonic',
       role: ['CANOPY', 'Back End Dev', '2015'],
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -57,7 +57,7 @@ const cardData = [
       sourceButton: '#',
     },
     {
-      project: '3',
+      id: '3',
       name: 'Multi-Post Stories',
       role: ['CANOPY', 'Back End Dev', '2015'],
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -107,8 +107,8 @@ cardContainer.innerHTML += `
               <li>${cardData[item].techskills[3]}</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="${item}" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" id="${item}" class="facebook360-button-desktop big-size get-button">See project</button>
+              <button type="button" id="${cardData[item].id}" class="see-project-button get-button mobile-display">See project</button>
+              <button type="button" id="${cardData[item].id}" class="facebook360-button-desktop big-size get-button">See project</button>
               </div>
           </div>
         </article>`;
@@ -118,81 +118,71 @@ cardContainer.innerHTML += `
     loadCard(item);
  }
 
- // ------------- DYNAMIC POP UP --------------- //
+// POP UP //
 
- 
 const popUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
 
-
-
 buttons.forEach((item, index) => {
   item.addEventListener('click', () => {
-    const buttonId = item.id;
-    const uploadMobileCard = cardData[buttonId];
+    const uploadMobileCard = cardData[index];
     const mobilePopUp = document.createElement('div');
     mobilePopUp.id = 'mobilePopUpContainer';
     mobilePopUp.innerHTML = `
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
-     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
+    <h2 class="mobile-popup-card-title">${cardData[index].name}</h2>
     <div id="close-mobile-popup">
-    <ul>
-      <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
-    </ul>
+      <ul>
+        <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
+      </ul>
     </div>        
   </div>
 
   <div class="mobile-pop-up-role-container">
     <ul class="project-role-detail">
-      <li class="project-role-client mobile-popup-role-fontweight">${uploadMobileCard.role[0]}</li>
+      <li class="project-role-client mobile-popup-role-fontweight">${cardData[index].role[0]}</li>
       <li>
         <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
       </li>
-      <li>${uploadMobileCard.role[1]}</li>
+      <li>${cardData[index].role[1]}</li>
       <li>
         <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
       </li>
-      <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
+      <li class="weight-desktop">${cardData[index].role[2]}</li>
     </ul>
   </div>
 
   <div class="image-container-mobile-popup">
-    <img class="mobile-popup-image" ${uploadMobileCard.image}/>
+    <img class="mobile-popup-image" ${cardData[index].image}/>
   </div>
 
-  <div class="desktop-bottom-container">
-
-    <div class="desktop-pop-up-paragraph-container">
-      <p class="mobile-popup-paragraph">
-        ${uploadMobileCard.description}
-      </p>
-    </div>
+  <p class="mobile-popup-paragraph">
+  ${cardData[index].description}
+  </p>
   
-    <div class="desktop-popup-buttons-container">
-      <ul class="project-language-list mobile-popup-tech-margin desktop-popup-tech-margin">
-        <li>${uploadMobileCard.techskills[0]}</li>
-        <li>${uploadMobileCard.techskills[1]}</li>
-        <li class="big-size">${uploadMobileCard.techskills[2]}</li>
-        <li>${uploadMobileCard.techskills[3]}</li>
-      </ul>
+  <ul class="project-language-list mobile-popup-tech-margin">
+    <li>${cardData[index].techskills[0]}</li>
+    <li>${cardData[index].techskills[1]}</li>
+    <li class="big-size">${cardData[index].techskills[2]}</li>
+    <li>${cardData[index].techskills[3]}</li>
+  </ul>
 
-      <div class="line-separation">
-        <img src="./Images_Background/Devider.png"/>
-      </div>
+  <div class="line-separation">
+    <img src="./Images_Background/Devider.png"/>
+  </div>
 
-      <div class="mobile-popup-button-container">
-        <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.liveButton}">
-          See live
-          <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-        </button>
+  <div class="mobile-popup-button-container">
+    <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
+      See live
+      <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+    </button>
      
-        <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.sourceButton}">
-          See source 
-          <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
-        </button>
-      </div>  
-    </div>   
+    <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
+      See source 
+      <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+    </button>
+     
   </div>
   <div class="closing-line-container">
     <img
@@ -212,4 +202,3 @@ buttons.forEach((item, index) => {
       closePopUpButton.addEventListener('click', closePopUp);
     });
   });
-
