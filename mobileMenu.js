@@ -20,9 +20,3 @@ menuListPortfolio.addEventListener('click', closeMobileMenu);
 menuListContact.addEventListener('click', closeMobileMenu);
 menuListAbout.addEventListener('click', closeMobileMenu);
 closeIcon.addEventListener('click', closeMobileMenu);
-
-function testeo () {
-if(window.innerWidth < 768) {
-  console.log("funciona");
-} else {console.log("+ grande")};
-}
