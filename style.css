@@ -9,6 +9,7 @@
 html {
   font-family: 'Poppins', sans-serif;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 .big-size {
@@ -105,6 +106,9 @@ html {
 }
 
 /* MOBILE CARDS */
+.dynamic-card-container-mobile {
+  margin: 0 6.5% 0 6.5%;
+}
 
 #card-works-container {
   display: grid;
@@ -115,6 +119,7 @@ html {
 
 #card-work-1 {
   grid-row: 1 / 2;
+  margin-bottom: 88px;
 }
 
 #card-work-2 {
@@ -393,7 +398,7 @@ textarea:-ms-input-placeholder {
 .mobile-menu-style {
   background-color: #6070ff;
   mix-blend-mode: multiply;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -443,7 +448,231 @@ textarea:-ms-input-placeholder {
   right: 35%;
 }
 
+/* ----------------- DYNAMIC POP UP ------------------- */
+
+#mobilePopUpContainer {
+  background-color: #c1c7d0;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+}
+
+.subcontainer-mobile-popup {
+  margin: 38px 4.67% 50px 4.67%;
+  border-radius: 16px;
+  background-color: #fff;
+  border: solid 1px #dfe1e6;
+  height: 85%;
+  overflow-y: scroll;
+}
+
+.title-close-mobile-popup-container {
+  margin: 18px 5.15% 22px 5.15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-popup-card-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #172b4d;
+}
+
+.cross-popup {
+  color: #67798e;
+}
+
+.mobile-pop-up-role-container {
+  margin-left: 5.15%;
+}
+
+.image-container-mobile-popup {
+  margin: 20px 5.15% 12px 5.15%;
+}
+
+.mobile-popup-image {
+  width: 100%;
+}
+
+.mobile-popup-paragraph {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin: 0 5.15% 12px 5.15%;
+  color: #344563;
+}
+
+.mobile-popup-role-fontweight {
+  font-weight: 600;
+}
+
+.mobile-popup-tech-margin {
+  margin-left: 5.15%;
+  margin-bottom: 20px;
+}
+
+.line-separation {
+  margin: 0 6.51% 0 6.51%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-popup-button-container {
+  margin: 24px 5.15% 22px 5.15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.see-button-container-mobile-popup {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  align-items: center;
+  width: 45%;
+  justify-content: space-evenly;
+}
+
+.button-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #396df2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 14px;
+}
+
+.see-live-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.github-see-source-icon {
+  width: 1.125rem;
+  height: auto;
+}
+
+.see-project-button-pop-up {
+  border-radius: 8px;
+  color: #6070ff;
+  border: 1px solid #396df2;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  padding: 12px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fff;
+  width: 42%;
+}
+
+/* -------------- MEDIA QUERY -------------- */
+
 @media all and (min-width: 768px) {
+  /* DESKTOP POP UP */
+
+  #mobilePopUpContainer {
+    background-color: #c1c7d0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .subcontainer-mobile-popup {
+    margin: 77px 9.86% 77px 9.86%;
+    width: 82%;
+    height: 88%;
+    border-radius: 16px;
+    background-color: #fff;
+    border: solid 1px #dfe1e6;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  .image-container-mobile-popup {
+    height: 65vh;
+  }
+
+  .mobile-popup-image {
+    margin: 0 2.166% 59px 2.166%;
+    width: 95.8%;
+    height: 100%;
+  }
+
+  .desktop-bottom-container {
+    margin: 0 2.166% 8% 2.166%;
+    display: flex;
+  }
+
+  .desktop-pop-up-paragraph-container {
+    width: 70%;
+  }
+
+  .mobile-popup-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #344563;
+    flex-shrink: 3;
+  }
+
+  .desktop-popup-buttons-container {
+    width: 30%;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .desktop-popup-tech-margin {
+    flex-wrap: wrap;
+  }
+
+  .desktop-popup-tech-margin li {
+    margin-bottom: 12px;
+  }
+
+  .see-project-button-pop-up {
+    border-radius: 8px;
+    color: #6070ff;
+    border: 1px solid #396df2;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    padding: 12px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+    width: 145px;
+    height: 3rem;
+    margin-top: 24px;
+    margin-right: 5px;
+    flex-wrap: wrap;
+  }
+
+  .desktop-line-separation {
+    margin: 0 28px 0 28px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-popup-button-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .see-button-container-mobile-popup {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    align-items: center;
+    width: 45%;
+    justify-content: space-evenly;
+  }
+
   /* GENERAL DESKTOP */
 
   .mobile-display {
@@ -500,6 +729,9 @@ textarea:-ms-input-placeholder {
   }
 
   /* CARDS DISTRIBUTION */
+  .dynamic-card-container-desktop {
+    margin: 0 10% 0 10%;
+  }
 
   #card-works-container {
     margin: 0 10% 0 10%;
@@ -574,7 +806,7 @@ textarea:-ms-input-placeholder {
     justify-content: space-between;
   }
 
-  .facebook360-button {
+  .facebook360-button-desktop {
     height: 48px;
     color: #fff;
     background-color: #4053fc;
@@ -588,12 +820,25 @@ textarea:-ms-input-placeholder {
     border-style: none;
   }
 
-  .facebook360-button:active {
+  .button-desktop {
+    border-radius: 8px;
+    color: #6070ff;
+    border: 1px solid #396df2;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    padding: 12px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+    width: 30%;
+  }
+
+  .facebook360-button-desktop:active {
     color: #6070ff;
     border: 1px solid #396df2;
   }
 
-  .facebook360-button:hover {
+  .facebook360-button-desktop:hover {
     color: #fff;
     background-color: #6070ff;
   }
