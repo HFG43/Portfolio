@@ -8,7 +8,7 @@ const menuListAbout = document.querySelector('.menu-mobile-about');
 
 function displayMobileMenu() {
   menuContainer.classList.remove('hidden');
-  menuList.classList.remove('hidden'); 
+  menuList.classList.remove('hidden');
 }
 hamburguer.addEventListener('click', displayMobileMenu);
 
