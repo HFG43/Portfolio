@@ -1,3 +1,30 @@
+// ------------- MOBILE MENU ---------------
+
+const menuContainer = document.querySelector('#mobile-menu-hidden');
+const hamburguer = document.getElementById('hamburguer');
+const closeIcon = document.getElementById('closing-Icon');
+const menuList = document.querySelector('.list-menu-mobile');
+const menuListPortfolio = document.querySelector('.menu-mobile-portfolio');
+const menuListContact = document.querySelector('.menu-mobile-contact');
+const menuListAbout = document.querySelector('.menu-mobile-about');
+
+function displayMobileMenu() {
+  menuContainer.classList.remove('hidden');
+  menuList.classList.remove('hidden');
+}
+hamburguer.addEventListener('click', displayMobileMenu);
+
+function closeMobileMenu() {
+  menuContainer.classList.add('hidden');
+  menuList.classList.add('hidden');
+}
+menuListPortfolio.addEventListener('click', closeMobileMenu);
+menuListContact.addEventListener('click', closeMobileMenu);
+menuListAbout.addEventListener('click', closeMobileMenu);
+closeIcon.addEventListener('click', closeMobileMenu);
+
+// ------------- DYNAMIC HTML ---------------
+
 const cardData = [
     {
       id: '0',
@@ -90,3 +117,89 @@ cardContainer.innerHTML += `
  for (let item = 0; item < cardData.length; item += 1) {
     loadCard(item);
  }
+
+ // ------------- DYNAMIC POP UP ---------------
+
+ 
+const popUpContainer = document.getElementById('mobilepopup-container');
+const buttons = document.querySelectorAll('.get-button');
+
+buttons.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    const uploadMobileCard = cardData[index];
+    const mobilePopUp = document.createElement('div');
+    mobilePopUp.id = 'mobilePopUpContainer';
+    mobilePopUp.innerHTML = `
+<div class="subcontainer-mobile-popup">
+  <div class="title-close-mobile-popup-container">
+    <h2 class="mobile-popup-card-title">${cardData[index].name}</h2>
+    <div id="close-mobile-popup">
+      <ul>
+        <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
+      </ul>
+    </div>        
+  </div>
+
+  <div class="mobile-pop-up-role-container">
+    <ul class="project-role-detail">
+      <li class="project-role-client mobile-popup-role-fontweight">${cardData[index].role[0]}</li>
+      <li>
+        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+      </li>
+      <li>${cardData[index].role[1]}</li>
+      <li>
+        <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+      </li>
+      <li class="weight-desktop">${cardData[index].role[2]}</li>
+    </ul>
+  </div>
+
+  <div class="image-container-mobile-popup">
+    <img class="mobile-popup-image" ${cardData[index].image}/>
+  </div>
+
+  <p class="mobile-popup-paragraph">
+  ${cardData[index].description}
+  </p>
+  <ul class="project-language-list mobile-popup-tech-margin">
+    <li>${cardData[index].techskills[0]}</li>
+    <li>${cardData[index].techskills[1]}</li>
+    <li class="big-size">${cardData[index].techskills[2]}</li>
+    <li>${cardData[index].techskills[3]}</li>
+  </ul>
+
+  <div class="line-separation">
+    <img src="./Images_Background/Devider.png"/>
+  </div>
+
+  <div class="mobile-popup-button-container">
+    <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
+      See live
+      <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+    </button>
+     
+    <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
+      See source 
+      <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+    </button>
+     
+  </div>
+  <div class="closing-line-container">
+    <img
+      class="closing-line"
+      src="Images_Background/Shape.png"
+      alt="closing-line"
+    />
+  </div>
+</div>  
+`;
+      popUpContainer.appendChild(mobilePopUp);
+
+      const closePopUpButton = document.getElementById('close-mobile-popup');
+      function closePopUp() {
+        popUpContainer.removeChild(mobilePopUp);
+      }
+      closePopUpButton.addEventListener('click', closePopUp);
+    });
+  });
+
