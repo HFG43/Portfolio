@@ -118,7 +118,7 @@ cardContainer.innerHTML += `
     loadCard(item);
  }
 
- // ------------- DYNAMIC POP UP ---------------
+ // ------------- DYNAMIC POP UP --------------- //
 
  
 const popUpContainer = document.getElementById('mobilepopup-container');
@@ -132,11 +132,11 @@ buttons.forEach((item, index) => {
     mobilePopUp.innerHTML = `
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
-    <h2 class="mobile-popup-card-title">${cardData[index].name}</h2>
+     <h2 class="mobile-popup-card-title">${cardData[index].name}</h2>
     <div id="close-mobile-popup">
-      <ul>
-        <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
-      </ul>
+    <ul>
+      <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
+    </ul>
     </div>        
   </div>
 
@@ -159,6 +159,7 @@ buttons.forEach((item, index) => {
   </div>
 
   <div class="desktop-bottom-container">
+
     <div class="desktop-pop-up-paragraph-container">
       <p class="mobile-popup-paragraph">
         ${cardData[index].description}
@@ -166,29 +167,29 @@ buttons.forEach((item, index) => {
     </div>
   
     <div class="desktop-popup-buttons-container">
-      <ul class="project-language-list desktop-popup-tech-margin">
+      <ul class="project-language-list mobile-popup-tech-margin desktop-popup-tech-margin">
         <li>${cardData[index].techskills[0]}</li>
         <li>${cardData[index].techskills[1]}</li>
         <li class="big-size">${cardData[index].techskills[2]}</li>
         <li>${cardData[index].techskills[3]}</li>
       </ul>
 
-    <div class="line-separation">
-      <img src="./Images_Background/Devider.png"/>
-    </div>
+      <div class="line-separation">
+        <img src="./Images_Background/Devider.png"/>
+      </div>
 
-    <div class="mobile-popup-button-container">
-      <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
-        See live
-        <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-      </button>
+      <div class="mobile-popup-button-container">
+        <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
+          See live
+          <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+        </button>
      
-      <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
-        See source 
-        <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
-      </button>
-    </div>  
-  </div>   
+        <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
+          See source 
+          <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+        </button>
+      </div>  
+    </div>   
   </div>
   <div class="closing-line-container">
     <img
