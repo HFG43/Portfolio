@@ -106,6 +106,9 @@ html {
 }
 
 /* MOBILE CARDS */
+.dynamic-card-container-mobile{
+  margin: 0 6.5% 0 6.5%;
+}
 
 #card-works-container {
   display: grid;
@@ -116,6 +119,7 @@ html {
 
 #card-work-1 {
   grid-row: 1 / 2;
+  margin-bottom: 88px;
 }
 
 #card-work-2 {
@@ -733,6 +737,9 @@ textarea:-ms-input-placeholder {
   }
 
   /* CARDS DISTRIBUTION */
+  .dynamic-card-container-desktop {
+    margin: 0 10% 0 10%;
+  }
 
   #card-works-container {
     margin: 0 10% 0 10%;
