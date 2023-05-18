@@ -158,31 +158,37 @@ buttons.forEach((item, index) => {
     <img class="mobile-popup-image" ${cardData[index].image}/>
   </div>
 
-  <p class="mobile-popup-paragraph">
-  ${cardData[index].description}
-  </p>
-  <ul class="project-language-list mobile-popup-tech-margin">
-    <li>${cardData[index].techskills[0]}</li>
-    <li>${cardData[index].techskills[1]}</li>
-    <li class="big-size">${cardData[index].techskills[2]}</li>
-    <li>${cardData[index].techskills[3]}</li>
-  </ul>
+  <div class="desktop-bottom-container">
+    <div class="desktop-pop-up-paragraph-container">
+      <p class="mobile-popup-paragraph">
+        ${cardData[index].description}
+      </p>
+    </div>
+  
+    <div class="desktop-popup-buttons-container">
+      <ul class="project-language-list desktop-popup-tech-margin">
+        <li>${cardData[index].techskills[0]}</li>
+        <li>${cardData[index].techskills[1]}</li>
+        <li class="big-size">${cardData[index].techskills[2]}</li>
+        <li>${cardData[index].techskills[3]}</li>
+      </ul>
 
-  <div class="line-separation">
-    <img src="./Images_Background/Devider.png"/>
-  </div>
+    <div class="line-separation">
+      <img src="./Images_Background/Devider.png"/>
+    </div>
 
-  <div class="mobile-popup-button-container">
-    <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
-      See live
-      <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-    </button>
+    <div class="mobile-popup-button-container">
+      <button class="see-project-button-pop-up" type="button" href="${cardData[index].liveButton}">
+        See live
+        <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+      </button>
      
-    <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
-      See source 
-      <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
-    </button>
-     
+      <button class="see-project-button-pop-up" type="button" href="${cardData[index].sourceButton}">
+        See source 
+        <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+      </button>
+    </div>  
+  </div>   
   </div>
   <div class="closing-line-container">
     <img
