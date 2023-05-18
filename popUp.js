@@ -42,11 +42,12 @@ cards.innerHTML = `
             </ul>
             <div class="button-container">
               <button type="button" id="mobile1" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" id="desktop3" class="facebook360-button big-size get-button">See project</button>
+              <button type="button" id="desktop3" class="facebook360-button-desktop big-size get-button">See project</button>
               <img src="Images_Background/hand-cursor 1.png" alt="Hand Cursor Icon" class="big-size"/>
             </div>
           </div>
         </article>
+
         <article id="card-work-2" class="mobile-card">
           <img
             class="card-snapshot"
@@ -84,10 +85,12 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile2" class="see-project-button get-button">See project</button>
+              <button type="button" id="mobile2" class="see-project-button get-button mobile-display">See project</button>
+              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>
+
         <article id="card-work-3" class="mobile-card">
           <img
             class="card-snapshot mobile-display"
@@ -122,10 +125,12 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile3" class="see-project-button get-button">See project</button>
+              <button type="button" id="mobile3" class="see-project-button get-button mobile-display">See project</button>
+              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>
+      
         <article id="card-work-4" class="mobile-card">
           <img
             class="card-snapshot"
@@ -162,7 +167,8 @@ cards.innerHTML = `
               <li>JavaScript</li>
             </ul>
             <div class="button-container">
-              <button type="button" id="mobile4" class="see-project-button get-button">See project</button>
+              <button type="button" id="mobile4" class="see-project-button get-button mobile-display">See project</button>
+              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>`;
@@ -212,7 +218,7 @@ const cardDataDesktop = {
   desktop1: {
     name: 'Tonic',
     role: ['CANOPY','Back End Dev','2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     techskills: ['HTML', 'CSS','JavaScript'],
     image: 'src="Images_Background/Desktop Card Snapshot-Nature.svg"',
     liveButton: '#',
@@ -221,7 +227,7 @@ const cardDataDesktop = {
   desktop2: {
     name: 'Multi-Post Stories',
     role: ['FACEBOOK','Fulls Stack Dev','2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     techskills: ['HTML','Ruby on Rails','CSS','JavaScript'],
     image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
     liveButton: '#',
@@ -230,16 +236,16 @@ const cardDataDesktop = {
    desktop3: {
     name: 'Facebook 360',
     role: ['FACEBOOK','Full Stack Dev','2015'],
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
+    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
     liveButton: '#',
     sourceButton: '#',
   },
   desktop4: {
     name: 'Multi-Post Stories',
     role: ['CANOPY','Back End Dev','2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     techskills: ['HTML', 'CSS','JavaScript'],
     image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
     liveButton: '#',
@@ -247,9 +253,9 @@ const cardDataDesktop = {
   },
 };
 
-
 const popUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
+const closePopUpButton = document.querySelector('.cross-popup');
 
 if(window.innerWidth <= 768){
 buttons.forEach((item) => {
@@ -257,14 +263,14 @@ buttons.forEach((item) => {
     const mobileId = item.id;
     const uploadMobileCard = cardDataMobil[mobileId];
     const mobilePopUp = document.createElement('div');
-    mobilePopUp.id = 'mobilePopUpContainer';
-    const closePopUpButton = document.querySelector('.cross-popup');
+    mobilePopUp.id = 'mobilePopUpContainer';   
     mobilePopUp.innerHTML = `
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
     <span><i class="fa-solid fa-xmark fa-lg cross-popup"></i></span>           
   </div>
+
   <div class="mobile-pop-up-role-container">
     <ul class="project-role-detail">
       <li class="project-role-client mobile-popup-role-fontweight">${uploadMobileCard.role[0]}</li>
@@ -278,9 +284,11 @@ buttons.forEach((item) => {
       <li class="weight-desktop">${uploadMobileCard.role[2]}</li>
     </ul>
   </div>
+
   <div class="image-container-mobile-popup">
     <img class="mobile-popup-image" ${uploadMobileCard.image}/>
   </div>
+
   <p class="mobile-popup-paragraph">
   ${uploadMobileCard.description}
   </p>
@@ -289,22 +297,23 @@ buttons.forEach((item) => {
     <li>${uploadMobileCard.techskills[1]}</li>
     <li>${uploadMobileCard.techskills[2]}</li>
   </ul>
+
   <div class="line-separation">
     <img src="./Images_Background/Devider.png"/>
   </div>
+
   <div class="mobile-popup-button-container">
-     <div class="see-button-container-mobile-popup">
-       <span class="button-text">
-         See live
-       </span>
-       <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-     </div>
-     <div class="see-button-container-mobile-popup">
-       <span class="button-text">
-         See source 
-       </span>
-         <img class="github-see-source-icon"src="./Images_Background/See Source Icon -GitHub.png"/>
-     </div>
+    <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.liveButton}">
+      See live
+      <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+    </button>
+     
+     
+    <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.sourceButton}">
+      See source 
+      <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+    </button>
+     
   </div>
   <div class="closing-line-container">
     <img
@@ -322,58 +331,62 @@ buttons.forEach((item) => {
 else {
   buttons.forEach((item) => {
     item.addEventListener('click', () => {
-      const mobileId = item.id;
-      const uploadDesktopCard = cardDataDesktop[mobileId];
+      const desktopId = item.id;
+      const uploadDesktopCard = cardDataDesktop[desktopId];
       const desktopPopUp = document.createElement('div');
       desktopPopUp.id = 'desktopPopUpContainer'; 
-      desktopPopUp.innerHTML = `
-      <div class="subcontainer-desktop-popup">
-        <div class="title-close-desktop-popup-container">
-          <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
-          <span class="cross-popup"><i class="fa-solid fa-xmark fa-lg"></i></span>           
-        </div>
-        <div class="desktop-pop-up-role-container">
-          <ul class="project-role-detail">
-            <li class="project-role-client desktop-popup-role-fontweight">${uploadDesktopCard.role[0]}</li>
-            <li>
-              <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
-            </li>
-            <li>${uploadDesktopCard.role[1]}</li>
-            <li>
-              <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
-            </li>
-            <li class="weight-desktop">${uploadDesktopCard.role[2]}</li>
-          </ul>
-        </div>
-        <img class="desktop-popup-image" src="/Images_Background/Snapshoot Portfolio 1_Orange.svg"/>
+      desktopPopUp.innerHTML = `      
+        <div class="subcontainer-desktop-popup">
+          <div class="title-close-desktop-popup-container">
+            <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
+            <span><i class="fa-solid fa-xmark fa-2xl cross-desktop-popup"></i></span>           
+          </div>
 
-        <p class="desktop-popup-paragraph">
-        ${uploadDesktopCard.description}
-        </p>
-        <ul class="project-language-list desktop-popup-tech-margin">
-          <li>${uploadDesktopCard.techskills[0]}</li>
-          <li>${uploadDesktopCard.techskills[1]}</li>
-          <li>${uploadDesktopCard.techskills[2]}</li>
-          <li>${uploadDesktopCard.techskills[3]}</li>
-        </ul>
-        <div class="desktop-line-separation">
-          <img src="./Images_Background/Devider.png"/>
-        </div>
-        <div class="desktop-popup-button-container">
-           <div class="see-button-container-desktop-popup">
-             <span class="button-text">
-               See live
-             </span>
-             <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
-           </div>
-           <div class="see-button-container-desktop-popup">
-             <span class="button-text">
-               See source 
-             </span>
-               <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
-           </div>
-        </div>
-      </div>
+          <div class="desktop-pop-up-role-container">
+            <ul class="project-role-detail">
+              <li class="project-role-client desktop-popup-role-fontweight">${uploadDesktopCard.role[0]}</li>
+              <li>
+                <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+              </li>
+              <li>${uploadDesktopCard.role[1]}</li>
+              <li>
+                <i class="fa-solid fa-circle fa-2xs project-role-counter"></i>
+              </li>
+              <li class="weight-desktop">${uploadDesktopCard.role[2]}</li>
+            </ul>
+          </div>
+
+          <img class="desktop-popup-image" ${uploadDesktopCard.image}/>
+          <div class="desktop-bottom-container">
+            <div class="desktop-pop-up-paragraph-container">
+              <p class="desktop-popup-paragraph">
+                ${uploadDesktopCard.description}
+              </p>
+            </div>
+
+            <div class="desktop-popup-buttons-container">
+              <ul class="project-language-list desktop-popup-tech-margin">
+                <li>${uploadDesktopCard.techskills[0]}</li>
+                <li>${uploadDesktopCard.techskills[1]}</li>
+                <li>${uploadDesktopCard.techskills[2]}</li>
+                <li>${uploadDesktopCard.techskills[3]}</li>
+              </ul>
+              <div class="desktop-line-separation">
+                <img src="./Images_Background/Devider.png"/>
+              </div>
+
+              <button class="see-project-button-pop-up-desktop" type="button" href="${uploadDesktopCard.liveButton}">
+                See live
+                <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
+              </button>         
+              <button class="see-project-button-pop-up-desktop" type="button" href="${uploadDesktopCard.sourceButton}">
+                See source 
+                <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
+              </button>
+            </div>
+
+          </div>  
+        </div>      
   `;
       popUpContainer.appendChild(desktopPopUp);
 
