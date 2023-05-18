@@ -460,14 +460,14 @@ textarea:-ms-input-placeholder {
   margin: 38px 4.67% 50px 4.67%;
   border-radius: 16px;
   background-color: #fff;
-  border: solid 1px #dfe1e6;  
+  border: solid 1px #dfe1e6;
 }
 
 .title-close-mobile-popup-container {
   margin: 18px 5.15% 22px 5.15%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .mobile-popup-card-title {
@@ -578,7 +578,7 @@ textarea:-ms-input-placeholder {
   margin: 77px 9.86% 77px 9.86%;
   border-radius: 16px;
   background-color: #fff;
-  border: solid 1px #dfe1e6;  
+  border: solid 1px #dfe1e6; 
 }
 
 .title-close-desktop-popup-container {
@@ -606,7 +606,7 @@ textarea:-ms-input-placeholder {
 }
 
 .desktop-popup-role-fontweight {
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .desktop-popup-image {
@@ -626,7 +626,7 @@ textarea:-ms-input-placeholder {
 .desktop-popup-paragraph {
   font-size: 1rem;
   font-weight: 400;
-  color: #344563;  
+  color: #344563;
 }
 
 .desktop-popup-buttons-container {
