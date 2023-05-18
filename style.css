@@ -448,12 +448,10 @@ textarea:-ms-input-placeholder {
 
 #mobilePopUpContainer {
   background-color: #c1c7d0;
-  /* mix-blend-mode: multiply; */
-  /* backdrop-filter: blur(15px); */
   background-size: cover;
   height: 100%;
   width: 100vw;
-  position: absolut;
+  position: absolute;
 }
 
 .subcontainer-mobile-popup {
@@ -566,11 +564,8 @@ textarea:-ms-input-placeholder {
 /* DESKTOP POP UP */
 #desktopPopUpContainer {
   background-color: #c1c7d0;
-  mix-blend-mode: multiply;
-  /* backdrop-filter: blur(15px); */
   background-size: cover;
   height: 100vh;
-  /* position: absolut; */
   width: 100vw;
 }
 

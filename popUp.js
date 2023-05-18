@@ -254,6 +254,7 @@ const cardDataDesktop = {
 }; 
 
 const popUpContainer = document.getElementById('mobilepopup-container');
+const desktopPopUpContainer = document.getElementById('desktoppopup-container');
 const buttons = document.querySelectorAll('.get-button');
 const closePopUpButton = document.querySelector('.cross-popup');
 
@@ -307,7 +308,6 @@ if (window.innerWidth <= 768) {
       See live
       <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
     </button>
-     
      
     <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.sourceButton}">
       See source 
@@ -387,7 +387,7 @@ if (window.innerWidth <= 768) {
           </div>  
         </div>      
   `;
-      popUpContainer.appendChild(desktopPopUp);
+      desktopPopUpContainer.appendChild(desktopPopUp);
 
       function closePopUp () {
         if(window.innerWidth <= 768){
