@@ -106,7 +106,7 @@ html {
 }
 
 /* MOBILE CARDS */
-.dynamic-card-container-mobile{
+.dynamic-card-container-mobile {
   margin: 0 6.5% 0 6.5%;
 }
 
@@ -570,7 +570,7 @@ textarea:-ms-input-placeholder {
 /* -------------- MEDIA QUERY -------------- */
 
 @media all and (min-width: 768px) {
- /* DESKTOP POP UP */
+  /* DESKTOP POP UP */
 
   #mobilePopUpContainer {
     background-color: #c1c7d0;
@@ -623,7 +623,7 @@ textarea:-ms-input-placeholder {
     margin-right: 24px;
     margin-left: 24px;
   }
-  
+
   .desktop-popup-tech-margin {
     flex-wrap: wrap;
   }
@@ -632,7 +632,7 @@ textarea:-ms-input-placeholder {
     margin-bottom: 12px;
   }
 
-  .see-project-button-pop-up{
+  .see-project-button-pop-up {
     border-radius: 8px;
     color: #6070ff;
     border: 1px solid #396df2;
@@ -662,7 +662,7 @@ textarea:-ms-input-placeholder {
     flex-direction: row;
     justify-content: space-around;
   }
-  
+
   .see-button-container-mobile-popup {
     display: flex;
     flex-direction: row;

@@ -26,52 +26,52 @@ closeIcon.addEventListener('click', closeMobileMenu);
 // ------------- DYNAMIC HTML ---------------
 
 const cardData = [
-    {
-      project: '0',
-      name: 'Tonic',
-      role: ['CANOPY', 'Back End Dev', '2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      techskills: ['HTML', 'CSS', 'Ruby on Rails','JavaScript'],
-      image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
-      liveButton: '#',
-      sourceButton: '#',
-    },
-    {
-      project: '1',
-      name: 'Multi-Post Stories',
-      role: ['CANOPY', 'Back End Dev', '2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      techskills: ['HTML', 'CSS', 'Ruby on Rails','JavaScript'],
-      image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
-      liveButton: '#',
-      sourceButton: '#',
-    },
-    {
-      project: '2',
-      name: 'Tonic',
-      role: ['CANOPY', 'Back End Dev', '2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      techskills: ['HTML', 'CSS', 'Ruby on Rails','JavaScript'],
-      image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
-      liveButton: '#',
-      sourceButton: '#',
-    },
-    {
-      project: '3',
-      name: 'Multi-Post Stories',
-      role: ['CANOPY', 'Back End Dev', '2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      techskills: ['HTML', 'CSS', 'Ruby on Rails','JavaScript'],
-      image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
-      liveButton: '#',
-      sourceButton: '#',
-    },
-  ];
-  
+  {
+    project: '0',
+    name: 'Tonic',
+    role: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  {
+    project: '1',
+    name: 'Multi-Post Stories',
+    role: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  {
+    project: '2',
+    name: 'Tonic',
+    role: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+  {
+    project: '3',
+    name: 'Multi-Post Stories',
+    role: ['CANOPY', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
+    liveButton: '#',
+    sourceButton: '#',
+  },
+];
+
 const cardContainer = document.querySelector('.dynamic-card-container');
 
-function loadCard(item) { 
-cardContainer.innerHTML += `
+function loadCard(item) {
+  cardContainer.innerHTML += `
 <article id="card-work-1" class="mobile-card">
           <img
             class="card-snapshot"
@@ -112,21 +112,18 @@ cardContainer.innerHTML += `
               </div>
           </div>
         </article>`;
- }
+}
 
- for (let item = 0; item < cardData.length; item += 1) {
-    loadCard(item);
- }
+for (let item = 0; item < cardData.length; item += 1) {
+  loadCard(item);
+}
 
- // ------------- DYNAMIC POP UP --------------- //
+// ------------- DYNAMIC POP UP --------------- //
 
- 
 const popUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
 
-
-
-buttons.forEach((item, index) => {
+buttons.forEach((item) => {
   item.addEventListener('click', () => {
     const buttonId = item.id;
     const uploadMobileCard = cardData[buttonId];
@@ -203,13 +200,12 @@ buttons.forEach((item, index) => {
   </div>
 </div>  
 `;
-      popUpContainer.appendChild(mobilePopUp);
+    popUpContainer.appendChild(mobilePopUp);
 
-      const closePopUpButton = document.getElementById('close-mobile-popup');
-      function closePopUp() {
-        popUpContainer.removeChild(mobilePopUp);
-      }
-      closePopUpButton.addEventListener('click', closePopUp);
-    });
+    const closePopUpButton = document.getElementById('close-mobile-popup');
+    function closePopUp() {
+      popUpContainer.removeChild(mobilePopUp);
+    }
+    closePopUpButton.addEventListener('click', closePopUp);
   });
-
+});
