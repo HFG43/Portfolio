@@ -86,7 +86,7 @@ cards.innerHTML = `
             </ul>
             <div class="button-container">
               <button type="button" id="mobile2" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
+              <button type="button" id="desktop4" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>
@@ -126,7 +126,7 @@ cards.innerHTML = `
             </ul>
             <div class="button-container">
               <button type="button" id="mobile3" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
+              <button type="button" id="desktop1" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>
@@ -168,7 +168,7 @@ cards.innerHTML = `
             </ul>
             <div class="button-container">
               <button type="button" id="mobile4" class="see-project-button get-button mobile-display">See project</button>
-              <button type="button" id="desktop3" class="button-desktop big-size get-button">See project</button>
+              <button type="button" id="desktop2" class="button-desktop big-size get-button">See project</button>
             </div>
           </div>
         </article>`;
@@ -177,94 +177,94 @@ cards.innerHTML = `
 
 const cardDataMobil = {
   mobile1: {
-    name: 'Tonic',
-    role: ['CANOPY','Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
+    name: 'Tonic', 
+    role: ['CANOPY','Back End Dev', '2015'], 
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
   mobile2: {
-    name: 'Multi-Post Stories',
-    role: ['CANOPY','Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
+    name: 'Multi-Post Stories', 
+    role: ['CANOPY','Back End Dev', '2015'], 
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
   mobile3: {
-    name: 'Tonic',
-    role: ['CANOPY','Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
+    name: 'Tonic', 
+    role: ['CANOPY','Back End Dev', '2015'], 
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
   mobile4: {
-    name: 'Multi-Post Stories',
-    role: ['CANOPY','Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    name: 'Multi-Post Stories', 
+    role: ['CANOPY','Back End Dev', '2015'], 
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.', 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
   },
 };
 
 const cardDataDesktop = {
   desktop1: {
-    name: 'Tonic',
-    role: ['CANOPY','Back End Dev','2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Desktop Card Snapshot-Nature.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
+    name: 'Tonic', 
+    role: ['CANOPY','Back End Dev','2015'], 
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.", 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Desktop Card Snapshot-Nature.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
   desktop2: {
-    name: 'Multi-Post Stories',
-    role: ['FACEBOOK','Fulls Stack Dev','2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
-    techskills: ['HTML','Ruby on Rails','CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
-   desktop3: {
-    name: 'Facebook 360',
-    role: ['FACEBOOK','Full Stack Dev','2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
-    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    name: 'Multi-Post Stories', 
+    role: ['FACEBOOK','Fulls Stack Dev','2015'], 
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.", 
+    techskills: ['HTML','Ruby on Rails','CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
+  desktop3: {
+    name: 'Facebook 360', 
+    role: ['FACEBOOK','Full Stack Dev','2015'], 
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.", 
+    techskills: ['HTML', 'Ruby on Rails','CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
   },
   desktop4: {
-    name: 'Multi-Post Stories',
-    role: ['CANOPY','Back End Dev','2015'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
-    techskills: ['HTML', 'CSS','JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"',
-    liveButton: '#',
-    sourceButton: '#',
-  },
-};
+    name: 'Multi-Post Stories', 
+    role: ['CANOPY','Back End Dev','2015'], 
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.", 
+    techskills: ['HTML', 'CSS','JavaScript'], 
+    image: 'src="Images_Background/Snapshoot Portfolio 2_Availability.svg"', 
+    liveButton: '#', 
+    sourceButton: '#', 
+  }, 
+}; 
 
 const popUpContainer = document.getElementById('mobilepopup-container');
 const buttons = document.querySelectorAll('.get-button');
 const closePopUpButton = document.querySelector('.cross-popup');
 
-if(window.innerWidth <= 768){
-buttons.forEach((item) => {
-  item.addEventListener('click', () => {
-    const mobileId = item.id;
-    const uploadMobileCard = cardDataMobil[mobileId];
-    const mobilePopUp = document.createElement('div');
-    mobilePopUp.id = 'mobilePopUpContainer';   
-    mobilePopUp.innerHTML = `
+if (window.innerWidth <= 768) {
+  buttons.forEach((item) => {
+    item.addEventListener('click', () => {
+      const mobileId = item.id;
+      const uploadMobileCard = cardDataMobil[mobileId];
+      const mobilePopUp = document.createElement('div');
+      mobilePopUp.id = 'mobilePopUpContainer';   
+      mobilePopUp.innerHTML = `
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
@@ -324,18 +324,17 @@ buttons.forEach((item) => {
   </div>
 </div>  
 `;
-    popUpContainer.appendChild(mobilePopUp);
+      popUpContainer.appendChild(mobilePopUp);
+    });
   });
-});
-}
-else {
+} else {
   buttons.forEach((item) => {
     item.addEventListener('click', () => {
       const desktopId = item.id;
       const uploadDesktopCard = cardDataDesktop[desktopId];
       const desktopPopUp = document.createElement('div');
       desktopPopUp.id = 'desktopPopUpContainer'; 
-      desktopPopUp.innerHTML = `      
+      desktopPopUp.innerHTML =`     
         <div class="subcontainer-desktop-popup">
           <div class="title-close-desktop-popup-container">
             <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
