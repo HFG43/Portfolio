@@ -256,7 +256,6 @@ const cardDataDesktop = {
 const popUpContainer = document.getElementById('mobilepopup-container');
 const desktopPopUpContainer = document.getElementById('desktoppopup-container');
 const buttons = document.querySelectorAll('.get-button');
-const closePopUpButton = document.querySelector('.cross-popup');
 
 if (window.innerWidth <= 768) {
   buttons.forEach((item) => {
@@ -269,7 +268,11 @@ if (window.innerWidth <= 768) {
 <div class="subcontainer-mobile-popup">
   <div class="title-close-mobile-popup-container">
     <h2 class="mobile-popup-card-title">${uploadMobileCard.name}</h2>
-    <span><i class="fa-solid fa-xmark fa-lg cross-popup"></i></span>           
+    <div id="close-mobile-popup">
+      <ul>
+        <li><span><i class="fa-solid fa-xmark fa-xl cross-popup"></i></span></li>
+      </ul>
+    </div>        
   </div>
 
   <div class="mobile-pop-up-role-container">
@@ -325,6 +328,12 @@ if (window.innerWidth <= 768) {
 </div>  
 `;
       popUpContainer.appendChild(mobilePopUp);
+      
+      const closePopUpButton = document.getElementById('close-mobile-popup');
+      function closePopUp () {
+        popUpContainer.removeChild(mobilePopUp);
+      }
+      closePopUpButton.addEventListener('click', closePopUp);
     });
   });
 } else {
@@ -338,7 +347,11 @@ if (window.innerWidth <= 768) {
         <div class="subcontainer-desktop-popup">
           <div class="title-close-desktop-popup-container">
             <h2 class="desktop-popup-card-title">${uploadDesktopCard.name}</h2>
-            <span><i class="fa-solid fa-xmark fa-2xl cross-desktop-popup"></i></span>           
+            <div id="close-desktop-popup">
+              <ul>
+                <li><span><i class="fa-solid fa-xmark fa-2xl cross-desktop-popup"></i></span></li>
+              </ul>
+            </div>              
           </div>
 
           <div class="desktop-pop-up-role-container">
@@ -389,14 +402,12 @@ if (window.innerWidth <= 768) {
   `;
       desktopPopUpContainer.appendChild(desktopPopUp);
 
+      const closePopUpButtonDesktop = document.getElementById('close-desktop-popup');
       function closePopUp () {
-        if(window.innerWidth <= 768){
-          mobilePopUpContainer.removeChild(mobilePopUp);
-          }
-          else 
-          {mobilePopUpContainer.removeChild(desktopPopUp)};
+        desktopPopUpContainer.removeChild(desktopPopUp);
       }
-      closePopUpButton.addEventListener('click', closePopUpButton);
+      closePopUpButtonDesktop.addEventListener('click', closePopUp);
+
     });
   });
 };
