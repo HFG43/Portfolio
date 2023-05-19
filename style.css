@@ -332,9 +332,9 @@ html {
 }
 
 .form-input {
-  color: #172b4d;
+  color: red;
   font-size: 1.0625rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .form-input-width {
