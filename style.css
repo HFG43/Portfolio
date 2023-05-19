@@ -332,6 +332,12 @@ html {
 }
 
 .form-input {
+  color: #172b4d;
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
+.form-input:invalid {
   color: red;
   font-size: 1.0625rem;
   font-weight: 700;
