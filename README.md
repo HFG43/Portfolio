@@ -35,7 +35,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message.
+Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message. As part of the features, some of the sections are loaded dynamicaly using JavaScript. Also, as a way to include usable and robus we are including data side validation, prior to sending to the server.
 
 Here you will find a Loom video explaining main goal, what was new for me and which challenges I faced during the preparation of this project, enjoy!
 [Portfolio project video](https://www.loom.com/share/cccee21071244920a217c4f1d6450c49)
@@ -78,11 +78,15 @@ Here you will find a Loom video explaining main goal, what was new for me and wh
 <summary>Data</summary>
   <ul>
     <li><a href="https://formspree.io/html/">Formspree</a></li>
+    <li>Client side Data Validation using JavaScript</li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
+- **[Form input validation using JavaScript]**
+- **[Includes dynamic pop ups for each project and screen size]**
+- **[Cards HTML section is created whe the page loads]**
 - **[Includes a video explaining the project goal]**
 - **[Includes a Mobile Menu displayed dynamicaly using JS events]**
 - **[First approach to a responsive portfolio design]**
@@ -164,7 +168,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Dynamic Style Media Querys including Desktop Version]**
 - **[Animations & Transitions]**
 - **[Accesibility taken into consideration]**
 - **[Use of Bootstrap and CSS preprocessors ]**
