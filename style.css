@@ -337,7 +337,7 @@ html {
   font-weight: 400;
 }
 
-.form-input:invalid{
+.form-input:invalid {
   color: #172b4d;
   font-size: 1.5rem;
   font-weight: 700;
