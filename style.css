@@ -306,7 +306,6 @@ html {
   background-position-x: right;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
 }
 
 .contact-me-title {
@@ -331,6 +330,13 @@ html {
   color: #172b4d;
   font-size: 1.0625rem;
   font-weight: 400;
+}
+
+.form-input:invalid {
+  color: #172b4d;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  border: 1px solid red;
 }
 
 .form-input-width {
