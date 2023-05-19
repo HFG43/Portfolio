@@ -215,11 +215,11 @@ buttons.forEach((item) => {
 const inputMail = document.querySelector('#mail');
 const regex = /[A-Z]/g;
 
-function verifyMail () {
+function verifyMail() {
   if ((inputMail.value.match(regex)) != null) {
-    inputMail.setCustomValidity("You are not aloud to use capital letters in your email!");
-    } else {
-      inputMail.setCustomValidity("");
-    }
+    inputMail.setCustomValidity('We were not able to receive your comment, as you are not aloud to use capital letters in your email!');
+  } else {
+    inputMail.setCustomValidity('');
   }
-  inputMail.addEventListener('input', verifyMail);
+}
+inputMail.addEventListener('input', verifyMail);
