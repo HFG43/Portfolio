@@ -223,3 +223,21 @@ function verifyMail() {
   }
 }
 inputMail.addEventListener('input', verifyMail);
+
+// =========  SAVE DATA FORM ==========
+
+const form = document.getElementById('form');
+const inputMessage = document.getElementById('message');
+const inputName = document.querySelector('.formname');
+
+const dataStored = {inputName:"",inputMail:"".inputMessage:""};
+
+const formData = { name: '', email: '', message: '' };
+const storeData = JSON.stringify(formData);
+
+function storeDat() {
+  const storeData = JSON.stringify(sumbittedData);
+
+  localStorage.setItem('storeData', storeData);
+}
+submittedData.addEventListener('submit', storeData);
