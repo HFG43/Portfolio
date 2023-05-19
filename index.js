@@ -209,3 +209,17 @@ buttons.forEach((item) => {
     closePopUpButton.addEventListener('click', closePopUp);
   });
 });
+
+// ------------- CLIENT SIDE VALIDATION ---------------
+
+const inputMail = document.querySelector('#mail');
+const regex = /[A-Z]/g;
+
+function verifyMail() {
+  if ((inputMail.value.match(regex)) != null) {
+    inputMail.setCustomValidity('We were not able to receive your comment, as you are not aloud to use capital letters in your email!');
+  } else {
+    inputMail.setCustomValidity('');
+  }
+}
+inputMail.addEventListener('input', verifyMail);
