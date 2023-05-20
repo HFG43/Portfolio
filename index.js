@@ -226,18 +226,34 @@ inputMail.addEventListener('input', verifyMail);
 
 // =========  SAVE DATA FORM ==========
 
+const buttonForm = document.getElementById('submit');
 const form = document.getElementById('form');
 const inputMessage = document.getElementById('message');
-const inputName = document.querySelector('.formname');
+const inputName = document.getElementById('name');
+const dataStored = {
+  name: '',
+  mail: '',
+  message: '',
+};
 
-const dataStored = {inputName:"",inputMail:"".inputMessage:""};
+function storeData() {
+  localStorage.setItem('inputName', document.getElementById('name').value);
+  localStorage.setItem('inputMail', document.getElementById('mail').value);
+  localStorage.setItem('inputMessage', document.getElementById('message').value);
+  localStorage.setItem('dataStored', JSON.stringify('dataStored'));
+};
+inputName.addEventListener('keypress', storeData);
+inputMail.addEventListener('keypress', storeData);
+inputMessage.addEventListener('keypress', storeData);
 
-const formData = { name: '', email: '', message: '' };
-const storeData = JSON.stringify(formData);
+function getData() {
+  if(localStorage.length > 0){
+   localStorage.getItem('dataStored', JSON.parse('dataStored'));
+  }
+};
+window.addEventListener("load", getData);
 
-function storeDat() {
-  const storeData = JSON.stringify(sumbittedData);
-
-  localStorage.setItem('storeData', storeData);
+function cleanStorage () {
+  localStorage.clean();
 }
-submittedData.addEventListener('submit', storeData);
+buttonForm.addEventListener('submit', cleanStorage);
