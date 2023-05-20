@@ -236,24 +236,29 @@ const dataStored = {
   message: '',
 };
 
-function storeData() {
-  localStorage.setItem('inputName', document.getElementById('name').value);
-  localStorage.setItem('inputMail', document.getElementById('mail').value);
-  localStorage.setItem('inputMessage', document.getElementById('message').value);
-  localStorage.setItem('dataStored', JSON.stringify('dataStored'));
-};
-inputName.addEventListener('keypress', storeData);
-inputMail.addEventListener('keypress', storeData);
-inputMessage.addEventListener('keypress', storeData);
-
 function getData() {
   if(localStorage.length > 0){
-   localStorage.getItem('dataStored', JSON.parse('dataStored'));
-  }
+    const obteindData = localStorage.getItem('dataStored');
+    const returnedData = JSON.parse(obteindData);
+    dataStored.name = returnedData.name
+    dataStored.mail = returnedData.mail;
+    dataStored.message = returnedData.message;
+    inputMail.value = dataStored.mail;
+    inputName.value = dataStored.name;
+    inputMessage.value = dataStored.message;
+  };
 };
-window.addEventListener("load", getData);
+window.addEventListener('load', getData);
 
-function cleanStorage () {
-  localStorage.clean();
-}
-buttonForm.addEventListener('submit', cleanStorage);
+function storeData() {
+  localStorage.setItem('name', dataStored.name.value);
+  localStorage.setItem('mail', dataStored.mail.value);
+  localStorage.setItem('message', dataStored.message.value);
+  dataStored.name = inputName.value;
+  dataStored.mail = inputMail.value;
+  dataStored.message = inputMessage.value;
+  localStorage.setItem('dataStored', JSON.stringify(dataStored));
+};
+inputName.addEventListener('keydown', storeData);
+inputMail.addEventListener('keydown', storeData);
+inputMessage.addEventListener('keydown', storeData);
