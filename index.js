@@ -223,3 +223,40 @@ function verifyMail() {
   }
 }
 inputMail.addEventListener('input', verifyMail);
+
+// =========  SAVE DATA FORM ==========
+
+const inputMessage = document.getElementById('message');
+const inputName = document.getElementById('name');
+const dataStored = {
+  name: '',
+  mail: '',
+  message: '',
+};
+
+function getData() {
+  if (localStorage.length > 0) {
+    const obteindData = localStorage.getItem('dataStored');
+    const returnedData = JSON.parse(obteindData);
+    dataStored.name = returnedData.name;
+    dataStored.mail = returnedData.mail;
+    dataStored.message = returnedData.message;
+    inputMail.value = dataStored.mail;
+    inputName.value = dataStored.name;
+    inputMessage.value = dataStored.message;
+  }
+}
+window.addEventListener('load', getData);
+
+function storeData() {
+  localStorage.setItem('name', dataStored.name.value);
+  localStorage.setItem('mail', dataStored.mail.value);
+  localStorage.setItem('message', dataStored.message.value);
+  dataStored.name = inputName.value;
+  dataStored.mail = inputMail.value;
+  dataStored.message = inputMessage.value;
+  localStorage.setItem('dataStored', JSON.stringify(dataStored));
+}
+inputName.addEventListener('keydown', storeData);
+inputMail.addEventListener('keydown', storeData);
+inputMessage.addEventListener('keydown', storeData);

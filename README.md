@@ -35,11 +35,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-<<<<<<< validate-form
-Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message. As part of the features, some of the sections are loaded dynamicaly using JavaScript. Also, as a way to include usable and robus we are including data side validation, prior to sending to the server.
-=======
-Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message. As part of the features, some of the sections are loaded dynamicaly using JavaScript.
->>>>>>> main
+Is a first project to prepare the arena to showcase my future Portfolio as software developer. Here you will find a first deployment to present my portfolio works and professional skills, and you will also have the option of sending me a message. As part of the features, some of the sections are loaded dynamicaly using JavaScript. Also, as a way to include usable and robus we are including data side validation, prior to sending to the server. And whatsmore, to improving the UX expierence, the data added to the form will be saved localy to be reusable.
 
 Here you will find a Loom video explaining main goal, what was new for me and which challenges I faced during the preparation of this project, enjoy!
 [Portfolio project video](https://www.loom.com/share/cccee21071244920a217c4f1d6450c49)
@@ -88,10 +84,8 @@ Here you will find a Loom video explaining main goal, what was new for me and wh
 
 ### Key Features <a name="key-features"></a>
 
-<<<<<<< validate-form
+- **[Form data input will be saved in local storage]**
 - **[Form input validation using JavaScript]**
-=======
->>>>>>> main
 - **[Includes dynamic pop ups for each project and screen size]**
 - **[Cards HTML section is created whe the page loads]**
 - **[Includes a video explaining the project goal]**
