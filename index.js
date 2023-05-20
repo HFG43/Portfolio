@@ -226,8 +226,6 @@ inputMail.addEventListener('input', verifyMail);
 
 // =========  SAVE DATA FORM ==========
 
-const buttonForm = document.getElementById('submit');
-const form = document.getElementById('form');
 const inputMessage = document.getElementById('message');
 const inputName = document.getElementById('name');
 const dataStored = {
@@ -237,17 +235,17 @@ const dataStored = {
 };
 
 function getData() {
-  if(localStorage.length > 0){
+  if (localStorage.length > 0) {
     const obteindData = localStorage.getItem('dataStored');
     const returnedData = JSON.parse(obteindData);
-    dataStored.name = returnedData.name
+    dataStored.name = returnedData.name;
     dataStored.mail = returnedData.mail;
     dataStored.message = returnedData.message;
     inputMail.value = dataStored.mail;
     inputName.value = dataStored.name;
     inputMessage.value = dataStored.message;
-  };
-};
+  }
+}
 window.addEventListener('load', getData);
 
 function storeData() {
@@ -258,7 +256,7 @@ function storeData() {
   dataStored.mail = inputMail.value;
   dataStored.message = inputMessage.value;
   localStorage.setItem('dataStored', JSON.stringify(dataStored));
-};
+}
 inputName.addEventListener('keydown', storeData);
 inputMail.addEventListener('keydown', storeData);
 inputMessage.addEventListener('keydown', storeData);
