@@ -28,13 +28,13 @@ closeIcon.addEventListener('click', closeMobileMenu);
 const cardData = [
   {
     project: '0',
-    name: 'Tonic',
-    role: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 1_Orange.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    name: 'To Do List',
+    role: ['MICROVERSE', 'Full Stack Dev', '2023'],
+    description: 'This project is about a generation of a To Do List where the user can add, edit and remove items through a user-friendly interface.',
+    techskills: ['JavaScript', 'Webpack', 'CSS', 'Local Storage'],
+    image: 'src="Images_Background/ToDoList_Project.jpg"',
+    liveButton: 'https://hfg43.github.io/ToDoList/',
+    sourceButton: 'https://github.com/HFG43/ToDoList',
   },
   {
     project: '1',
