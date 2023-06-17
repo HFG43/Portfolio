@@ -43,8 +43,8 @@ const cardData = [
     description: 'Applied responsive design, the use of best practicies for HTML, CSS & JavaScript.',
     techskills: ['HTML', 'CSS','JavaScript', 'RWD'],
     image: 'src="Images_Background/Capstone1_Screenshot.png"',
-    liveButton: '#',
-    sourceButton: '#',
+    liveButton: 'https://hfg43.github.io/Capstone1/',
+    sourceButton: 'https://github.com/HFG43/Capstone1',
   },
   {
     project: '2',
