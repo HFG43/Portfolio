@@ -6,6 +6,10 @@
   transition: 0.4s;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
   font-size: 100%;
