@@ -308,6 +308,10 @@ html {
   height: 50px;
 }
 
+.logo_frame {
+  height: 35px;
+}
+
 /* CONTACT ME SECTION */
 
 #contact-me {
