@@ -304,6 +304,10 @@ html {
   margin-bottom: 23px;
 }
 
+.logo {
+  height: 50px;
+}
+
 /* CONTACT ME SECTION */
 
 #contact-me {
@@ -913,7 +917,7 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 18% 18% 18%;
+    grid-template-columns: 20% 20% 20% 20%;
   }
 
   .tech-languages li {
