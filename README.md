@@ -101,7 +101,7 @@ Here you will find a Loom video explaining main goal, what was new for me and wh
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[My portfolio live demo link](https://hfg43.github.io/Portfolio_Mobile_First/)
+[My portfolio live demo link](https://hfg43.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
