@@ -144,7 +144,7 @@ No test available yet.
 
 You can deploy this project using:
 
-[My portfolio deployment link](https://hfg43.github.io/Portfolio_Mobile_First/)
+[My portfolio deployment link](https://hfg43.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,17 +153,8 @@ You can deploy this project using:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/HFG43)
-- Twitter: [@twitterhandle](https://twitter.com/HFG_43)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hern%C3%A1n-g%C3%BCemes-a440591b/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/najibullahjafari)
-- Twitter: [@twitterhandle](https://twitter.com/Najib_Jafari_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/najibulla-jafari-609852263/)
+- GitHub: [@HFG43](https://github.com/HFG43)
+- LinkedIn: [hernanguemes](https://www.linkedin.com/in/hernanguemes)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,7 +184,7 @@ If you like this project, please Star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my coding partner Anwar Hussaini [@githubhandle](https://github.com/M-Anwar-Hussaini) for working together with the contact form section!
+I would like to thank my coding partner Anwar Hussaini [@githubhandle](https://github.com/M-Anwar-Hussaini) for working together with the contact form section!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
