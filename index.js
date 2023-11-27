@@ -28,13 +28,13 @@ closeIcon.addEventListener('click', closeMobileMenu);
 const cardData = [
   {
     project: '0',
-    name: 'To Do List',
-    role: ['MICROVERSE', 'Full Stack Dev', '2023'],
-    description: 'This project is about a generation of a To Do List where the user can add, edit and remove items through a user-friendly interface.',
-    techskills: ['JavaScript', 'Webpack', 'CSS', 'Local Storage'],
-    image: 'src="Images_Background/ToDoList_Screenshot.png"',
-    liveButton: 'https://hfg43.github.io/ToDoList/',
-    sourceButton: 'https://github.com/HFG43/ToDoList',
+    name: 'Gourmet Experience',
+    role: ['MICROVERSE', 'Full-stack Dev', '2023'],
+    description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
+    techskills: ['Ruby on Rails', 'API', 'React', 'Swagger'],
+    image: 'src="Images_Background/gourmet_experience_desktop.png""',
+    liveButton: 'https://gourmet-experiences-app.onrender.com/login',
+    sourceButton: 'https://github.com/HFG43/final_capstone_back_end',
   },
   {
     project: '1',
