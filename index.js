@@ -29,7 +29,7 @@ const cardData = [
   {
     project: '0',
     name: 'Gourmet Experience',
-    role: ['MICROVERSE', 'Full-stack Dev', '2023'],
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
     techskills: ['Ruby on Rails', 'API', 'React', 'Swagger'],
     image: 'src="Images_Background/gourmet_experience_desktop.png""',
@@ -39,7 +39,7 @@ const cardData = [
   {
     project: '1',
     name: 'Forum Invitation',
-    role: ['MICROVERSE', 'Full Stack Dev', '2023'],
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Applied responsive design, the use of best practicies for HTML, CSS & JavaScript.',
     techskills: ['HTML', 'CSS','JavaScript', 'RWD'],
     image: 'src="Images_Background/Capstone1_Screenshot.png"',
@@ -48,23 +48,23 @@ const cardData = [
   },
   {
     project: '2',
-    name: 'Tonic',
-    role: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    name: 'S&P 500 Market',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'A Single Page App (SPA) with mobile design, that will delivery price, and other key indicators from Companies that operate in the S&P 500 Market.',
+    techskills: ['React', 'Redux', 'API Rest', 'JavaScript'],
     image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    liveButton: 'https://sp500-stockmarket.onrender.com/',
+    sourceButton: 'https://github.com/HFG43/metrics_webapp',
   },
   {
     project: '3',
-    name: 'Multi-Post Stories',
-    role: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
+    name: 'TV-themes',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'The app displays TV Shows and movie categories libraries upon search',
+    techskills: ['HTML', 'CSS','JavaScript', 'API Rest'],
     image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    liveButton: 'https://hfg43.github.io/JS_Capstone/',
+    sourceButton: 'https://github.com/HFG43/JS_Capstone',
   },
 ];
 
@@ -103,7 +103,7 @@ function loadCard(item) {
             <ul class="project-language-list">
               <li>${cardData[item].techskills[0]}</li>
               <li>${cardData[item].techskills[1]}</li>
-              <li class="big-size">${cardData[item].techskills[2]}</li>
+              <li>${cardData[item].techskills[2]}</li>
               <li>${cardData[item].techskills[3]}</li>
             </ul>
             <div class="button-container">

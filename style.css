@@ -193,11 +193,13 @@ html {
 
 .project-language-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
 .project-language-list li {
   margin-right: 8px;
+  margin-bottom: 6px;
   background-color: #ebebff;
   color: #6070ff;
   font-weight: 500;
