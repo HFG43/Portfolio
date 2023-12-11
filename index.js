@@ -31,7 +31,7 @@ const cardData = [
     name: 'Gourmet Experience',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
-    techskills: ['Ruby on Rails', 'API', 'React', 'Swagger'],
+    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'MVC pattern', 'React', 'Redux' ],
     image: 'src="Images_Background/gourmet_experience_desktop.png""',
     liveButton: 'https://gourmet-experiences-app.onrender.com/login',
     sourceButton: 'https://github.com/HFG43/final_capstone_back_end',
@@ -101,10 +101,7 @@ function loadCard(item) {
             ${cardData[item].description}
             </p>
             <ul class="project-language-list">
-              <li>${cardData[item].techskills[0]}</li>
-              <li>${cardData[item].techskills[1]}</li>
-              <li>${cardData[item].techskills[2]}</li>
-              <li>${cardData[item].techskills[3]}</li>
+              ${cardData[item].techskills.map(skill => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
             </ul>
             <div class="button-container">
               <button type="button" id="${item}" class="see-project-button get-button mobile-display">See project</button>
