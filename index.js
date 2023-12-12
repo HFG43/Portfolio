@@ -179,7 +179,7 @@ buttons.forEach((item) => {
       </div>
 
       <div class="mobile-popup-button-container">
-        <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.liveButton}">
+        <button class="see-project-button-pop-up z-index-but" type="button" href="${uploadMobileCard.liveButton}">
           See live
           <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
         </button>

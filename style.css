@@ -292,6 +292,20 @@ html {
   background-color: #f7f7f9;
 }
 
+.tech-prof-skills {
+  color: #253858;
+  font-size: 0.9375rem;
+  margin-left: 3%;
+  flex-direction: column;
+}
+
+.tech-prof-skills li {
+  background-color: #f7f7f9;
+  margin-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .arrow-skills {
   justify-content: space-between;
   margin-right: 6.5%;
@@ -309,6 +323,10 @@ html {
 .bottom-line-language {
   border-bottom: 3px solid #dfe1e6;
   margin-bottom: 23px;
+}
+
+.proffesional-skills {
+  margin-bottom: 55px;
 }
 
 .logo {
@@ -912,6 +930,7 @@ textarea:-ms-input-placeholder {
 
   .margin-about-me-skills {
     margin-left: 18px;
+    z-index: -1;
   }
 
   .about-myself-skills {
@@ -928,9 +947,14 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25%;
   }
 
+  .tech-prof-skills {
+    display: grid;
+    grid-template-columns: 75%;
+  }
+  
   .tech-languages li {
     display: flex;
     flex-direction: column;
