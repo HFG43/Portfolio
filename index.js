@@ -168,10 +168,7 @@ buttons.forEach((item) => {
   
     <div class="desktop-popup-buttons-container">
       <ul class="project-language-list mobile-popup-tech-margin desktop-popup-tech-margin">
-        <li>${uploadMobileCard.techskills[0]}</li>
-        <li>${uploadMobileCard.techskills[1]}</li>
-        <li class="big-size">${uploadMobileCard.techskills[2]}</li>
-        <li>${uploadMobileCard.techskills[3]}</li>
+        ${uploadMobileCard.techskills.map(skill => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
       </ul>
 
       <div class="line-separation">
