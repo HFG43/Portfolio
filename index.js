@@ -1,6 +1,7 @@
 // ------------- MOBILE MENU ---------------
 
 const menuContainer = document.querySelector('#mobile-menu-hidden');
+const introSection = document.querySelector('#introduction-section');
 const hamburguer = document.getElementById('hamburguer');
 const closeIcon = document.getElementById('closing-Icon');
 const menuList = document.querySelector('.list-menu-mobile');
@@ -11,12 +12,14 @@ const menuListAbout = document.querySelector('.menu-mobile-about');
 function displayMobileMenu() {
   menuContainer.classList.remove('hidden');
   menuList.classList.remove('hidden');
+  introSection.classList.add('zeta-index');
 }
 hamburguer.addEventListener('click', displayMobileMenu);
 
 function closeMobileMenu() {
   menuContainer.classList.add('hidden');
   menuList.classList.add('hidden');
+  introSection.classList.remove('zeta-index');
 }
 menuListPortfolio.addEventListener('click', closeMobileMenu);
 menuListContact.addEventListener('click', closeMobileMenu);
@@ -31,20 +34,20 @@ const cardData = [
     name: 'Gourmet Experience',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
-    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'MVC pattern', 'React', 'Redux' ],
+    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'ERD', 'MVC pattern', 'React', 'Redux' ],
     image: 'src="Images_Background/gourmet_experience_desktop.png""',
     liveButton: 'https://gourmet-experiences-app.onrender.com/login',
     sourceButton: 'https://github.com/HFG43/final_capstone_back_end',
   },
   {
     project: '1',
-    name: 'Forum Invitation',
+    name: 'Smart Spend',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
-    description: 'Applied responsive design, the use of best practicies for HTML, CSS & JavaScript.',
-    techskills: ['HTML', 'CSS','JavaScript', 'RWD'],
+    description: 'App where you are able to manage your spending, by creating spend categories, add transactions and see how much money you spend on each.',
+    techskills: ['Ruby on Rails', 'Devise-gem','MVC pattern', 'PostgreSQL'],
     image: 'src="Images_Background/Capstone1_Screenshot.png"',
-    liveButton: 'https://hfg43.github.io/Capstone1/',
-    sourceButton: 'https://github.com/HFG43/Capstone1',
+    liveButton: 'https://budget-app-eb8d.onrender.com/',
+    sourceButton: 'https://github.com/HFG43/budget-app',
   },
   {
     project: '2',

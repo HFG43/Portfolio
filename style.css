@@ -63,7 +63,10 @@ html {
   position: relative;
   height: 82vh;
   margin-bottom: 20%;
-  /* z-index: -1; */
+}
+
+.zeta-index {
+  z-index: -1;
 }
 
 .principal-margin-intro {
