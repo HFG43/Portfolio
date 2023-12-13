@@ -83,6 +83,11 @@ html {
   margin-bottom: 1.67%;
 }
 
+.question {
+  margin-top: 2%;
+  font-size: 1.8rem;
+}
+
 .introduction-paragraph {
   color: #344563;
   font-weight: 400;
@@ -954,7 +959,7 @@ textarea:-ms-input-placeholder {
     display: grid;
     grid-template-columns: 75%;
   }
-  
+
   .tech-languages li {
     display: flex;
     flex-direction: column;
