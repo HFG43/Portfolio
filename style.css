@@ -319,6 +319,7 @@ html {
 .arrow-look {
   color: #acb7c3;
   margin-right: 41.5px;
+  z-index: -1; /*AGREGADO */
 }
 
 .language-name {
@@ -354,7 +355,7 @@ html {
   background-position-y: 21px;
   background-position-x: right;
   background-repeat: no-repeat;
-  position: relative;
+  /* position: relative; AGREGADO */
 }
 
 .contact-me-title {
