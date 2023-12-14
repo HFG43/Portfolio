@@ -112,6 +112,11 @@ html {
   flex-wrap: wrap;
 }
 
+.mail-logo {
+  height: 20px;
+  width: auto;
+}
+
 .social-icons-margin-bottom-presentation {
   margin-bottom: 18.95%;
 }
