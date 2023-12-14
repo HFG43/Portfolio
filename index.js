@@ -65,7 +65,7 @@ const cardData = [
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'The app displays TV Shows and movie categories libraries upon search',
     techskills: ['HTML', 'CSS','JavaScript', 'API Rest'],
-    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
+    image: 'src="Images_Background/JS_Capstone_desktop.png"',
     liveButton: 'https://hfg43.github.io/JS_Capstone/',
     sourceButton: 'https://github.com/HFG43/JS_Capstone',
   },
