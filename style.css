@@ -35,10 +35,7 @@ html {
 }
 
 .my-logo {
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: #6070ff;
-  text-decoration: none;
+  height: 50px;
   flex-shrink: 2;
 }
 
@@ -754,6 +751,10 @@ textarea:-ms-input-placeholder {
     text-decoration: none;
   }
 
+  .my-logo {
+    height: 80px;    
+  }
+  
   /* INTRODUCTION SECTION DESKTOP */
 
   #introduction-section {
