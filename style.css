@@ -35,13 +35,15 @@ html {
 }
 
 .my-logo {
-  /* font-weight: 700;
-  font-size: 1.125rem; */
-  font-size: 1.4rem;
-  font-weight: 900;
-  color: #f85a11;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #6070ff;
   text-decoration: none;
   flex-shrink: 2;
+}
+
+#hamburguer{
+  margin-left: 70%;
 }
 
 .hamburguer-menu {
@@ -319,7 +321,7 @@ html {
 .arrow-look {
   color: #acb7c3;
   margin-right: 41.5px;
-  z-index: -1; /*AGREGADO */
+  z-index: -1;
 }
 
 .language-name {
@@ -355,7 +357,6 @@ html {
   background-position-y: 21px;
   background-position-x: right;
   background-repeat: no-repeat;
-  /* position: relative; AGREGADO */
 }
 
 .contact-me-title {

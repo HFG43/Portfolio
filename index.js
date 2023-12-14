@@ -9,12 +9,12 @@ const menuListPortfolio = document.querySelector('.menu-mobile-portfolio');
 const menuListContact = document.querySelector('.menu-mobile-contact');
 const menuListAbout = document.querySelector('.menu-mobile-about');
 
-// const displayMobileMenu = () => {
-//   menuContainer.classList.remove('hidden');
-//   menuList.classList.remove('hidden');
-//   introSection.classList.add('zeta-index');
-// };
-// hamburguer.addEventListener('click', displayMobileMenu);
+const displayMobileMenu = () => {
+  menuContainer.classList.remove('hidden');
+  menuList.classList.remove('hidden');
+  introSection.classList.add('zeta-index');
+};
+hamburguer.addEventListener('click', displayMobileMenu);
 
 const closeMobileMenu = () => {
   menuContainer.classList.add('hidden');
