@@ -176,12 +176,12 @@ buttons.forEach((item) => {
       </div>
 
       <div class="mobile-popup-button-container">
-        <button class="see-project-button-pop-up z-index-but" type="button" onclick="window.open('${uploadMobileCard.liveButton}', '_blank')">
+        <button class="see-project-button-pop-up z-index-but" type="button" onclick="window.open('${uploadMobileCard.liveButton}', '_blank')" rel="noopener">
           See live
           <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
         </button>
      
-        <button class="see-project-button-pop-up" type="button" onclick="window.open('${uploadMobileCard.sourceButton}', '_blank')">
+        <button class="see-project-button-pop-up" type="button" onclick="window.open('${uploadMobileCard.sourceButton}', '_blank')" rel="noopener">
           See source 
           <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
         </button>
