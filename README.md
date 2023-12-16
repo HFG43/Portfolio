@@ -153,8 +153,8 @@ You can deploy this project using:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/HFG43)
-- LinkedIn: [LinkedIn](linkedin.com/in/hernanguemes)
+- GitHub: [@HFG43](https://github.com/HFG43)
+- LinkedIn: [hernanguemes](https://www.linkedin.com/in/hernanguemes)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,7 +184,7 @@ If you like this project, please Star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my coding partner Anwar Hussaini [@githubhandle](https://github.com/M-Anwar-Hussaini) for working together with the contact form section!
+I would like to thank my coding partner Anwar Hussaini [@githubhandle](https://github.com/M-Anwar-Hussaini) for working together with the contact form section!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
