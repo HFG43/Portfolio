@@ -207,6 +207,27 @@ buttons.forEach((item) => {
   });
 });
 
+
+// ------------- TECH SKILLS ---------------
+
+const techSkills = document.querySelector('.tech-prof-skills');
+const arrowDown = document.getElementById('tech-skills-arrow-down');
+const arrowSide = document.getElementById('tech-skills-arrow-side');
+
+const displayProfessionalSkills = () => {
+  arrowDown.classList.add('hidden');
+  techSkills.classList.remove('hidden');
+  arrowSide.classList.remove('hidden');
+}
+arrowDown.addEventListener('click', displayProfessionalSkills)
+
+const hideProffesionalSkills = () => {
+  arrowDown.classList.remove('hidden');
+  techSkills.classList.add('hidden');
+  arrowSide.classList.add('hidden');
+}
+arrowSide.addEventListener('click', hideProffesionalSkills)
+
 // ------------- CLIENT SIDE VALIDATION ---------------
 
 const inputMail = document.querySelector('#mail');
