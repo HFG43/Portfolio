@@ -339,6 +339,10 @@ html {
   margin-bottom: 55px;
 }
 
+.hidden-skills {
+  display: none;
+}
+
 .logo {
   height: 50px;
 }
@@ -786,6 +790,7 @@ textarea:-ms-input-placeholder {
   }
 
   /* CARDS DISTRIBUTION */
+
   .dynamic-card-container-desktop {
     margin: 0 10% 0 10%;
   }
@@ -968,6 +973,10 @@ textarea:-ms-input-placeholder {
     grid-template-columns: 75%;
   }
 
+  .hidden-skills {
+    display: none;
+  }
+  
   .tech-languages li {
     display: flex;
     flex-direction: column;
@@ -994,6 +1003,11 @@ textarea:-ms-input-placeholder {
     margin-bottom: 0;
   }
 
+  #tech-skills-arrow-down,
+  #tech-skills-arrow-side {
+    margin-right: 5%;
+  }
+  
   /* CONTACT ME DESKTOP SECTION */
 
   #contact-me {

@@ -215,16 +215,16 @@ const arrowDown = document.getElementById('tech-skills-arrow-down');
 const arrowSide = document.getElementById('tech-skills-arrow-side');
 
 const displayProfessionalSkills = () => {
-  arrowDown.classList.add('hidden');
-  techSkills.classList.remove('hidden');
-  arrowSide.classList.remove('hidden');
+  arrowDown.classList.add('hidden-skills');
+  techSkills.classList.remove('hidden-skills');
+  arrowSide.classList.remove('hidden-skills');
 }
 arrowDown.addEventListener('click', displayProfessionalSkills)
 
 const hideProffesionalSkills = () => {
-  arrowDown.classList.remove('hidden');
-  techSkills.classList.add('hidden');
-  arrowSide.classList.add('hidden');
+  arrowDown.classList.remove('hidden-skills');
+  techSkills.classList.add('hidden-skills');
+  arrowSide.classList.add('hidden-skills');
 }
 arrowSide.addEventListener('click', hideProffesionalSkills)
 
