@@ -994,20 +994,17 @@ textarea:-ms-input-placeholder {
     padding-bottom: 20px;
   }
 
-  .arrow-look {
-    margin-right: 5%;
-  }
-
   .bottom-line-language {
     padding-bottom: 23px;
     margin-bottom: 0;
   }
 
   #tech-skills-arrow-down,
-  #tech-skills-arrow-side {
+  #tech-skills-arrow-side,
+  .arrow-look {
     margin-right: 5%;
   }
-  
+
   /* CONTACT ME DESKTOP SECTION */
 
   #contact-me {
