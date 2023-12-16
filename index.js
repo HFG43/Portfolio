@@ -34,7 +34,7 @@ const cardData = [
     name: 'Gourmet Experience',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
-    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'ERD', 'MVC pattern', 'React', 'Redux' ],
+    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'ERD', 'MVC pattern', 'React', 'Redux'],
     image: 'src="Images_Background/Gourmet-experience.png""',
     liveButton: 'https://gourmet-experiences-app.onrender.com/login',
     sourceButton: 'https://github.com/HFG43/final_capstone_back_end',
@@ -44,8 +44,8 @@ const cardData = [
     name: 'Smart Spend',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'App where you are able to manage your spending, by creating spend categories, add transactions and see how much money you spend on each.',
-    techskills: ['Ruby on Rails', 'Devise-gem','MVC pattern', 'PostgreSQL'],
-    image: 'src="Images_Background/smart_spend.png"',
+    techskills: ['Ruby on Rails', 'Devise-gem', 'MVC pattern', 'PostgreSQL'],
+    image: 'src="Images_Background/Smart-spend-ipad.png"',
     liveButton: 'https://budget-app-eb8d.onrender.com/',
     sourceButton: 'https://github.com/HFG43/budget-app',
   },
@@ -64,7 +64,7 @@ const cardData = [
     name: 'TV-themes',
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'The app displays TV Shows and movie categories libraries upon search',
-    techskills: ['HTML', 'CSS','JavaScript', 'API Rest'],
+    techskills: ['HTML', 'CSS', 'JavaScript', 'API Rest'],
     image: 'src="Images_Background/JS_Capstone_desktop.png"',
     liveButton: 'https://hfg43.github.io/JS_Capstone/',
     sourceButton: 'https://github.com/HFG43/JS_Capstone',
@@ -104,7 +104,7 @@ function loadCard(item) {
             ${cardData[item].description}
             </p>
             <ul class="project-language-list">
-              ${cardData[item].techskills.map(skill => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
+              ${cardData[item].techskills.map((skill) => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
             </ul>
             <div class="button-container">
               <button type="button" id="${item}" class="see-project-button get-button mobile-display">See project</button>
@@ -168,7 +168,7 @@ buttons.forEach((item) => {
   
     <div class="desktop-popup-buttons-container">
       <ul class="project-language-list mobile-popup-tech-margin desktop-popup-tech-margin">
-        ${uploadMobileCard.techskills.map(skill => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
+        ${uploadMobileCard.techskills.map((skill) => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
       </ul>
 
       <div class="line-separation">
@@ -207,7 +207,6 @@ buttons.forEach((item) => {
   });
 });
 
-
 // ------------- TECH SKILLS ---------------
 
 const techSkills = document.querySelector('.tech-prof-skills');
@@ -218,15 +217,15 @@ const displayProfessionalSkills = () => {
   arrowDown.classList.add('hidden-skills');
   techSkills.classList.remove('hidden-skills');
   arrowSide.classList.remove('hidden-skills');
-}
-arrowDown.addEventListener('click', displayProfessionalSkills)
+};
+arrowDown.addEventListener('click', displayProfessionalSkills);
 
 const hideProffesionalSkills = () => {
   arrowDown.classList.remove('hidden-skills');
   techSkills.classList.add('hidden-skills');
   arrowSide.classList.add('hidden-skills');
-}
-arrowSide.addEventListener('click', hideProffesionalSkills)
+};
+arrowSide.addEventListener('click', hideProffesionalSkills);
 
 // ------------- CLIENT SIDE VALIDATION ---------------
 

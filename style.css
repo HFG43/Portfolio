@@ -39,7 +39,7 @@ html {
   flex-shrink: 2;
 }
 
-#hamburguer{
+#hamburguer {
   margin-left: 70%;
 }
 
@@ -513,6 +513,7 @@ textarea:-ms-input-placeholder {
   height: 100%;
   width: 100vw;
   position: fixed;
+  z-index: 2;
 }
 
 .subcontainer-mobile-popup {
@@ -756,9 +757,9 @@ textarea:-ms-input-placeholder {
   }
 
   .my-logo {
-    height: 80px;    
+    height: 80px;
   }
-  
+
   /* INTRODUCTION SECTION DESKTOP */
 
   #introduction-section {
@@ -976,7 +977,7 @@ textarea:-ms-input-placeholder {
   .hidden-skills {
     display: none;
   }
-  
+
   .tech-languages li {
     display: flex;
     flex-direction: column;
