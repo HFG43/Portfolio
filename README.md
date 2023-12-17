@@ -118,7 +118,7 @@ Open on Visual Studio Code or any other code reader, and use an app as Live Serv
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/HFG43/Portfolio_Mobile_First
+git clone https://github.com/HFG43/Portfolio
 
 ### Install
 

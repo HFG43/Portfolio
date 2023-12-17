@@ -1,6 +1,7 @@
 // ------------- MOBILE MENU ---------------
 
 const menuContainer = document.querySelector('#mobile-menu-hidden');
+const introSection = document.querySelector('#introduction-section');
 const hamburguer = document.getElementById('hamburguer');
 const closeIcon = document.getElementById('closing-Icon');
 const menuList = document.querySelector('.list-menu-mobile');
@@ -8,16 +9,18 @@ const menuListPortfolio = document.querySelector('.menu-mobile-portfolio');
 const menuListContact = document.querySelector('.menu-mobile-contact');
 const menuListAbout = document.querySelector('.menu-mobile-about');
 
-function displayMobileMenu() {
+const displayMobileMenu = () => {
   menuContainer.classList.remove('hidden');
   menuList.classList.remove('hidden');
-}
+  introSection.classList.add('zeta-index');
+};
 hamburguer.addEventListener('click', displayMobileMenu);
 
-function closeMobileMenu() {
+const closeMobileMenu = () => {
   menuContainer.classList.add('hidden');
   menuList.classList.add('hidden');
-}
+  introSection.classList.remove('zeta-index');
+};
 menuListPortfolio.addEventListener('click', closeMobileMenu);
 menuListContact.addEventListener('click', closeMobileMenu);
 menuListAbout.addEventListener('click', closeMobileMenu);
@@ -28,43 +31,43 @@ closeIcon.addEventListener('click', closeMobileMenu);
 const cardData = [
   {
     project: '0',
-    name: 'To Do List',
-    role: ['MICROVERSE', 'Full Stack Dev', '2023'],
-    description: 'This project is about a generation of a To Do List where the user can add, edit and remove items through a user-friendly interface.',
-    techskills: ['JavaScript', 'Webpack', 'CSS', 'Local Storage'],
-    image: 'src="Images_Background/ToDoList_Screenshot.png"',
-    liveButton: 'https://hfg43.github.io/ToDoList/',
-    sourceButton: 'https://github.com/HFG43/ToDoList',
+    name: 'Gourmet Experience',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'Web app that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
+    techskills: ['Ruby on Rails', 'API', 'Swagger', 'PostgreSQL', 'ERD', 'MVC pattern', 'React', 'Redux'],
+    image: 'src="Images_Background/Gourmet-experience.png""',
+    liveButton: 'https://gourmet-experiences-app.onrender.com/login',
+    sourceButton: 'https://github.com/HFG43/final_capstone_back_end',
   },
   {
     project: '1',
-    name: 'Forum Invitation',
-    role: ['MICROVERSE', 'Full Stack Dev', '2023'],
-    description: 'Applied responsive design, the use of best practicies for HTML, CSS & JavaScript.',
-    techskills: ['HTML', 'CSS','JavaScript', 'RWD'],
-    image: 'src="Images_Background/Capstone1_Screenshot.png"',
-    liveButton: 'https://hfg43.github.io/Capstone1/',
-    sourceButton: 'https://github.com/HFG43/Capstone1',
+    name: 'Smart Spend',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'App where you are able to manage your spending, by creating spend categories, add transactions and see how much money you spend on each.',
+    techskills: ['Ruby on Rails', 'Devise-gem', 'MVC pattern', 'PostgreSQL'],
+    image: 'src="Images_Background/Smart-spend-ipad.png"',
+    liveButton: 'https://budget-app-eb8d.onrender.com/',
+    sourceButton: 'https://github.com/HFG43/budget-app',
   },
   {
     project: '2',
-    name: 'Tonic',
-    role: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 3_Ballerina.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    name: 'S&P 500 Market',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'A Single Page App (SPA) with mobile design, that will delivery price, and other key indicators from Companies that operate in the S&P 500 Market.',
+    techskills: ['React', 'Redux', 'API Rest', 'JavaScript'],
+    image: 'src="Images_Background/Market-mix.png"',
+    liveButton: 'https://sp500-stockmarket.onrender.com/',
+    sourceButton: 'https://github.com/HFG43/metrics_webapp',
   },
   {
     project: '3',
-    name: 'Multi-Post Stories',
-    role: ['CANOPY', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    techskills: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
-    image: 'src="Images_Background/Snapshoot Portfolio 4_Art Printing.svg"',
-    liveButton: '#',
-    sourceButton: '#',
+    name: 'TV-themes',
+    role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
+    description: 'The app displays TV Shows and movie categories libraries upon search',
+    techskills: ['HTML', 'CSS', 'JavaScript', 'API Rest'],
+    image: 'src="Images_Background/JS_Capstone_desktop.png"',
+    liveButton: 'https://hfg43.github.io/JS_Capstone/',
+    sourceButton: 'https://github.com/HFG43/JS_Capstone',
   },
 ];
 
@@ -101,10 +104,7 @@ function loadCard(item) {
             ${cardData[item].description}
             </p>
             <ul class="project-language-list">
-              <li>${cardData[item].techskills[0]}</li>
-              <li>${cardData[item].techskills[1]}</li>
-              <li class="big-size">${cardData[item].techskills[2]}</li>
-              <li>${cardData[item].techskills[3]}</li>
+              ${cardData[item].techskills.map((skill) => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
             </ul>
             <div class="button-container">
               <button type="button" id="${item}" class="see-project-button get-button mobile-display">See project</button>
@@ -168,10 +168,7 @@ buttons.forEach((item) => {
   
     <div class="desktop-popup-buttons-container">
       <ul class="project-language-list mobile-popup-tech-margin desktop-popup-tech-margin">
-        <li>${uploadMobileCard.techskills[0]}</li>
-        <li>${uploadMobileCard.techskills[1]}</li>
-        <li class="big-size">${uploadMobileCard.techskills[2]}</li>
-        <li>${uploadMobileCard.techskills[3]}</li>
+        ${uploadMobileCard.techskills.map((skill) => `<li>${skill !== undefined ? skill : ''}</li>`).join('')}
       </ul>
 
       <div class="line-separation">
@@ -179,12 +176,12 @@ buttons.forEach((item) => {
       </div>
 
       <div class="mobile-popup-button-container">
-        <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.liveButton}">
+        <button class="see-project-button-pop-up z-index-but" type="button" onclick="window.open('${uploadMobileCard.liveButton}', '_blank')" rel="noopener">
           See live
           <img class="see-live-icon" src="./Images_Background/see Live Icon.png"/>
         </button>
      
-        <button class="see-project-button-pop-up" type="button" href="${uploadMobileCard.sourceButton}">
+        <button class="see-project-button-pop-up" type="button" onclick="window.open('${uploadMobileCard.sourceButton}', '_blank')" rel="noopener">
           See source 
           <img class="github-see-source-icon" src="./Images_Background/See Source Icon -GitHub.png"/>
         </button>
@@ -209,6 +206,26 @@ buttons.forEach((item) => {
     closePopUpButton.addEventListener('click', closePopUp);
   });
 });
+
+// ------------- TECH SKILLS ---------------
+
+const techSkills = document.querySelector('.tech-prof-skills');
+const arrowDown = document.getElementById('tech-skills-arrow-down');
+const arrowSide = document.getElementById('tech-skills-arrow-side');
+
+const displayProfessionalSkills = () => {
+  arrowDown.classList.add('hidden-skills');
+  techSkills.classList.remove('hidden-skills');
+  arrowSide.classList.remove('hidden-skills');
+};
+arrowDown.addEventListener('click', displayProfessionalSkills);
+
+const hideProffesionalSkills = () => {
+  arrowDown.classList.remove('hidden-skills');
+  techSkills.classList.add('hidden-skills');
+  arrowSide.classList.add('hidden-skills');
+};
+arrowSide.addEventListener('click', hideProffesionalSkills);
 
 // ------------- CLIENT SIDE VALIDATION ---------------
 

@@ -35,11 +35,12 @@ html {
 }
 
 .my-logo {
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: #6070ff;
-  text-decoration: none;
+  height: 50px;
   flex-shrink: 2;
+}
+
+#hamburguer {
+  margin-left: 70%;
 }
 
 .hamburguer-menu {
@@ -61,6 +62,9 @@ html {
   position: relative;
   height: 82vh;
   margin-bottom: 20%;
+}
+
+.zeta-index {
   z-index: -1;
 }
 
@@ -76,6 +80,11 @@ html {
   margin-top: 20%;
   flex-shrink: 2;
   margin-bottom: 1.67%;
+}
+
+.question {
+  margin-top: 2%;
+  font-size: 1.8rem;
 }
 
 .introduction-paragraph {
@@ -98,6 +107,11 @@ html {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+}
+
+.mail-logo {
+  height: 20px;
+  width: auto;
 }
 
 .social-icons-margin-bottom-presentation {
@@ -191,11 +205,13 @@ html {
 
 .project-language-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 
 .project-language-list li {
   margin-right: 8px;
+  margin-bottom: 6px;
   background-color: #ebebff;
   color: #6070ff;
   font-weight: 500;
@@ -285,6 +301,20 @@ html {
   background-color: #f7f7f9;
 }
 
+.tech-prof-skills {
+  color: #253858;
+  font-size: 0.9375rem;
+  margin-left: 3%;
+  flex-direction: column;
+}
+
+.tech-prof-skills li {
+  background-color: #f7f7f9;
+  margin-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .arrow-skills {
   justify-content: space-between;
   margin-right: 6.5%;
@@ -293,6 +323,7 @@ html {
 .arrow-look {
   color: #acb7c3;
   margin-right: 41.5px;
+  z-index: -1;
 }
 
 .language-name {
@@ -302,6 +333,22 @@ html {
 .bottom-line-language {
   border-bottom: 3px solid #dfe1e6;
   margin-bottom: 23px;
+}
+
+.proffesional-skills {
+  margin-bottom: 55px;
+}
+
+.hidden-skills {
+  display: none;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo_frame {
+  height: 35px;
 }
 
 /* CONTACT ME SECTION */
@@ -316,7 +363,6 @@ html {
   background-position-y: 21px;
   background-position-x: right;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .contact-me-title {
@@ -467,6 +513,7 @@ textarea:-ms-input-placeholder {
   height: 100%;
   width: 100vw;
   position: fixed;
+  z-index: 2;
 }
 
 .subcontainer-mobile-popup {
@@ -709,6 +756,10 @@ textarea:-ms-input-placeholder {
     text-decoration: none;
   }
 
+  .my-logo {
+    height: 80px;
+  }
+
   /* INTRODUCTION SECTION DESKTOP */
 
   #introduction-section {
@@ -740,6 +791,7 @@ textarea:-ms-input-placeholder {
   }
 
   /* CARDS DISTRIBUTION */
+
   .dynamic-card-container-desktop {
     margin: 0 10% 0 10%;
   }
@@ -897,6 +949,7 @@ textarea:-ms-input-placeholder {
 
   .margin-about-me-skills {
     margin-left: 18px;
+    z-index: -1;
   }
 
   .about-myself-skills {
@@ -913,7 +966,16 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 18% 18% 18%;
+    grid-template-columns: 25% 25% 25%;
+  }
+
+  .tech-prof-skills {
+    display: grid;
+    grid-template-columns: 75%;
+  }
+
+  .hidden-skills {
+    display: none;
   }
 
   .tech-languages li {
@@ -933,13 +995,15 @@ textarea:-ms-input-placeholder {
     padding-bottom: 20px;
   }
 
-  .arrow-look {
-    margin-right: 5%;
-  }
-
   .bottom-line-language {
     padding-bottom: 23px;
     margin-bottom: 0;
+  }
+
+  #tech-skills-arrow-down,
+  #tech-skills-arrow-side,
+  .arrow-look {
+    margin-right: 5%;
   }
 
   /* CONTACT ME DESKTOP SECTION */
