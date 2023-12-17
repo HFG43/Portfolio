@@ -46,7 +46,7 @@ html {
 
 .my-logo {
   height: 50px;
-  flex-shrink: 2; 
+  flex-shrink: 2;
 }
 
 #hamburguer {
@@ -766,13 +766,13 @@ textarea:-ms-input-placeholder {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    align-items: baseline;  
+    align-items: baseline;
     padding: 0 3%;
   }
 
   .navbar-menu-list {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
   }
 
   .navbar-menu-list li a {
