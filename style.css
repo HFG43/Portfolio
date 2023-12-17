@@ -22,21 +22,31 @@ html {
 
 /* NAVIGATION BAR */
 
-.navbar {
-  margin: 0 6.5% 0 6.5%;
-  padding-top: 8px;
+.header {
+  position: sticky;
+  top: 5px;
+  z-index: 999;
 }
 
-.navbar ul {
+.navbar {
+  margin: 0 5.5% 0 5.5%;
+  padding-top: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(64, 83, 252, 0.24);
+}
+
+.navbar-container {
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0 3%;
 }
 
 .my-logo {
   height: 50px;
-  flex-shrink: 2;
+  flex-shrink: 2; 
 }
 
 #hamburguer {
@@ -744,7 +754,25 @@ textarea:-ms-input-placeholder {
   /* NAVIGATION BAR DESKTOP */
 
   .navbar {
-    margin: 25px 10% 73px 10%;
+    margin: 0 5.5% 0 5.5%;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .navbar-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: baseline;  
+    padding: 0 3%;
+  }
+
+  .navbar-menu-list {
+    display: flex;
+    justify-content: space-around;    
   }
 
   .navbar-menu-list li a {
@@ -757,7 +785,8 @@ textarea:-ms-input-placeholder {
   }
 
   .my-logo {
-    height: 80px;
+    height: 50px;
+    margin-left: 1%;
   }
 
   /* INTRODUCTION SECTION DESKTOP */
