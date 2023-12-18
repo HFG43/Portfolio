@@ -662,12 +662,14 @@ textarea:-ms-input-placeholder {
 
   .image-container-mobile-popup {
     height: 65vh;
+    margin-top: 0;
+    margin-bottom: 8%;
   }
 
   .mobile-popup-image {
     margin: 0 2.166% 59px 2.166%;
-    width: 95.8%;
-    height: 100%;
+    width: 60%;
+    height: auto;
   }
 
   .desktop-bottom-container {
@@ -715,6 +717,10 @@ textarea:-ms-input-placeholder {
     margin-top: 24px;
     margin-right: 5px;
     flex-wrap: wrap;
+  }
+
+  .project-role-client {
+    margin-bottom: 0;
   }
 
   .desktop-line-separation {
