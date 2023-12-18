@@ -754,7 +754,7 @@ textarea:-ms-input-placeholder {
   /* NAVIGATION BAR DESKTOP */
 
   .navbar {
-    margin: 0 5.5% 0 5.5%;
+    margin: 0 30% 0 30%;
     padding-top: 8px;
     display: flex;
     flex-direction: row;
