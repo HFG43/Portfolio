@@ -45,7 +45,7 @@ const cardData = [
     role: ['SELF-EMPLOYED', 'Full-stack Dev', '2023'],
     description: 'Single Page App where you are able to manage your spending! Create spending categories, input transactions, and track your expenses to easily monitor your financial situation. Spend smart!!',
     techskills: ['Ruby on Rails', 'Devise-gem', 'MVC pattern', 'PostgreSQL', 'ERD', 'Rspec Tests'],
-    image: 'src="Images_Background/Smart-spend-ipad.png"',
+    image: 'src="Images_Background/Smart-spend-mix.png"',
     liveButton: 'https://budget-app-eb8d.onrender.com/',
     sourceButton: 'https://github.com/HFG43/budget-app',
   },
