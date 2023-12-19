@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  transition: 1.5s;
+  transition: 0.8s;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,7 +14,6 @@ a {
 html {
   font-family: 'Poppins', sans-serif;
   font-size: 100%;
-  scroll-behavior: smooth;
 }
 
 .big-size {
@@ -648,6 +648,12 @@ textarea:-ms-input-placeholder {
   width: 42%;
 }
 
+.see-project-button-pop-up:hover {
+  color: #fff;
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 /* -------------- MEDIA QUERY -------------- */
 
 @media all and (min-width: 768px) {
@@ -919,8 +925,8 @@ textarea:-ms-input-placeholder {
 
   .facebook360-button-desktop {
     height: 48px;
-    color: #fff;
-    background-color: #4053fc;
+    color: #4053fc;
+    background-color: #efefef;
     border-radius: 8px;
     font-weight: 500;
     font-size: 1.0625rem;
