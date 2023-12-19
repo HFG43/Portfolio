@@ -87,7 +87,7 @@ const cardContainer = document.querySelector('.dynamic-card-container');
 
 function loadCard(item) {
   cardContainer.innerHTML += `
-<article id="card-work-1" class="mobile-card">
+<article id="card-work-${item}" class="mobile-card">
           <img
             class="card-snapshot"
             ${cardData[item].image}

@@ -148,20 +148,20 @@ html {
   row-gap: 88px;
 }
 
-#card-work-1 {
+#card-work-0 {
   grid-row: 1 / 2;
   margin-bottom: 88px;
 }
 
-#card-work-2 {
+#card-work-1 {
   grid-row: 2 / 3;
 }
 
-#card-work-3 {
+#card-work-2 {
   grid-row: 3 / 4;
 }
 
-#card-work-4 {
+#card-work-3 {
   grid-row: 4 / 5;
 }
 
@@ -866,24 +866,24 @@ textarea:-ms-input-placeholder {
     row-gap: 8.875rem;
   }
 
-  #card-work-1 {
+  #card-work-0 {
     grid-row: 3 / 4;
     display: flex;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
-  #card-work-2 {
+  #card-work-1 {
     grid-row: 4 / 5;
     display: flex;
     flex-direction: row-reverse;
   }
 
-  #card-work-3 {
+  #card-work-2 {
     grid-row: 1 / 2;
     display: flex;
   }
 
-  #card-work-4 {
+  #card-work-3 {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: row-reverse;
