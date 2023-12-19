@@ -1,4 +1,16 @@
+// ------------- OPENING ANIMATIONS --------
+
+const navBar = document.querySelector('.navbar');
+
+const applyNavbarWidth = () => {
+  setTimeout( () => {
+    navBar.classList.add('navbar-margin');
+  }, 1000)
+}
+document.addEventListener('DOMContentLoaded', applyNavbarWidth);
+
 // ------------- MOBILE MENU ---------------
+
 
 const menuContainer = document.querySelector('#mobile-menu-hidden');
 const introSection = document.querySelector('#introduction-section');
@@ -115,7 +127,7 @@ function loadCard(item) {
 }
 
 for (let item = 0; item < cardData.length; item += 1) {
-  loadCard(item);
+  loadCard(item);  
 }
 
 // ------------- DYNAMIC POP UP --------------- //

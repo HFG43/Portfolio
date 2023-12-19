@@ -29,11 +29,14 @@ html {
 }
 
 .navbar {
-  margin: 0 5.5% 0 5.5%;
   padding-top: 8px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(64, 83, 252, 0.24);
+}
+
+.navbar-margin {
+  margin: 0 5.5% 0 5.5%;
 }
 
 .navbar-container {
@@ -779,12 +782,15 @@ textarea:-ms-input-placeholder {
   /* NAVIGATION BAR DESKTOP */
 
   .navbar {
-    margin: 0 30% 0 30%;
     padding-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+  }
+
+  .navbar-margin {
+    margin: 0 30% 0 30%;
   }
 
   .navbar-container {
@@ -807,6 +813,11 @@ textarea:-ms-input-placeholder {
     font-size: 0.9375rem;
     color: #344563;
     text-decoration: none;
+  }
+
+  .navbar-menu-list li a:hover {
+    font-weight: 700;
+    transition: 0.3s;   
   }
 
   .my-logo {
