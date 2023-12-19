@@ -87,7 +87,7 @@ const cardContainer = document.querySelector('.dynamic-card-container');
 
 function loadCard(item) {
   cardContainer.innerHTML += `
-<article id="card-work-${item}" class="mobile-card">
+<article id="card-work-${item}" class="mobile-card ${item %2 === 0 || item === 0 ? 'even-card' : 'odd-card'}">
           <img
             class="card-snapshot"
             ${cardData[item].image}
@@ -129,6 +129,28 @@ function loadCard(item) {
 for (let item = 0; item < cardData.length; item += 1) {
   loadCard(item);  
 }
+
+const isCardInViewport = (element) => {
+  const detect = element.getBoundingClientRect();
+  const threshold = 0.4; 
+  return (
+    detect.top <= (window.innerHeight || document.documentElement.clientHeight) * (1 - threshold) &&
+    detect.bottom >= 0
+    );
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', () => {
+    const loadedCards = document.querySelectorAll('.mobile-card');
+
+    loadedCards.forEach((card) => {
+      if (isCardInViewport(card)) {
+        card.style.opacity = '1';     
+      }
+    });
+  });
+});
+
 
 // ------------- DYNAMIC POP UP --------------- //
 

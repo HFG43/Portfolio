@@ -151,18 +151,26 @@ html {
 #card-work-0 {
   grid-row: 1 / 2;
   margin-bottom: 88px;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #card-work-1 {
   grid-row: 2 / 3;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #card-work-2 {
   grid-row: 3 / 4;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #card-work-3 {
   grid-row: 4 / 5;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .mobile-card {
