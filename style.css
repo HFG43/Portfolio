@@ -73,7 +73,6 @@ html {
   border-bottom-left-radius: 10px;
   background-size: cover;
   position: relative;
-  height: 82vh;
   margin-bottom: 20%;
 }
 
@@ -153,24 +152,31 @@ html {
   margin-bottom: 88px;
   opacity: 0.2;
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 #card-work-1 {
   grid-row: 2 / 3;
+  margin-bottom: 88px;
   opacity: 0.2;
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 #card-work-2 {
   grid-row: 3 / 4;
+  margin-bottom: 88px;
   opacity: 0.2;
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 #card-work-3 {
   grid-row: 4 / 5;
+  margin-bottom: 88px;
   opacity: 0.2;
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .mobile-card {
@@ -840,6 +846,7 @@ textarea:-ms-input-placeholder {
     background-position-x: 2.1625rem;
     background-size: 96%;
     margin-bottom: 8.875rem;
+      height: 82vh;
   }
 
   .social-icons-margin-bottom-presentation {
@@ -877,7 +884,6 @@ textarea:-ms-input-placeholder {
   #card-work-0 {
     grid-row: 3 / 4;
     display: flex;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   }
 
   #card-work-1 {
