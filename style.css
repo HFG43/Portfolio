@@ -1045,7 +1045,7 @@ textarea:-ms-input-placeholder {
 
   .tech-languages {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 23% 23% 23% 23%;
   }
 
   .tech-prof-skills {
